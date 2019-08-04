@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ProjectBiddingService.cs" />
+    <Compile Remove="ProjectDemandService.cs" />
+    <Compile Remove="ProjectKindService.cs" />
+    <Compile Remove="ProjectPayLogService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Qiniu.Shared" Version="7.2.15" />
+    <PackageReference Include="Senparc.NeuChar" Version="0.6.0.2" />
+    <PackageReference Include="Senparc.Weixin.MP" Version="16.6.7" />
+    <PackageReference Include="Senparc.Weixin.Open" Version="4.4.0.2" />
+    <PackageReference Include="Senparc.Weixin.WxOpen" Version="3.3.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Senparc.Core\Senparc.Core.csproj" />
+    <ProjectReference Include="..\Senparc.Log\Senparc.Log.csproj" />
+    <ProjectReference Include="..\Senparc.Respository\Senparc.Respository.csproj" />
+    <ProjectReference Include="..\Senparc.SMS\Senparc.SMS.csproj" />
+    <ProjectReference Include="..\Senparc.Utility\Senparc.Utility.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+
+----------------------header--------------------------
+2019-07-31 23:00:34,312 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2736 T=1
+2019-07-31 23:00:36,126 [9] ERROR WebLoggerRepository - FullSystemConfig为null
+ : ? R=4550 T=9
+2019-07-31 23:01:09,787 [11] INFO  WebLoggerRepository - AdminUserInfo新增：SenparcCoreAdmin00（ID：1）
+ : ? R=38211 T=11
+2019-07-31 23:01:09,818 [11] INFO  SystemLoggerRepository - 系统信息被编辑
+ : ? R=38242 T=11
+
+----------------------header--------------------------
+2019-07-31 23:18:49,104 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=8394 T=1
+
+----------------------header--------------------------
+2019-07-31 23:24:37,116 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2223 T=1
+2019-07-31 23:27:02,941 [23] INFO  WebLoggerRepository - AdminUserInfo新增：SenparcCoreAdmin10（ID：2）
+ : ? R=148048 T=23

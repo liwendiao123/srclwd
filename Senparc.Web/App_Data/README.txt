@@ -1,0 +1,3 @@
+管理员账号：SenparcCoreAdmin00
+
+管理员密码：02e6301b
