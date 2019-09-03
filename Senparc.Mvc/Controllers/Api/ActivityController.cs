@@ -27,7 +27,7 @@ namespace Senparc.Mvc.Controllers
                 code = 0,
                 msg = "获取数据成功",
                 data = new List<ActivityResponse>() {
-                     new ActivityResponse(),
+                    new ActivityResponse(),
                     new ActivityResponse(),
 
                 }

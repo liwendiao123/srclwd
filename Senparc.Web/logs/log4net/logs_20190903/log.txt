@@ -1,0 +1,46 @@
+
+----------------------header--------------------------
+2019-09-03 21:29:00,033 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3471 T=1
+
+----------------------header--------------------------
+2019-09-03 21:37:44,888 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2044 T=1
+
+----------------------header--------------------------
+2019-09-03 22:08:15,953 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2285 T=1
+
+----------------------header--------------------------
+2019-09-03 22:17:20,069 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2116 T=1
+2019-09-03 22:17:33,871 [9] ERROR WebLoggerRepository - FullSystemConfig为null
+ : ? R=15918 T=9
+
+----------------------header--------------------------
+2019-09-03 22:21:57,046 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2137 T=1
+
+----------------------header--------------------------
+2019-09-03 22:34:27,356 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3204 T=1
+
+----------------------header--------------------------
+2019-09-03 22:42:51,442 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2053 T=1
+
+----------------------header--------------------------
+2019-09-03 22:53:44,293 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2083 T=1
+
+----------------------header--------------------------
+2019-09-03 22:57:43,342 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2123 T=1
+
+----------------------header--------------------------
+2019-09-03 23:01:35,094 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2084 T=1
+
+----------------------header--------------------------
+2019-09-03 23:03:39,826 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2217 T=1

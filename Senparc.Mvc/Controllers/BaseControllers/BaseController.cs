@@ -11,6 +11,7 @@ using Senparc.Core.Models;
 using Senparc.Core.Models.VD;
 using Senparc.Log;
 using Senparc.Mvc.Models.RequestModel;
+using Senparc.Service;
 using Senparc.Utility;
 using System;
 using System.Collections.Generic;
@@ -24,15 +25,22 @@ namespace Senparc.Mvc.Controllers
     public class BaseController : Controller, IResultFilter
     {
         //private ISystemConfigService _systemConfigService;
+        private readonly AdminUserInfoService _adminUserInfoService;
+        private readonly EncryptionService _encryptionService;
         protected FullSystemConfig _fullSystemConfig;
         protected DateTime PageStartTime { get; set; }
         protected DateTime PageEndTime { get; set; }
 
         protected SessionInfo Session { get; set; }
 
+        protected AdminUserInfo AdminUser { get; set; }
         //protected st
-        public BaseController()
+        public BaseController(AdminUserInfoService adminUserInfoService
+            , EncryptionService encryptionService
+            )
         {
+            _adminUserInfoService = adminUserInfoService;
+            _encryptionService = encryptionService;
             PageStartTime = DateTime.Now;
         }
 
@@ -47,9 +55,39 @@ namespace Senparc.Mvc.Controllers
             try
             {
                 TempData["Messager"] = TempData["Messager"];
-                var fullSystemConfigCache = SenparcDI.GetService<FullSystemConfigCache>();
-                _fullSystemConfig = fullSystemConfigCache.Data;
 
+
+               var result = context.HttpContext.Session.GetString("userName");
+
+                if (!string.IsNullOrEmpty(result))
+                {
+                    this.AdminUser = _adminUserInfoService.GetUserInfo(result);
+                }
+
+                var ctoken = context.HttpContext.Session.GetString("ctoken");
+
+                if (!string.IsNullOrEmpty(ctoken))
+                {
+                   var er = _encryptionService.CommonDecrypt(ctoken);
+                    var arr = result.Split("-");
+                    if (arr.Length == 3)
+                    {
+
+                        long ticks = 0;
+                        Int64.TryParse(arr[1], out ticks);
+                        this.Session = new SessionInfo
+                        {
+                            ClientKey = arr[2],
+                             ExpireTime =new DateTime(ticks),
+                              UserName = arr[0]
+                        };
+
+                    }
+                }
+
+                var fullSystemConfigCache = SenparcDI.GetService<FullSystemConfigCache>();
+
+                _fullSystemConfig = fullSystemConfigCache.Data;
                 var fullAccountCache = SenparcDI.GetService<FullAccountCache>();
                 if (this.UserName != null)
                 {
@@ -57,7 +95,6 @@ namespace Senparc.Mvc.Controllers
                     if (FullAccount != null)
                     {
                         //...
-
                     }
                     else
                     {

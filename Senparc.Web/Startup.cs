@@ -95,7 +95,10 @@ namespace Senparc.Web
             //services.Configure<RazorViewEngineOptions>();//https://stackoverflow.com/questions/36372926/asp-net-mvc-core-custom-controller-factory
             services.AddSignalR();
             services.AddTransient(typeof(Lazy<>)); //注册Lazy
-
+            services.AddCors(options =>
+               options.AddPolicy("customerget",
+               p => p.AllowAnyOrigin())
+               );
             //var cache = services.BuildServiceProvider().GetService<IMemoryCache>();//测试成功
             services.Configure<SenparcCoreSetting>(Configuration.GetSection("SenparcCoreSetting"))
                 .Configure<SenparcWeixinSetting>(Configuration.GetSection("SenparcWeixinSetting"))
@@ -179,7 +182,7 @@ namespace Senparc.Web
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
+            app.UseCors("customerget");
             #region CO2NET
 
             // 启动 CO2NET 全局注册，必须！

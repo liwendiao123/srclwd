@@ -13,12 +13,17 @@ namespace Senparc.Mvc.Controllers
     {
         private readonly EncryptionService _encryptionService;
         private readonly QQWry _qqWry;
+
+        private readonly AdminUserInfoService _userInfoService;
+
         public UserController(
                 EncryptionService encryptionService,
+                AdminUserInfoService userInfoService,
                 QQWry qqWry
             )
         {
             _encryptionService = encryptionService;
+            _userInfoService = userInfoService;
             _qqWry = qqWry;
         }
 
@@ -40,17 +45,23 @@ namespace Senparc.Mvc.Controllers
             {
                 var ip = _qqWry.GetCurrentIP();
 
-                if ("sa".Equals(request.UserName) && "sa".Equals(request.Password))
+
+                if (_userInfoService.CheckPassword(request.UserName, request.Password))
                 {
                     string loginInfo = "{0}-{1}-{2}";
-                  var result =  string.Format(loginInfo, request.UserName, ip, DateTime.Now.AddDays(30).Ticks);
+                    var result = string.Format(loginInfo, request.UserName, ip, DateTime.Now.AddDays(30).Ticks);
                     return Json(new
                     {
                         code = 0,
                         msg = "登录成功,",
-                        data = _encryptionService.CommonEncrypt(result)
+                        data = new
+                        {
+                            token = _encryptionService.CommonEncrypt(result)
+                        }
                     });
                 }
+
+               
                 return Json(new
                 {
                     code = -1,

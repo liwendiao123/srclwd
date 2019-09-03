@@ -13,10 +13,12 @@ namespace Senparc.Mvc.Filter
 
         private bool forceLogout = false;//被强制退出登录
         private readonly EncryptionService _encryptionService;
-     
+        private readonly AdminUserInfoService _adminUserInfoService;
+
         public SessionAttribute()
         {
             _encryptionService = CO2NET.SenparcDI.GetService<EncryptionService>();
+            _adminUserInfoService = CO2NET.SenparcDI.GetService<AdminUserInfoService>();
         }
 
 
@@ -38,6 +40,10 @@ namespace Senparc.Mvc.Filter
                     var arr = result.Split("-");
                     if (arr.Length == 3)
                     {
+
+                        httpContext.Session.SetString("userName", arr[0]);
+                        httpContext.Session.SetString("ctoken", strjson);
+                     // var sresult =  _adminUserInfoService.GetUserInfo(arr[0]);
                         return true;
                     }
                     else
@@ -64,17 +70,29 @@ namespace Senparc.Mvc.Filter
 
             if (string.IsNullOrEmpty(strjson))
             {
+                strjson = httpContext.Request.Form["session"];
+            }
+           
+            if (string.IsNullOrEmpty(strjson))
+            {
                 return false;
             }
             else
             {
               var result =  _encryptionService.CommonDecrypt(strjson);
 
+                
+
                 if (!string.IsNullOrEmpty(result))
                 {
                  var arr =   result.Split("-");
                     if (arr.Length == 3)
                     {
+                        var sresult = _adminUserInfoService.GetUserInfo(arr[0]);
+
+
+                        //httpContext.Session.Set("UserInfo", sresult);
+                      ///  httpContext.Session.i
                         return true;
                     }
                     else
@@ -92,7 +110,7 @@ namespace Senparc.Mvc.Filter
         public void OnAuthorization(AuthorizationFilterContext filterContext)
         {
      
-     
+        
 
             if (filterContext == null)
             {
