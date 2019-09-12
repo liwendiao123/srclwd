@@ -8,7 +8,12 @@ namespace Senparc.Repository
 
     public class PointsLogRepository : BaseClientRepository<PointsLog>, IPointsLogRepository
     {
+        private readonly ISqlClientFinanceData _sqlClientFinanceData;
 
+        public PointsLogRepository(ISqlClientFinanceData sqlClientFinanceData) : base(sqlClientFinanceData)
+        {
+
+        }
     }
 }
 

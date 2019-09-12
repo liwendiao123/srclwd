@@ -1,0 +1,518 @@
+@model Senparc.Areas.Admin.Models.VD.CompetitionProgram_EditVD
+@{
+    ViewData["Title"] = $"{(Model.IsEdit ? "编辑" : "新增")}活动";
+}
+
+@section Style{
+
+    <link href="~/bower_components/gentelella/vendors/google-code-prettify/src/prettify.css" rel="stylesheet" />
+    @*<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" />*@
+
+    <link href="~/bower_components/gentelella/vendors/bootstrap-wysiwyg/css/style.css" rel="stylesheet" />
+    <link href="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/css/fileinput.css" rel="stylesheet" />
+    <link href="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/themes/explorer/theme.css" rel="stylesheet" />
+
+    <link href="~/bower_components/gentelella/vendors/kindeditor/themes/default/default.css" rel="stylesheet" />
+
+
+}
+
+@section breadcrumbs{
+    <li>
+        <a asp-action="Index" asp-controller="Activity">活动管理</a>
+    </li>
+    <li>
+        @ViewData["Title"]
+    </li>
+}
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_content">
+                <form class="form-horizontal form-label-left" novalidate method="post">
+                    <input type="hidden" asp-for="Id" />
+                    <input type="hidden" asp-for="ImgUrl" />
+
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            演出项目类别 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <select asp-for="Cate" required="required" class="form-control">
+                                @if (Model.Cate < 0)
+                                {
+                                    <option value="" selected> 请选择</option>
+
+                                }
+                                else
+                                {
+                                    <option value=""> 请选择</option>
+                                }
+                                @foreach (var item in Model.CateList)
+                                {
+                                    @if (item.Id == Model.Cate)
+                                    {
+                                        <option value="@item.Id" selected>@item.Name</option>
+
+                                    }
+                                    else
+                                    {
+
+                                        <option value="@item.Id">@item.Name</option>
+                                    }
+
+                                }
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            活动名称 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <select asp-for="ActivityId" required="required" class="form-control">
+                                @if (string.IsNullOrEmpty(Model.ActivityId))
+                                {
+                                    <option value="" selected> 请选择</option>
+
+                                }
+                                else
+                                {
+                                    <option value=""> 请选择</option>
+                                }
+                                @foreach (var item in Model.Activities)
+                                {
+                                    @if (item.Id == Model.ActivityId)
+                                    {
+                                        <option value="@item.Id" selected>@item.Title</option>
+
+                                    }
+                                    else
+                                    {
+
+                                        <option value="@item.Id">@item.Title</option>
+                                    }
+
+                                }
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            参赛赛程 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <select asp-for="ProjectId" required="required" class="form-control">
+                                @if (string.IsNullOrEmpty(Model.ProjectId))
+                                {
+                                    <option value="" selected> 请选择</option>
+
+                                }
+                                else
+                                {
+                                    <option value=""> 请选择</option>
+                                }
+                                @foreach (var item in Model.Schedules)
+                                {
+                                    @if (item.Id == Model.ProjectId)
+                                    {
+                                        <option value="@item.Id" selected>@item.Name</option>
+
+                                    }
+                                    else
+                                    {
+
+                                        <option value="@item.Id">@item.Name</option>
+                                    }
+
+                                }
+
+                            </select>
+                        </div>
+                    </div>
+                    @*<input type="hidden" asp-for="CoverUrl" />*@
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            演出项目名称 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="Name" class="form-control col-md-7 col-xs-12" data-validate-length="1,200" placeholder="请输入演出项目名称" required="required" type="text">
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            演出单位 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="Company" class="form-control col-md-7 col-xs-12" data-validate-length="1,200" placeholder="请输入演出单位" required="required" type="text">
+                            <span asp-validation-for="Company" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            网盘展示图片地址 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="BdImgUrl" class="form-control col-md-7 col-xs-12" data-validate-length="1,200" placeholder="请输入展示图片" type="text">
+                            <span asp-validation-for="BdImgUrl" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            网盘展示图片地址密码 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="BdImgUrlPwd" class="form-control col-md-7 col-xs-12" data-validate-length="1,200" placeholder="请输入展示图片地址密码" type="text">
+                            <span asp-validation-for="BdImgUrlPwd" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            状态 <span class="required">*</span>
+                        </label>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <label class="radio-inline">
+                                <input type="radio" value="0" asp-for="Status">开始报名
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" value="1" asp-for="Status">等待抽签
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" value="2" asp-for="Status">演出中
+                            </label>
+
+                        </div>
+
+                    </div>
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            指定签号 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+
+                            <select asp-for="SignNum">
+                                @if (string.IsNullOrEmpty(Model.SignNum))
+                                {
+                                    <option value="" selected>请选择签号</option>
+                                }
+                                else
+                                {
+                                    <option value="">请选择签号</option>
+                                }
+
+                                @foreach (var item in Model.AvalidSignNums)
+                                {
+                                    if (Model.SignNum == item)
+                                    {
+                                        <option selected value="@item">@item</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@item">@item</option>
+                                    }
+                                }
+
+                            </select>
+
+
+                        </div>
+
+                        @*<div class="col-md-3 col-sm-3 col-xs-12">
+
+                <label class="control-label " for="name">
+                    可用签号 <span class="required">@Model.ScheduleSignNum</span>
+                </label>
+            </div>*@
+
+                    </div>
+
+
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            指定抽签账号 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+
+                            <select asp-for="ControlId" required>
+                                @if (string.IsNullOrEmpty(Model.ControlId))
+                                {
+                                    <option value="" selected>请选择抽签账号</option>
+                                }
+                                else
+                                {
+                                    <option value="">请选择抽签账号</option>
+                                }
+
+                                @foreach (var item in Model.UserList)
+                                {
+                                    if (Model.ControlId == item.UserName)
+                                    {
+                                        <option selected value="@item.UserName">
+
+                                            @item.UserName
+                                        </option>
+                                    }
+                                    else
+                                    {
+                                        <option  value="@item.UserName">
+
+                                            @item.UserName
+                                        </option>
+                                    }
+                                }
+
+                            </select>
+
+
+                        </div>
+
+                
+
+                    </div>
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            抽签人联系电话 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="LeaderPhone" class="form-control col-md-7 col-xs-12" data-validate-length="1,200" placeholder="请输入抽签人联系电话（自动生成帐号，密码为电话号码后六位）" required="required" type="text">
+                            <span asp-validation-for="LeaderPhone" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            抽签人姓名 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="LeaderName" class="form-control col-md-7 col-xs-12" data-validate-length="1,200" placeholder="请输入抽签人姓名" required="required" type="text">
+                            <span asp-validation-for="LeaderName" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            抽签人工作单位 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="LeaderCom" class="form-control col-md-7 col-xs-12" data-validate-length="1,200" placeholder="请输入抽签人工作单位" required="required" type="text">
+                            <span asp-validation-for="LeaderCom" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            抽签人身份证号
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="LeaderCard" class="form-control col-md-7 col-xs-12" data-validate-length="1,200" placeholder="请输入抽签人身份证号" type="text">
+                            <span asp-validation-for="LeaderCard" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            抽签人民族
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="LeaderNation" class="form-control col-md-7 col-xs-12" data-validate-length="1,200" placeholder="请输入抽签人民族" type="text">
+                            <span asp-validation-for="LeaderNation" class="text-danger"></span>
+                        </div>
+                    </div>
+                    @*<div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            抽签人邮箱
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="LeaderEmail" class="form-control col-md-7 col-xs-12" data-validate-length="1,200" placeholder="请输入抽签人邮箱" type="text">
+                            <span asp-validation-for="LeaderEmail" class="text-danger"></span>
+                        </div>
+                    </div>*@
+
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            抽签人职务或职称 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="LeaderDuty" class="form-control col-md-7 col-xs-12" data-validate-length="1,200" placeholder="请输入活动抽签人职务或职称" required="required" type="text">
+                            <span asp-validation-for="LeaderDuty" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    @*<div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            演出项目封面 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+
+                            <div class="form-group">
+                                <input id="input-709" name="files" type="file" multiple class="file-loading">
+                                <div id="kv-error-1" style="margin-top:10px;display:none"></div>
+                                <div id="kv-success-1" class="alert alert-success fade in" style="margin-top:10px;display:none"></div>
+                            </div>
+
+                        </div>
+                    </div>*@
+                    @*<div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Content">
+                            演出项目简要说明
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <textarea asp-for="Remark" class="form-control col-md-7 col-xs-12" placeholder="请输入简要说明"></textarea>
+                            <span asp-validation-for="Remark" class="text-danger"></span>
+                        </div>
+                    </div>*@
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Description">
+                            舞台技术要求
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <textarea asp-for="Desc" class="form-control col-md-7 col-xs-12" placeholder="请输入概述"></textarea>
+                            <span asp-validation-for="Desc" class="text-danger"></span>
+
+                        </div>
+                    </div>
+                    <div class="ln_solid"></div>
+                    <div class="form-group">
+                        <div class="col-md-6 col-md-offset-3">
+                            <a href="javascript:histroy.go(-1);" type="submit" class="btn btn-primary">取消</a>
+                            <button id="send" type="submit" class="btn btn-success">提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/bower_components/gentelella/vendors/kindeditor/kindeditor-min.js"></script>
+    <script src="~/bower_components/gentelella/vendors/kindeditor/lang/zh_CN.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/bower_components/gentelella/vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="~/bower_components/gentelella/vendors/google-code-prettify/src/prettify.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-wysiwyg/src/bootstrap-wysiwyg.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/js/plugins/piexif.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/js/plugins/sortable.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/js/fileinput.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/js/locales/zh.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/themes/explorer/theme.js"></script>
+
+
+    <script type='text/javascript'>
+
+
+        $("#input-709").fileinput({
+            language: 'zh',
+            uploadUrl: "http://localhost:11946/Upload/Imgupload", // 服务器接收上传文件方法
+            uploadAsync: true,
+            showPreview: true,
+            overwriteInitial: false,
+            allowedFileExtensions: ['gif', 'jpg', 'jpeg', 'png', 'bmp'],
+            maxFileCount: 5,
+            elErrorContainer: '#kv-error-1',
+            initialPreviewAsData: true,
+            initialPreview: [
+                 '@Model.ImgUrl'
+            ],
+            initialPreviewConfig: [
+
+            ]
+        }).on('filebatchuploadcomplete', function (event, files, extra) {
+            console.log('File batch upload complete');
+        }).on('filebatchpreupload', function (event, data, id, index) {
+            $('#kv-success-1').html('<h4>上传状态</h4><ul></ul>').hide();
+        }).on('filebatchuploadsuccess', function (event, data, previewId, index) {
+            var form = data.form, files = data.files, extra = data.extra,
+                response = data.response, reader = data.reader;
+            console.log('File batch upload success');
+        }).on('fileuploaded', function (event, data, id, index) {
+            var fname = data.files[index].name,
+                out = '<li>' + 'U上传文件 # ' + (index + 1) + ' - ' +
+                    fname + ' 成功' + '</li>';
+
+            if (data.response.code == 0) {
+                if (data.response.curl != "")
+                {
+                    var ccurl = $('#ImgUrl').val();
+
+                    if (ccurl == "") {
+                        $('#ImgUrl').val(data.response.curl);
+                    }
+                    else
+                    {
+                        var cccurl = ccurl+("," + ccurl);
+                        $('#ImgUrl').val('').val(cccurl);
+                    }
+
+
+                }
+            }
+
+            $('#kv-success-1 ul').append(out);
+            $('#kv-success-1').fadeIn('slow');
+        }).on('filedeleted', function (event, key) {
+            console.log('Key = ' + key);
+        }).on('filesuccessremove', function (event, id) {
+            if (some_processing_function(id)) {
+                console.log('Uploaded thumbnail successfully removed');
+            } else {
+                return false; // 缩略图删除中断
+            }
+        }).on('fileuploaderror', function (event, data, msg) {
+            var form = data.form, files = data.files, extra = data.extra,
+                response = data.response, reader = data.reader;
+            console.log('File upload error');
+            // 获取信息
+            alert(msg);
+        }).on('filedeleteerror', function (event, data, msg) {
+            console.log('File delete error');
+            // get message
+            alert(msg);
+            });
+
+
+        KindEditor.ready(function (K) {
+            var editor1 = K.create('#Description', {
+                cssPath: '/bower_components/gentelella/vendors/kindeditor/themes/default/default.css',
+                uploadJson: '/Upload/UploadKindEditor',
+                fileManagerJson: '/Upload/FileManager',
+                allowFileManager: true,
+                height: "400px", 
+                pleaseInput: "@Model.Desc",
+                afterBlur: function () { this.sync(); },
+                afterCreate: function () {
+                    var self = this;
+                    K.ctrl(document, 13, function () {
+                        self.sync();
+                        K('form[name=form-editor]')[0].submit();
+                    });
+                    K.ctrl(self.edit.doc, 13, function () {
+                        self.sync();
+                        K('form[name=form-editor]')[0].submit();
+                    });
+                },
+                afterUpload: function (url, data, name) { //上传文件后执行的回调函数，必须为3个参数
+                    if (name == "image" || name == "multiimage") { //单个和批量上传图片时
+                        var img = new Image(); img.src = url;
+                        img.onload = function () { //图片必须加载完成才能获取尺寸
+                            if (img.width > 330) editor1.html(editor1.html().replace('<img src="' + url + '"', '<img src="' + url + '" width="80%"'))
+                        }
+                    }
+                }  
+            });
+            prettyPrint();
+        });
+
+
+    </script>
+
+    <script type="text/javascript">
+       
+    </script>
+}

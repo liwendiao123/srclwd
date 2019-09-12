@@ -49,6 +49,7 @@ namespace Senparc.Areas.Admin.Controllers
                 }
                 vd.UserName = userInfo.UserName;
                 vd.Note = userInfo.Note;
+                vd.RealName = userInfo.RealName;
                 vd.Id = userInfo.Id;
             }
             vd.IsEdit = isEdit;
@@ -98,8 +99,8 @@ namespace Senparc.Areas.Admin.Controllers
             {
                 userInfo.Password = this._adminUserInfoService.GetPassword(model.Password, userInfo.PasswordSalt, false);//生成密码
             }
-
-            await this.TryUpdateModelAsync(userInfo, "", z => z.Note, z => z.UserName);
+            userInfo.RealName = model.RealName;
+            await this.TryUpdateModelAsync(userInfo, "", z => z.Note,z=>z.RealName ,z => z.UserName);
             this._adminUserInfoService.SaveObject(userInfo);
 
             base.SetMessager(MessageType.success, $"{(isEdit ? "修改" : "新增")}成功！");

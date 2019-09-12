@@ -13,13 +13,24 @@ namespace Senparc.Core.Models
     //[Pluggable("ClientDatabase")]
     public class SqlClientFinanceData : SqlBaseFinanceData, ISqlBaseFinanceData, ISqlClientFinanceData
     {
+
+        private readonly SenparcEntities _dataContext;
+        public SqlClientFinanceData(SenparcEntities senparcEntities)
+        {
+            _dataContext = senparcEntities;
+        }
+
+        // private static object lockobj = new object();
+
         private SenparcEntities dataContext;
 
         public SenparcEntities DataContext
         {
             get
             {
-                return BaseDataContext as SenparcEntities;
+
+                return _dataContext;
+               // return BaseDataContext as SenparcEntities;
             }
         }
 
@@ -37,16 +48,22 @@ namespace Senparc.Core.Models
         {
             get
             {
-                if (dataContext == null)
-                {
-                    var connectionString = Senparc.Core.Config.SenparcDatabaseConfigs.ClientConnectionString;
 
-                    dataContext = SenparcDI.GetService<SenparcEntities>();
-                    //TODO:当前采用注入可以保证HttpContext单例，如果要全局单例，可采用单件模式（需要先解决释放的问题）
-                }
-                //var hashCode = dataContext.GetHashCode();
-                //System.Web.HttpContext.Current.Response.Write(dataContext.GetHashCode() + "<br />");//测试同一Request只有一个SenparcEntities实例
-                return dataContext;
+                return _dataContext;
+               //// lock (lockobj)
+               //// {
+               //     if (dataContext == null)
+               //     {
+               //         var connectionString = Senparc.Core.Config.SenparcDatabaseConfigs.ClientConnectionString;
+
+               //         dataContext = SenparcDI.GetService<SenparcEntities>();
+               //         //TODO:当前采用注入可以保证HttpContext单例，如果要全局单例，可采用单件模式（需要先解决释放的问题）
+               //     }
+               //     var hashCode = dataContext.GetHashCode();
+               //     //System.Web.HttpContext.Current.Response.Write(dataContext.GetHashCode() + "<br />");//测试同一Request只有一个SenparcEntities实例
+               //     return dataContext;
+               //// }
+              
             }
 
         }

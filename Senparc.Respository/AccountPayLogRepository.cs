@@ -12,7 +12,12 @@ namespace Senparc.Repository
 
     public class AccountPayLogRepository : BaseClientRepository<AccountPayLog>, IAccountPayLogRepository
     {
+        private readonly ISqlClientFinanceData _sqlClientFinanceData;
 
+        public AccountPayLogRepository(ISqlClientFinanceData sqlClientFinanceData) : base(sqlClientFinanceData)
+        {
+
+        }
     }
 }
 

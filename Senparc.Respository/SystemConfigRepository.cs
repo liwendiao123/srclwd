@@ -8,7 +8,12 @@ namespace Senparc.Repository
 
     public class SystemConfigRepository : BaseClientRepository<SystemConfig>, ISystemConfigRepository
     {
+        private readonly ISqlClientFinanceData _sqlClientFinanceData;
 
+        public SystemConfigRepository(ISqlClientFinanceData sqlClientFinanceData) : base(sqlClientFinanceData)
+        {
+            _sqlClientFinanceData = sqlClientFinanceData;
+        }
     }
 }
 

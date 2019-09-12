@@ -22,7 +22,9 @@
                             昵称 
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12 ">
-                            <span class="form-control-static">@Model.NickName</span>
+                            @*<span class="form-control-static">@Model.NickName</span>*@
+                            <input class="form-control" type="text" asp-for="NickName">
+                            <span asp-validation-for="NickName" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="item form-group">
@@ -30,7 +32,9 @@
                             用户名 <span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <span class="form-control-static">@Model.UserName</span>
+                            <input class="form-control" type="text" asp-for="AccountNum" required="required">
+                            <span asp-validation-for="AccountNum" class="text-danger"></span>
+                            @*<span class="form-control-static">@Model.UserName</span>*@
                         </div>
                     </div>
                     <div class="item form-group">

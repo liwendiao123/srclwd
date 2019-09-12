@@ -17,7 +17,7 @@ namespace Senparc.Mvc.Filter
 
         public SessionAttribute()
         {
-            _encryptionService = CO2NET.SenparcDI.GetService<EncryptionService>();
+            _encryptionService    = CO2NET.SenparcDI.GetService<EncryptionService>();
             _adminUserInfoService = CO2NET.SenparcDI.GetService<AdminUserInfoService>();
         }
 
@@ -88,10 +88,10 @@ namespace Senparc.Mvc.Filter
                  var arr =   result.Split("-");
                     if (arr.Length == 3)
                     {
-                        var sresult = _adminUserInfoService.GetUserInfo(arr[0]);
+                        //var sresult = _adminUserInfoService.GetUserInfo(arr[0]);
 
 
-                        //httpContext.Session.Set("UserInfo", sresult);
+                        httpContext.Session.SetString("userName", arr[0]);
                       ///  httpContext.Session.i
                         return true;
                     }

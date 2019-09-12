@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Senparc.Mvc.Controllers
 {
-    public class ErrorController : BaseController
+    public class ErrorController : Controller
     {
         public ActionResult Error()
         {

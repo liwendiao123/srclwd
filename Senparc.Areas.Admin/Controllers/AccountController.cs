@@ -18,12 +18,12 @@ namespace Senparc.Areas.Admin.Controllers
     public class AccountController : BaseAdminController
     {
         private readonly AccountService _accountService;
-        private readonly SenparcEntities _senparcEntities;
+       // private readonly SenparcEntities _senparcEntities;
 
-        public AccountController(AccountService accountService, SenparcEntities senparcEntities)
+        public AccountController(AccountService accountService)
         {
             _accountService = accountService;
-            _senparcEntities = senparcEntities;
+          //  _senparcEntities = senparcEntities;
         }
 
         public ActionResult Index(string kw = null, int pageIndex = 1)
@@ -81,13 +81,14 @@ namespace Senparc.Areas.Admin.Controllers
                 {
                     return RenderError("信息不存在！");
                 }
+                account.UserName = model.AccountNum;
             }
             else
             {
                 account = new Account()
                 {
                     AddTime = DateTime.Now,
-                    UserName = _accountService.GetNewUserName(),
+                    UserName = "",
                     NickName = ""
                 };
             }

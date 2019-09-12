@@ -15,7 +15,7 @@ namespace Senparc.Web.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.1-rtm-30846")
+                .HasAnnotation("ProductVersion", "2.2.2-servicing-10034")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -232,6 +232,175 @@ namespace Senparc.Web.Migrations
                     b.ToTable("AdminUserInfos");
                 });
 
+            modelBuilder.Entity("Senparc.Core.Models.DataBaseModel.Activity", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Content");
+
+                    b.Property<string>("CoverUrl")
+                        .IsUnicode(false);
+
+                    b.Property<string>("Description");
+
+                    b.Property<bool>("Flag");
+
+                    b.Property<bool>("IsPublish");
+
+                    b.Property<DateTime>("IssueTime");
+
+                    b.Property<int>("ScheduleStatus");
+
+                    b.Property<string>("Summary");
+
+                    b.Property<string>("Title");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Activities");
+                });
+
+            modelBuilder.Entity("Senparc.Core.Models.DataBaseModel.CompetitionProgram", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("BdImgUrl")
+                        .IsUnicode(false);
+
+                    b.Property<string>("BdImgUrlPwd");
+
+                    b.Property<int>("Cate");
+
+                    b.Property<string>("Company");
+
+                    b.Property<string>("ControlId");
+
+                    b.Property<DateTime>("CreateTime");
+
+                    b.Property<string>("CreatorId");
+
+                    b.Property<string>("CreatorName");
+
+                    b.Property<string>("Desc");
+
+                    b.Property<bool>("Flag");
+
+                    b.Property<string>("ImgUrl")
+                        .IsUnicode(false);
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Remark");
+
+                    b.Property<string>("ScheduleId");
+
+                    b.Property<string>("SignNum");
+
+                    b.Property<int>("Status");
+
+                    b.Property<DateTime>("UpdateTime");
+
+                    b.Property<string>("UpdatorId");
+
+                    b.Property<string>("UpdatorName");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ScheduleId");
+
+                    b.ToTable("CompetitionPrograms");
+                });
+
+            modelBuilder.Entity("Senparc.Core.Models.DataBaseModel.ProjectMember", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Company");
+
+                    b.Property<DateTime>("CreateTime");
+
+                    b.Property<string>("Duty");
+
+                    b.Property<string>("Email");
+
+                    b.Property<bool>("Flag");
+
+                    b.Property<int>("Gender");
+
+                    b.Property<string>("HeadImgUrl");
+
+                    b.Property<string>("IdCard");
+
+                    b.Property<string>("IdCardImgUrl");
+
+                    b.Property<bool>("IsLeader");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Nation");
+
+                    b.Property<string>("Phone");
+
+                    b.Property<string>("ProjectId");
+
+                    b.Property<int>("Sort");
+
+                    b.Property<DateTime>("UpdateTime");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProjectId");
+
+                    b.ToTable("ProjectMembers");
+                });
+
+            modelBuilder.Entity("Senparc.Core.Models.DataBaseModel.Schedule", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("ActivityId");
+
+                    b.Property<string>("Address");
+
+                    b.Property<DateTime>("CreateTime");
+
+                    b.Property<string>("Creator");
+
+                    b.Property<string>("CreatorId");
+
+                    b.Property<string>("Desc");
+
+                    b.Property<DateTime>("EndTime");
+
+                    b.Property<bool>("Flag");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("Remark");
+
+                    b.Property<string>("SignNumber");
+
+                    b.Property<int>("Sort");
+
+                    b.Property<DateTime>("StartTime");
+
+                    b.Property<DateTime>("UpdateTime");
+
+                    b.Property<string>("UpdatorId");
+
+                    b.Property<string>("UpdatorName");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ActivityId");
+
+                    b.ToTable("Schedules");
+                });
+
             modelBuilder.Entity("Senparc.Core.Models.FeedBack", b =>
                 {
                     b.Property<int>("Id")
@@ -317,6 +486,30 @@ namespace Senparc.Web.Migrations
                         .WithMany("AccountPayLogs")
                         .HasForeignKey("AccountId")
                         .OnDelete(DeleteBehavior.Restrict);
+                });
+
+            modelBuilder.Entity("Senparc.Core.Models.DataBaseModel.CompetitionProgram", b =>
+                {
+                    b.HasOne("Senparc.Core.Models.DataBaseModel.Schedule", "Schedule")
+                        .WithMany("CompetitionPrograms")
+                        .HasForeignKey("ScheduleId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Senparc.Core.Models.DataBaseModel.ProjectMember", b =>
+                {
+                    b.HasOne("Senparc.Core.Models.DataBaseModel.CompetitionProgram", "CompetitionProgram")
+                        .WithMany("ProjectMembers")
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Senparc.Core.Models.DataBaseModel.Schedule", b =>
+                {
+                    b.HasOne("Senparc.Core.Models.DataBaseModel.Activity", "Activity")
+                        .WithMany("Schedules")
+                        .HasForeignKey("ActivityId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Senparc.Core.Models.FeedBack", b =>

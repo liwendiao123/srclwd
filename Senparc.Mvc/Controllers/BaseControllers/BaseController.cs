@@ -25,22 +25,20 @@ namespace Senparc.Mvc.Controllers
     public class BaseController : Controller, IResultFilter
     {
         //private ISystemConfigService _systemConfigService;
-        private readonly AdminUserInfoService _adminUserInfoService;
-        private readonly EncryptionService _encryptionService;
+      //  protected readonly AdminUserInfoService _adminUserInfoService;
+        protected readonly EncryptionService _encryptionService;
         protected FullSystemConfig _fullSystemConfig;
         protected DateTime PageStartTime { get; set; }
         protected DateTime PageEndTime { get; set; }
 
-        protected SessionInfo Session { get; set; }
+       // protected SessionInfo Session { get; set; }
 
-        protected AdminUserInfo AdminUser { get; set; }
+       // protected AdminUserInfo AdminUser { get; set; }
         //protected st
-        public BaseController(AdminUserInfoService adminUserInfoService
-            , EncryptionService encryptionService
-            )
+        public BaseController()
         {
-            _adminUserInfoService = adminUserInfoService;
-            _encryptionService = encryptionService;
+          //  _adminUserInfoService = CO2NET.SenparcDI.GetService<AdminUserInfoService>(); 
+            _encryptionService    = CO2NET.SenparcDI.GetService<EncryptionService>();
             PageStartTime = DateTime.Now;
         }
 
@@ -61,29 +59,30 @@ namespace Senparc.Mvc.Controllers
 
                 if (!string.IsNullOrEmpty(result))
                 {
-                    this.AdminUser = _adminUserInfoService.GetUserInfo(result);
+                  //var  _adminUserInfoService = CO2NET.SenparcDI.GetService<AdminUserInfoService>();
+                  //  this.AdminUser = _adminUserInfoService.GetUserInfo(result);
                 }
 
-                var ctoken = context.HttpContext.Session.GetString("ctoken");
+                //var ctoken = context.HttpContext.Session.GetString("session");
 
-                if (!string.IsNullOrEmpty(ctoken))
-                {
-                   var er = _encryptionService.CommonDecrypt(ctoken);
-                    var arr = result.Split("-");
-                    if (arr.Length == 3)
-                    {
+                //if (!string.IsNullOrEmpty(ctoken))
+                //{
+                //   var er = _encryptionService.CommonDecrypt(ctoken);
+                //    var arr = result.Split("-");
+                //    if (arr.Length == 3)
+                //    {
 
-                        long ticks = 0;
-                        Int64.TryParse(arr[1], out ticks);
-                        this.Session = new SessionInfo
-                        {
-                            ClientKey = arr[2],
-                             ExpireTime =new DateTime(ticks),
-                              UserName = arr[0]
-                        };
+                //        long ticks = 0;
+                //        Int64.TryParse(arr[1], out ticks);
+                //        this.Session = new SessionInfo
+                //        {
+                //            ClientKey = arr[2],
+                //             ExpireTime =new DateTime(ticks),
+                //              UserName = arr[0]
+                //        };
 
-                    }
-                }
+                //    }
+                //}
 
                 var fullSystemConfigCache = SenparcDI.GetService<FullSystemConfigCache>();
 

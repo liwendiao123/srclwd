@@ -20,7 +20,7 @@ namespace Senparc.Core.Utility
         /// <param name="isDel">是否删除已存在</param>
         /// <param name="allowedExtension">允许上传的扩展名</param>
         /// <returns></returns>
-        private static string UploadFile_Img(string saveOnServerPath, IFormFile file, string fileNameOnServer, long limit, bool isDel)
+        public static string UploadFile_Img(string saveOnServerPath, IFormFile file, string fileNameOnServer, long limit, bool isDel)
         {
             return UploadFile_Img(saveOnServerPath, file, fileNameOnServer, limit, isDel, null);
         }

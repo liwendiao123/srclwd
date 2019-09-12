@@ -19,12 +19,19 @@ namespace Senparc.Repository
             }
         }
 
-        public BaseClientRepository() : this(null) { }
-        public BaseClientRepository(ISqlClientFinanceData db)
+        //public BaseClientRepository() : this(null) { }
+        public BaseClientRepository(ISqlClientFinanceData db):base(db)
         {
             //System.Web.HttpContext.Current.Response.Write("-"+this.GetType().Name + "<br />");
-
-            base.BaseDB = db ?? SenparcDI.GetService<ISqlClientFinanceData>();// ObjectFactory.GetInstance<ISqlClientFinanceData>();
+            if (db == null)
+            {
+                base.BaseDB =  SenparcDI.GetService<ISqlClientFinanceData>();
+            }
+            else
+            {
+                base.BaseDB = db;
+            }
+            //base.BaseDB = db ?? SenparcDI.GetService<ISqlClientFinanceData>();// ObjectFactory.GetInstance<ISqlClientFinanceData>();
 
             _entitySetName = EntitySetKeys.Keys[typeof(T)];
         }

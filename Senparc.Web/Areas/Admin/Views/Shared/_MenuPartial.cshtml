@@ -42,12 +42,38 @@
                             管理员管理
                         </a>
                     </li>
-                    <li class="@Html.CurrentMenu("Account")">
+                    @*<li class="@Html.CurrentMenu("Account")">
                         <a asp-action="Index" asp-controller="Account">
                             <i class="fa fa-users"></i>
                             用户管理
                         </a>
+                    </li>*@
+                    <li class="@Html.CurrentMenu("Activity")">
+                        <a asp-action="Index" asp-controller="Activity">
+                            <i class="fa fa-envelope"></i>
+                            活动管理
+                        </a>
                     </li>
+                    <li class="@Html.CurrentMenu("Schedule")">
+                        <a asp-action="Index" asp-controller="Schedule">
+                            <i class="fa fa-envelope"></i>
+                            赛程安排
+                        </a>
+                    </li>
+                    <li class="@Html.CurrentMenu("CompetitionProgram")">
+                        <a asp-action="Index" asp-controller="CompetitionProgram">
+                            <i class="fa fa-envelope"></i>
+                            参赛节目
+                        </a>
+                    </li>
+
+                    <li class="@Html.CurrentMenu("ProjectMember")">
+                        <a asp-action="Index" asp-controller="ProjectMember">
+                            <i class="fa fa-envelope"></i>
+                            参赛者列表
+                        </a>
+                    </li>
+
                     <li class="@Html.CurrentMenu("Feedback")">
                         <a asp-action="Index" asp-controller="Feedback">
                             <i class="fa fa-envelope"></i>

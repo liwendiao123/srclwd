@@ -8,5 +8,11 @@ namespace Senparc.Repository
 
     public class FeedBackRepository : BaseClientRepository<FeedBack>, IFeedBackRepository
     {
+        private readonly ISqlClientFinanceData _sqlClientFinanceData;
+
+        public FeedBackRepository(ISqlClientFinanceData sqlClientFinanceData) : base(sqlClientFinanceData)
+        {
+
+        }
     }
 }

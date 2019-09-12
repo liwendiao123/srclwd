@@ -13,16 +13,20 @@ namespace Senparc.Repository
 {
     public class BaseRepository<T> : BaseData, IBaseRepository<T> where T : class, new() //global::System.Data.Objects.DataClasses.EntityObject, new()
     {
-        protected string _entitySetName;
 
-        public BaseRepository() :
-            this(null)
-        {
-        }
+        private static object lockobj = new object();
+
+        protected string _entitySetName;
+        private readonly ISqlBaseFinanceData _sqlBaseFinanceData;
+        //public BaseRepository() :
+        //    this(null)
+        //{
+        //}
 
         public BaseRepository(ISqlBaseFinanceData db) :
             base(db)
         {
+            _sqlBaseFinanceData = db;
             //System.Web.HttpContext.Current.Response.Write("-"+this.GetType().Name + "<br />");
             //DB = db ?? ObjectFactory.GetInstance<ISqlClientFinanceData>();//如果没有定义，取默认数据库
             _entitySetName = EntitySetKeys.Keys[typeof(T)];
@@ -53,7 +57,8 @@ namespace Senparc.Repository
 
         public virtual PagedList<T> GetObjectList<TK>(Expression<Func<T, bool>> where, Expression<Func<T, TK>> orderBy, OrderingType orderingType, int pageIndex, int pageCount, string[] includes = null)
         {
-            //string sql = string.Format("SELECT VALUE c FROM {0} AS c ", _entitySetName);
+        
+                //string sql = string.Format("SELECT VALUE c FROM {0} AS c ", _entitySetName);
             int skipCount = Extensions.GetSkipRecord(pageIndex, pageCount);
             int totalCount = -1;
             List<T> result = null;
@@ -64,7 +69,8 @@ namespace Senparc.Repository
                                         .Includes(includes)
                                         .Where(where)
                                         .OrderBy(orderBy, orderingType);//.Includes(includes);
-            if (pageCount > 0 && pageIndex > 0)
+        
+           if (pageCount > 0 && pageIndex > 0)
             {
                 resultList = resultList.Skip(skipCount).Take(pageCount);
                 totalCount = this.ObjectCount(where, null); //whereList.Count();
@@ -75,8 +81,8 @@ namespace Senparc.Repository
             //}
 
             //try
-            {
-                result = resultList.ToList();
+            {        
+               result = resultList.ToList();
             }
             //catch (ArgumentException ex)//DbArithmeticExpression 参数必须具有数值通用类型。
             //{

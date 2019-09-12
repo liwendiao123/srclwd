@@ -8,6 +8,13 @@ namespace Senparc.Repository
 
     public class AccountRepository : BaseClientRepository<Account>, IAccountRepository
     {
+        private readonly ISqlClientFinanceData _sqlClientFinanceData;
+
+        public AccountRepository(ISqlClientFinanceData sqlClientFinanceData):base(sqlClientFinanceData)
+        {
+
+        }
+
 
     }
 }

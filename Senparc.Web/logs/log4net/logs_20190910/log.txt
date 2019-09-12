@@ -1,0 +1,178 @@
+
+----------------------header--------------------------
+2019-09-10 00:04:05,356 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=815 T=1
+
+----------------------header--------------------------
+2019-09-10 00:07:33,831 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2954 T=1
+
+----------------------header--------------------------
+2019-09-10 00:10:06,583 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2624 T=1
+
+----------------------header--------------------------
+2019-09-10 01:08:34,504 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3077 T=1
+
+----------------------header--------------------------
+2019-09-10 01:24:59,133 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3448 T=1
+2019-09-10 01:27:00,337 [13] ERROR WebLoggerRepository - FullSystemConfig为null
+ : ? R=124651 T=13
+2019-09-10 01:28:13,873 [13] ERROR WebLoggerRepository - FullSystemConfig为null
+ : ? R=198188 T=13
+2019-09-10 01:29:17,916 [25] ERROR WebLoggerRepository - FullSystemConfig为null
+ : ? R=262230 T=25
+
+----------------------header--------------------------
+2019-09-10 01:49:39,435 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2505 T=1
+
+----------------------header--------------------------
+2019-09-10 01:51:56,915 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3526 T=1
+2019-09-10 01:53:07,186 [12] INFO  WebLoggerRepository - CompetitionProgram编辑：李小二（ID：acdc91b749d046db877e9c3405de071a）
+ : ? R=73797 T=12
+
+----------------------header--------------------------
+2019-09-10 02:01:18,415 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3075 T=1
+2019-09-10 02:02:23,961 [13] INFO  WebLoggerRepository - CompetitionProgram编辑：李小二（ID：acdc91b749d046db877e9c3405de071a）
+ : ? R=68621 T=13
+
+----------------------header--------------------------
+2019-09-10 02:21:18,985 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3826 T=1
+
+----------------------header--------------------------
+2019-09-10 02:39:35,380 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=4314 T=1
+
+----------------------header--------------------------
+2019-09-10 02:54:50,235 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3360 T=1
+
+----------------------header--------------------------
+2019-09-10 02:55:55,405 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2786 T=1
+2019-09-10 02:56:37,866 [10] INFO  WebLoggerRepository - CompetitionProgram编辑：李小二（ID：acdc91b749d046db877e9c3405de071a）
+ : ? R=45247 T=10
+
+----------------------header--------------------------
+2019-09-10 02:59:46,157 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2620 T=1
+2019-09-10 03:00:38,274 [15] INFO  WebLoggerRepository - CompetitionProgram编辑：李小二（ID：acdc91b749d046db877e9c3405de071a）
+ : ? R=54737 T=15
+2019-09-10 03:01:31,671 [20] INFO  WebLoggerRepository - CompetitionProgram编辑：李小二（ID：acdc91b749d046db877e9c3405de071a）
+ : ? R=108134 T=20
+
+----------------------header--------------------------
+2019-09-10 03:03:39,924 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3020 T=1
+
+----------------------header--------------------------
+2019-09-10 09:18:30,059 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3266 T=1
+
+----------------------header--------------------------
+2019-09-10 09:29:04,447 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=669 T=1
+2019-09-10 09:29:04,951 [7] ERROR WebLoggerRepository - FullSystemConfig为null
+ : ? R=1173 T=7
+
+----------------------header--------------------------
+2019-09-10 09:37:27,997 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=1820 T=1
+
+----------------------header--------------------------
+2019-09-10 09:48:44,375 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=1773 T=1
+
+----------------------header--------------------------
+2019-09-10 15:01:14,078 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3467 T=1
+
+----------------------header--------------------------
+2019-09-10 15:06:42,479 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=1942 T=1
+
+----------------------header--------------------------
+2019-09-10 15:39:35,449 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2302 T=1
+
+----------------------header--------------------------
+2019-09-10 15:44:13,504 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2042 T=1
+2019-09-10 15:50:17,017 [7] INFO  WebLoggerRepository - CompetitionProgram新增：18299694563（ID：657810c5a75644668413797f0869c029）
+ : ? R=365555 T=7
+
+----------------------header--------------------------
+2019-09-10 15:57:17,390 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=1959 T=1
+
+----------------------header--------------------------
+2019-09-10 16:04:51,668 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2416 T=1
+
+----------------------header--------------------------
+2019-09-10 16:14:02,281 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2193 T=1
+
+----------------------header--------------------------
+2019-09-10 16:15:24,893 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2217 T=1
+
+----------------------header--------------------------
+2019-09-10 16:25:25,785 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2134 T=1
+
+----------------------header--------------------------
+2019-09-10 16:27:16,675 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2351 T=1
+
+----------------------header--------------------------
+2019-09-10 16:34:59,638 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2210 T=1
+2019-09-10 16:35:52,677 [11] INFO  WebLoggerRepository - ProjectMember编辑：（ID：455e9d5d92b140f7ab9af715e1b62516）
+ : ? R=55249 T=11
+
+----------------------header--------------------------
+2019-09-10 17:03:27,618 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2200 T=1
+
+----------------------header--------------------------
+2019-09-10 17:56:25,918 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2344 T=1
+
+----------------------header--------------------------
+2019-09-10 17:58:08,789 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2334 T=1
+
+----------------------header--------------------------
+2019-09-10 18:00:06,677 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2312 T=1
+2019-09-10 18:01:54,354 [42] INFO  WebLoggerRepository - CompetitionProgram新增：测试专用（ID：ca0c51f8c1bc464aa572bf9e156ca5a5）
+ : ? R=109989 T=42
+2019-09-10 18:01:54,367 [42] INFO  WebLoggerRepository - CompetitionProgram新增：测试专用（ID：27fe2a3f6b8d43ac862099325736ed7d）
+ : ? R=110002 T=42
+2019-09-10 18:06:01,240 [5] INFO  WebLoggerRepository - CompetitionProgram编辑：测试专用（ID：ca0c51f8c1bc464aa572bf9e156ca5a5）
+ : ? R=356875 T=5
+2019-09-10 18:06:14,290 [5] INFO  WebLoggerRepository - CompetitionProgram编辑：测试专用（ID：27fe2a3f6b8d43ac862099325736ed7d）
+ : ? R=369925 T=5
+
+----------------------header--------------------------
+2019-09-10 22:47:02,488 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=6045 T=1
+
+----------------------header--------------------------
+2019-09-10 23:12:15,595 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2836 T=1
+
+----------------------header--------------------------
+2019-09-10 23:16:40,612 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3235 T=1
+
+----------------------header--------------------------
+2019-09-10 23:34:11,738 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2919 T=1

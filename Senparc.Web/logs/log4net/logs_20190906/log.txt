@@ -1,0 +1,14 @@
+
+----------------------header--------------------------
+2019-09-06 23:41:42,939 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=5104 T=1
+2019-09-06 23:41:44,583 [9] ERROR WebLoggerRepository - FullSystemConfig为null
+ : ? R=6748 T=9
+
+----------------------header--------------------------
+2019-09-06 23:57:17,331 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3198 T=1
+
+----------------------header--------------------------
+2019-09-06 23:59:21,422 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2613 T=1

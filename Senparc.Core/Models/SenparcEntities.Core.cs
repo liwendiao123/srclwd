@@ -4,6 +4,8 @@ using System.Reflection;
 namespace Senparc.Core.Models
 {
     using Microsoft.EntityFrameworkCore;
+    using Senparc.Core.Models.DataBaseModel;
+    using Senparc.Core.Models.DataBaseModel.Mapping;
 
     public partial class SenparcEntities : DbContext
     {
@@ -23,6 +25,26 @@ namespace Senparc.Core.Models
 
         public virtual DbSet<AccountPayLog> AccountPayLogs { get; set; }
 
+        /// <summary>
+        /// 活动
+        /// </summary>
+        public virtual DbSet<Activity> Activities { get; set; }
+
+        /// <summary>
+        /// 项目成员
+        /// </summary>
+        public virtual DbSet<ProjectMember> ProjectMembers { get; set; }
+
+        /// <summary>
+        /// 参赛项目
+        /// </summary>
+        public virtual DbSet<CompetitionProgram> CompetitionPrograms { get; set; }
+
+        /// <summary>
+        /// 赛程
+        /// </summary>
+        public virtual DbSet<Schedule> Schedules { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new AccountConfigurationMapping());
@@ -30,6 +52,10 @@ namespace Senparc.Core.Models
             modelBuilder.ApplyConfiguration(new FeedbackConfigurationMapping());
             modelBuilder.ApplyConfiguration(new AccountPayLogConfigurationMapping());
             modelBuilder.ApplyConfiguration(new PointsLogConfigurationMapping());
+            modelBuilder.ApplyConfiguration(new ActivityConfigurationMapping());
+            modelBuilder.ApplyConfiguration(new ScheduleConfigurationMapping());
+            modelBuilder.ApplyConfiguration(new CompetitionProgramConfigurationMapping());
+            modelBuilder.ApplyConfiguration(new ProjectMemberConfigurationMapping());
         }
 
         /// <summary>

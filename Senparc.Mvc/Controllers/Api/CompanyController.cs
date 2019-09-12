@@ -9,7 +9,7 @@ using System.Text;
 namespace Senparc.Mvc.Controllers
 {
 
-    [Session]
+   // [Session]
     public  class CompanyController : BaseFrontController
     {
 

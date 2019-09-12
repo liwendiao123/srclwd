@@ -9,6 +9,7 @@ namespace Senparc.Core.Models
     {
         public Account()
         {
+            AccountPayLogs = new List<AccountPayLog>();
             PointsLogs = new List<PointsLog>();
         }
 

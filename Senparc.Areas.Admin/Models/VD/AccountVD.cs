@@ -20,6 +20,8 @@ namespace Senparc.Areas.Admin.Models.VD
         /// </summary>		
         public int Id { get; set; }
 
+        public string AccountNum { get; set; }
+             
         /// <summary>
         /// NickName
         /// </summary>	

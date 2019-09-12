@@ -11,7 +11,6 @@ namespace Senparc.Areas.Admin.Models.VD
     {
         RouteData RouteData { get; set; }
     }
-
     public class BaseAdminVD : IBaseAdminVD
     {
         public bool IsAdmin { get; set; }

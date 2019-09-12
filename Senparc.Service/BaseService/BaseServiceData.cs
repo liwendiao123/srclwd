@@ -16,6 +16,7 @@ namespace Senparc.Service
         public BaseServiceData(IBaseData baseData)
         {
             BaseData = baseData;
+            //baseData.
         }
 
         public virtual void CloseConnection()

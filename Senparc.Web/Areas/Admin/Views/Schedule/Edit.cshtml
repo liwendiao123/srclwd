@@ -1,0 +1,296 @@
+@model Senparc.Areas.Admin.Models.VD.Schedule_EditVD
+@{
+    ViewData["Title"] = $"{(Model.IsEdit ? "编辑" : "新增")}赛程";
+}
+
+@section Style{
+
+    <link href="~/bower_components/gentelella/vendors/google-code-prettify/src/prettify.css" rel="stylesheet" />
+    @*<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" />*@
+
+    <link href="~/bower_components/gentelella/vendors/bootstrap-wysiwyg/css/style.css" rel="stylesheet" />
+    <link href="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/css/fileinput.css" rel="stylesheet" />
+    <link href="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/themes/explorer/theme.css" rel="stylesheet" />
+
+    <link href="~/bower_components/gentelella/vendors/kindeditor/themes/default/default.css" rel="stylesheet" />
+    <link href="~/bower_components/gentelella/vendors/jquery.tagsinput/src/jquery.tagsinput.css" rel="stylesheet" />
+    <link href="~/bower_components/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+
+}
+
+@section breadcrumbs{
+    <li>
+        <a asp-action="Index" asp-controller="Activity">赛程管理管理</a>
+    </li>
+    <li>
+        @ViewData["Title"]
+    </li>
+}
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_content">
+                <form class="form-horizontal form-label-left" novalidate method="post">
+                    <input type="hidden" asp-for="Id" />
+                    <input type="hidden" asp-for="StartTime" />
+                    <input type="hidden" asp-for="EndTime" />
+                    <div class="form-group">
+                        <label for="email" class="control-label col-md-3 col-sm-3 col-xs-12">所属赛程</label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <!-- Single button -->
+                            <select asp-for="ActivityId" required="required" class="form-control">
+                                @if (string.IsNullOrEmpty(Model.ActivityId))
+                                {
+                                    <option value="" selected> 请选择</option>
+
+                                }
+                                else
+                                {
+                                    <option value="" > 请选择</option>
+                                }
+                                @foreach (var item in Model.ActivityList)
+                                {
+                                    @if (!string.IsNullOrEmpty(Model.ActivityId) && item.Id == Model.ActivityId)
+                                    {
+                                         <option value="@item.Id" selected>@item.Title</option>
+
+                                    }
+                                    else
+                                    {
+                                        
+                                         <option value="@item.Id">@item.Title</option>
+                                    }
+                                    
+                                }
+
+                                @*<option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>*@
+                            </select>
+    
+
+                        </div>
+                      
+                    </div>
+               
+                   
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            赛程名称 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="Name" class="form-control col-md-7 col-xs-12" data-validate-length="1,200" placeholder="请输入赛程名称" required="required" type="text">
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            赛程地址 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="Address" class="form-control col-md-7 col-xs-12" data-validate-length="1,200" placeholder="请输入赛程地址" required="required" type="text">
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            赛程开始时间 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="picktime" class="form-control col-md-7 col-xs-12" required="required" type="datetime">
+
+                        </div>
+                    </div>
+                    @*<div class="item form-group">
+            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                赛程结束时间 <span class="required">*</span>
+            </label>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <input asp-for="EndTime" class="form-control col-md-7 col-xs-12" required="required" type="datetime">
+                <span asp-validation-for="EndTime" class="text-danger"></span>
+            </div>
+        </div>*@
+
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            赛程排序 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="Sort" class="form-control col-md-7 col-xs-12" type="number" min="0">
+                            <span asp-validation-for="Sort" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            签号管理 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="SignNumber" class="form-control col-md-7 col-xs-12" placeholder="签号管理" required="required" type="text">
+                            <span asp-validation-for="SignNumber" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            赛程备注
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="Remark" class="form-control col-md-7 col-xs-12" type="text">
+                            <span asp-validation-for="Remark" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+
+                    @*<div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Description">
+                            赛程详细描述
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <textarea asp-for="Desc" class="form-control col-md-7 col-xs-12" placeholder="请输入详细描述"></textarea>
+                            <span asp-validation-for="Desc" class="text-danger"></span>
+
+                        </div>
+                    </div>*@
+                    <div class="ln_solid"></div>
+                    <div class="form-group">
+                        <div class="col-md-6 col-md-offset-3">
+                            <a href="javascript:histroy.go(-1);" type="submit" class="btn btn-primary">取消</a>
+                            <button id="send" type="submit" class="btn btn-success">提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/bower_components/gentelella/vendors/kindeditor/kindeditor-min.js"></script>
+    <script src="~/bower_components/gentelella/vendors/kindeditor/lang/zh_CN.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/bower_components/gentelella/vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="~/bower_components/gentelella/vendors/google-code-prettify/src/prettify.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-wysiwyg/src/bootstrap-wysiwyg.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/js/plugins/piexif.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/js/plugins/sortable.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/js/fileinput.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/js/locales/zh.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/themes/explorer/theme.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap-daterangepicker/2.1.25/moment.min.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="~/bower_components/gentelella/vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+    <script type='text/javascript'>
+
+
+        $('#SignNumber').tagsInput({
+            @*'autocomplete_url': "http://localhost:11946/Admin/Schedule/GetScheduleTags?id=" +'@Model.Id' ,
+            'autocomplete': { selectFirst: true, width: '100px', autoFill: true },*@
+            //'height': '100px',
+            //'width': '300px',
+            //'interactive': true,
+            'defaultText': '添加签号',
+            'onAddTag': function (e) {
+
+
+            },
+            'onRemoveTag': function (e) {
+
+
+            },
+            'onChange': function (e) {
+
+
+            },
+            'delimiter': [','],   // Or a string with a single delimiter. Ex: ';'
+            'removeWithBackspace': true,
+            'minChars': 0,
+            'maxChars': 0, // if not provided there is no limit
+            'placeholderColor': 'blue'
+        });
+
+       
+
+        $('#picktime').daterangepicker({
+            timePicker: true, //显示时间
+            timePicker24Hour: true, //时间制
+            timePickerSeconds: true, //时间显示到秒
+            startDate: moment().hours(0).minutes(0).seconds(0), //设置开始日期
+            //endDate: moment(new Date()), //设置结束器日期
+            //maxDate: moment(new Date()), //设置最大日期
+            "opens": "center",
+            ranges: {
+                '今天': [moment(), moment()],
+                '昨天': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                '上周': [moment().subtract(6, 'days'), moment()],
+                '前30天': [moment().subtract(29, 'days'), moment()],
+                '本月': [moment().startOf('month'), moment().endOf('month')],
+                '上月': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            },
+            showWeekNumbers: true,
+            locale: {
+                format: "YYYY-MM-DD HH:mm:ss", //设置显示格式
+                applyLabel: '确定', //确定按钮文本
+                cancelLabel: '取消', //取消按钮文本
+                customRangeLabel: '自定义',
+                daysOfWeek: ['日', '一', '二', '三', '四', '五', '六'],
+                monthNames: ['一月', '二月', '三月', '四月', '五月', '六月',
+                    '七月', '八月', '九月', '十月', '十一月', '十二月'
+                ],
+                firstDay: 1
+            },
+        }, function (start, end, label) {
+            timeRangeChange = [start.format('YYYY-MM-DD HH:mm:ss'), end.format('YYYY-MM-DD HH:mm:ss')];
+
+            $('#StartTime').val(start.format('YYYY-MM-DD HH:mm:ss'));
+            $('#EndTime').val(end.format('YYYY-MM-DD HH:mm:ss'));
+
+            //console.log(timeRangeChange);
+        });
+
+
+
+        @*KindEditor.ready(function (K) {
+            var editor1 = K.create('#Desc', {
+                cssPath: '/bower_components/gentelella/vendors/kindeditor/themes/default/default.css',
+                uploadJson: '/Upload/UploadKindEditor',
+                fileManagerJson: '/Upload/FileManager',
+                allowFileManager: true,
+                height: "400px",
+                pleaseInput: "@Model.Desc",
+                afterBlur: function () { this.sync(); },
+                afterCreate: function () {
+                    var self = this;
+                    K.ctrl(document, 13, function () {
+                        self.sync();
+                        K('form[name=form-editor]')[0].submit();
+                    });
+                    K.ctrl(self.edit.doc, 13, function () {
+                        self.sync();
+                        K('form[name=form-editor]')[0].submit();
+                    });
+                },
+                afterUpload: function (url, data, name) { //上传文件后执行的回调函数，必须为3个参数
+                    if (name == "image" || name == "multiimage") { //单个和批量上传图片时
+                        var img = new Image(); img.src = url;
+                        img.onload = function () { //图片必须加载完成才能获取尺寸
+                            if (img.width > 330) editor1.html(editor1.html().replace('<img src="' + url + '"', '<img src="' + url + '" width="80%"'))
+                        }
+                    }
+                }
+            });*@
+            prettyPrint();
+        });
+
+
+    </script>
+
+    <script type="text/javascript">
+
+    </script>
+}

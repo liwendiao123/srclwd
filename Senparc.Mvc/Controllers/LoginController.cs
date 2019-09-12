@@ -1,9 +1,10 @@
 ﻿using Senparc.Service;
 using Senparc.Core.Cache;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Senparc.Mvc.Controllers
 {
-    public class LoginController : BaseController
+    public class LoginController : Controller
     {
         private AccountService _accountService;
         private WeixinService _weixinService;

@@ -1,0 +1,165 @@
+@model Senparc.Areas.Admin.Models.VD.ProjectMember_EditVD
+@{
+    ViewData["Title"] = $"{(Model.IsEdit ? "编辑" : "新增")}活动";
+}
+
+@section Style{
+
+    <link href="~/bower_components/gentelella/vendors/google-code-prettify/src/prettify.css" rel="stylesheet" />
+    @*<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" />*@
+
+    <link href="~/bower_components/gentelella/vendors/bootstrap-wysiwyg/css/style.css" rel="stylesheet" />
+    <link href="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/css/fileinput.css" rel="stylesheet" />
+    <link href="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/themes/explorer/theme.css" rel="stylesheet" />
+
+    <link href="~/bower_components/gentelella/vendors/kindeditor/themes/default/default.css" rel="stylesheet" />
+
+
+}
+
+@section breadcrumbs{
+    <li>
+        <a asp-action="Index" asp-controller="Activity">参演人员管理</a>
+    </li>
+    <li>
+        @ViewData["Title"]
+    </li>
+}
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_content">
+                <form class="form-horizontal form-label-left" novalidate method="post">
+                    <input type="hidden" asp-for="Id" />                   
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            演出项目 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <select asp-for="ProjectId" required="required" class="form-control">
+                                @if (string.IsNullOrEmpty( Model.ProjectId))
+                                {
+                                    <option value="" selected> 请选择</option>
+
+                                }
+                                else
+                                {
+                                    <option value=""> 请选择</option>
+                                }
+                                @foreach (var item in Model.CompetitionPrograms)
+                                {
+                                    @if (item.Id == Model.ProjectId)
+                                    {
+                                        <option value="@item.Id" selected>@item.Name</option>
+
+                                    }
+                                    else
+                                    {
+
+                                        <option value="@item.Id">@item.Name</option>
+                                    }
+
+                                }
+
+                            </select>
+                        </div>
+                    </div>
+          
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            姓名 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="Name" class="form-control col-md-7 col-xs-12"  placeholder="请输入演出项目名称" required="required" type="text">
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            工作单位 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="Company" class="form-control col-md-7 col-xs-12"  placeholder="请输入演出单位" required="required" type="text">
+                            <span asp-validation-for="Company" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            联系电话 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="Phone" class="form-control col-md-7 col-xs-12"  placeholder="请输入联系电话" required="required" type="text">
+                            <span asp-validation-for="Phone" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            民族 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="Nation" class="form-control col-md-7 col-xs-12"  placeholder="请输入民族" required="required" type="text">
+                            <span asp-validation-for="Nation" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            身份证号 <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="IdCard" class="form-control col-md-7 col-xs-12"  placeholder="请输入身份证号" required="required" type="text">
+                            <span asp-validation-for="IdCard" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            职务、职称
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="Duty" class="form-control col-md-7 col-xs-12"  placeholder="请输入 职务、职称" type="text">
+                            <span asp-validation-for="Duty" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">
+                            是否为领导
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input asp-for="IsLeader" type="checkbox">
+                            <span asp-validation-for="IsLeader" class="text-danger"></span>
+                        </div>
+                    </div>
+        
+
+      
+                    <div class="ln_solid"></div>
+                    <div class="form-group">
+                        <div class="col-md-6 col-md-offset-3">
+                            <a href="javascript:histroy.go(-1);" type="submit" class="btn btn-primary">取消</a>
+                            <button id="send" type="submit" class="btn btn-success">提交</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/bower_components/gentelella/vendors/kindeditor/kindeditor-min.js"></script>
+    <script src="~/bower_components/gentelella/vendors/kindeditor/lang/zh_CN.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/bower_components/gentelella/vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="~/bower_components/gentelella/vendors/google-code-prettify/src/prettify.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-wysiwyg/src/bootstrap-wysiwyg.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/js/plugins/piexif.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/js/plugins/sortable.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/js/fileinput.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/js/locales/zh.js"></script>
+    <script src="~/bower_components/gentelella/vendors/bootstrap-fileinput-master/themes/explorer/theme.js"></script>
+
+
+  
+}

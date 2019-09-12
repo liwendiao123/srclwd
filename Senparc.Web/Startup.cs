@@ -17,10 +17,12 @@ using Senparc.Core.Cache;
 using Senparc.Core.Config;
 using Senparc.Core.Extensions;
 using Senparc.Core.Models;
+using Senparc.Core.Oss;
 using Senparc.Core.Utility;
 using Senparc.Log;
 using Senparc.Mvc.Filter;
 using Senparc.Repository;
+using Senparc.Respository;
 using Senparc.Service;
 using Senparc.SMS;
 using Senparc.Utility;
@@ -103,6 +105,7 @@ namespace Senparc.Web
             services.Configure<SenparcCoreSetting>(Configuration.GetSection("SenparcCoreSetting"))
                 .Configure<SenparcWeixinSetting>(Configuration.GetSection("SenparcWeixinSetting"))
                 .Configure<SenparcSmsSetting>(Configuration.GetSection("SenparcSmsSetting"))
+                .Configure<SenparcQiniuSetting>(Configuration.GetSection("SenparcQiniuSetting"))
                 //.AddSenparcDI() //全局注册 SenparcDI
                 //.AddSenparcMvcDI() //TODO：需要和AddSenparcDI()进行合并
                 .AddSenparcEntitiesDI(); //SQL Server设置
@@ -128,7 +131,10 @@ namespace Senparc.Web
                 .AddScoped<FeedBackRepository>().AddScoped<FeedBackService>()
                 .AddScoped<PointsLogRepository>().AddScoped<PointsLogService>()
                 .AddScoped<AccountPayLogRepository>().AddScoped<AccountPayLogService>()
-
+                .AddTransient<ActivityRepository>().AddTransient<ActivityService>()
+                .AddTransient<ScheduleRepository>().AddTransient<ScheduleService>()
+                .AddTransient<CompetitionProgramRepository>().AddTransient<CompetitionProgramService>()
+                .AddTransient<ProjectMemberRepository>().AddTransient<ProjectMemberService>()
                 .AddTransient<EncryptionService>()
                 .AddTransient<WeixinService>()
                 .AddTransient<QQWry>()

@@ -1,0 +1,28 @@
+
+----------------------header--------------------------
+2019-09-12 09:42:39,400 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=8465 T=1
+
+----------------------header--------------------------
+2019-09-12 09:53:06,482 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2432 T=1
+
+----------------------header--------------------------
+2019-09-12 10:12:25,332 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2423 T=1
+
+----------------------header--------------------------
+2019-09-12 10:13:46,944 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2627 T=1
+
+----------------------header--------------------------
+2019-09-12 10:16:17,304 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2646 T=1
+
+----------------------header--------------------------
+2019-09-12 10:48:59,814 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2756 T=1
+
+----------------------header--------------------------
+2019-09-12 11:10:19,215 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3452 T=1

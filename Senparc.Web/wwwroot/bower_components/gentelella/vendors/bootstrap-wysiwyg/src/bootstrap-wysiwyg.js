@@ -11,15 +11,12 @@
 	'use strict';
 
 	var readFileIntoDataUrl = function (fileInfo) {
-		var loader = $.Deferred(),
-			fReader = new FileReader();
-		fReader.onload = function (e) {
-			loader.resolve(e.target.result);
-		};
-		fReader.onerror = loader.reject;
-		fReader.onprogress = loader.notify;
-		fReader.readAsDataURL(fileInfo);
-		return loader.promise();
+        var form = new FormData();
+        form.append("file", fileInfo);
+        var xhr = new XMLHttpRequest();
+        xhr.open("post", "/Upload/imgupload", false);//后台接收的方法，返回图片路径（全路径，不然页面不显示图片）
+        xhr.send(form);
+        return xhr.responseText;
 	};
 	$.fn.cleanHtml = function (o) {
 		if ( $(this).data("wysiwyg-html-mode") === true ) {

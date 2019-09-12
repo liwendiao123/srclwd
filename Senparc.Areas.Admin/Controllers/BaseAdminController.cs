@@ -9,6 +9,7 @@ using Senparc.Core.Enums;
 using Senparc.Core.Extensions;
 using Senparc.Core.Models;
 using Senparc.Core.Models.VD;
+using Senparc.Service;
 using System.Collections.Generic;
 using System.Net;
 
@@ -34,6 +35,26 @@ namespace Senparc.Areas.Admin.Controllers
             }
         }
 
+        protected AdminUserInfo AdminUser {
+            get {
+                var _adminUserInfoService = CO2NET.SenparcDI.GetService<AdminUserInfoService>();
+
+                if (!string.IsNullOrEmpty(User.Identity.Name))
+                {
+                    var admin = _adminUserInfoService.GetUserInfo(User.Identity.Name);
+
+                    if (admin != null)
+                    {
+                        return admin;
+                    }
+                }
+               
+                return new AdminUserInfo();
+            }
+
+        }
+
+        
         public override void OnActionExecuting(ActionExecutingContext context)
         {
             TempData["Messager"] = TempData["Messager"];

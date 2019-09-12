@@ -27,7 +27,7 @@ namespace Senparc.Mvc.Controllers
             _qqWry = qqWry;
         }
 
-       [Session]
+       //[Session]
         public IActionResult Common()
         {
             return Json(new

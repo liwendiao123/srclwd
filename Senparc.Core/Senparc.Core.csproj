@@ -13,12 +13,19 @@
   </Target>
 
   <ItemGroup>
+    <Compile Remove="Models\Data\**" />
+    <EmbeddedResource Remove="Models\Data\**" />
+    <None Remove="Models\Data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Cache\BaseCache\CacheStrategyFactory.cs" />
     <Compile Remove="Cache\BaseCache\LocalCacheStrategy.cs" />
     <Compile Remove="Cache\BaseCache\MemcachedStrategy.cs" />
     <Compile Remove="Cache\BaseCache\RedisStrategy.cs" />
     <Compile Remove="Cache\Interface\IBaseCacheStrategy.cs" />
     <Compile Remove="Models\DataBaseModel\Mapping\AccountTypeConfigurationMapping.cs" />
+    <Compile Remove="Models\DataSettings.cs" />
   </ItemGroup>
   
   <ItemGroup>
@@ -41,6 +48,10 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.0-preview1-final" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Infrastructure\DependencyManagement\" />
   </ItemGroup>
 
 
