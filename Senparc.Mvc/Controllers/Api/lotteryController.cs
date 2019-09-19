@@ -70,7 +70,7 @@ namespace Senparc.Mvc.Controllers
         /// <summary>
         /// 获取抽签详情
         /// </summary>
-        /// <param name="program_id"></param>
+        /// <param name="program_id">项目ID</param>
         /// <returns></returns>
 
         public IActionResult Detail(string program_id)

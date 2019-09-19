@@ -764,7 +764,7 @@ namespace Senparc.Mvc.Controllers.Api
                     return Json(new
                     {
                         code = -1,
-                        msg = "请先登录",
+                        msg = "当前人员不存在",
                         data = new
                         {
                            

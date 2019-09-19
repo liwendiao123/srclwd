@@ -1,0 +1,16 @@
+
+----------------------header--------------------------
+2019-09-14 11:55:03,598 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=4706 T=1
+2019-09-14 11:55:21,706 [11] ERROR WebLoggerRepository - FullSystemConfig为null
+ : ? R=22814 T=11
+
+----------------------header--------------------------
+2019-09-14 14:49:21,287 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3099 T=1
+2019-09-14 14:56:20,416 [22] INFO  WebLoggerRepository - CompetitionProgram编辑：test（ID：acdc91b749d046db877e9c3405de071a）
+ : ? R=422228 T=22
+
+----------------------header--------------------------
+2019-09-14 15:39:07,708 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=4105 T=1

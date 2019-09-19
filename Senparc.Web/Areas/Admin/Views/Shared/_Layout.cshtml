@@ -99,7 +99,8 @@
             <!-- footer content -->
             <footer>
                 <div class="pull-right">
-                    &copy; @DateTime.Now.Year -  <a href="http://wwww.senparc.com">苏州盛派网络科技有限公司</a>
+                    &copy; @DateTime.Now.Year -  <a href="#">广西索骏科技</a>
+                    <div id="btn_test"></div>
                 </div>
                 <div class="clearfix"></div>
             </footer>
@@ -162,6 +163,30 @@
             hm.src = "https://hm.baidu.com/hm.js?cff4d7b0f55e45ceab91d2197cb95cdc";
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
+
+
+            $("#btn_test").click(function () {
+                $.ajax({
+                    url: 'http://221.7.253.6:9019/home/testpost/token',
+                    type: 'get',
+                    headers: {
+                        'Authorization': 'bearer ' +'QRM5djJffOLBQzufLzE_B0tOnm7t8slCAyOvWjxsYlvAYoGAcc-_Bk1rKu34YKFnN-1Nk8oSY34d30VN4MLQ0_fGYhR6Zm3nVIYM-osSM7FDi9evkx7CE0SxPThD9xk3Iq0E83YLeTIyHkpewrUsLP9B2QrWWkeAtizwM8Qev8dQOFgtiL3lWWUteaxqLOClbQgbKgj6jQEwQZw0d6mQU_Z0fz0VwOPn3pmaWytQwAo'
+                    },
+                    data: { 'type': '1' },    // post参数
+                    dataType: 'json',
+                    success: function (data) {
+                        var _msg = "请求地址：/home/getlist\r\n";
+                        _msg += "请求头：Authorization：" + 'bearer ' + $("#token").val() + "\r\n";
+                        _msg += "返回结果：" + JSON.stringify(data);
+                        $("#content").val(_msg);
+                    },
+                    error: function (err) {
+                        alert('通信失败');
+                        console.log(err);
+                    }
+
+                });
+            });
         });
     </script>
     @RenderSection("scripts", false)

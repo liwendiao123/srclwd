@@ -48,17 +48,17 @@ namespace Senparc.Areas.Admin.Models.VD
 
                 new Category{
                      Id = 0,
-                      Name = "舞蹈"
+                      Name = "舞蹈类"
                 },
                  new Category
                  {
                      Id = 1,
-                     Name = "歌曲"
+                     Name = "声乐类"
                  },
                  new Category{
                      Id = 2,
-                     Name = "杂技"
-                 }                                 
+                     Name = "器乐类"
+                 }
             };
             ProjectMemberList = new List<ProjectMember>();
             Activities = new List<Activity>();

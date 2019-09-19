@@ -166,7 +166,18 @@ namespace Senparc.Areas.Admin.Controllers
                 }
                 var modellist = _competitionProgramService.GetFullList(x => !string.IsNullOrEmpty(x.SignNum)&& x.ScheduleId == model.ScheduleId,x=>x.CreateTime,OrderingType.Descending).Select(x=>x.SignNum).ToList();
 
-                var numlist = model.Schedule.SignNumber.Split(",");
+
+                if (model.Schedule == null)
+                {
+                    model.Schedule = _scheduleService.GetObject(s => s.Id == model.ScheduleId);
+                }
+
+                var numlist = new List<string>();
+                if (model.Schedule != null)
+                {
+                    numlist = model.Schedule.SignNumber.Split(",").ToList();
+                }
+              
 
 
                 List<string> num = new List<string>();
@@ -289,7 +300,7 @@ namespace Senparc.Areas.Admin.Controllers
                 account.ImgUrl      = model.ImgUrl;
                 account.Cate        = model.Cate;
                 account.Remark      = model.Remark;
-
+                account.ScheduleId = model.ProjectId;
                 account.Desc        = model.Desc;
                 account.BdImgUrl    = model.BdImgUrl;
                 account.BdImgUrlPwd = model.BdImgUrlPwd;

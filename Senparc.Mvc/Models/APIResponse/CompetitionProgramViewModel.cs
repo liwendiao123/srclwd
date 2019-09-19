@@ -14,16 +14,16 @@ namespace Senparc.Mvc.Models.APIResponse
 
                 new FrontCategory{
                      Id = 0,
-                      Name = "舞蹈"
+                      Name = "舞蹈类"
                 },
                  new FrontCategory
                  {
                      Id = 1,
-                     Name = "歌曲"
+                     Name = "声乐类"
                  },
                  new FrontCategory{
                      Id = 2,
-                     Name = "杂技"
+                     Name = "器乐类"
                  }
             };
             List = new List<CompetitionProgramVM>();

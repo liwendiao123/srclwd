@@ -58,6 +58,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NugetSources", "NugetSource
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuoJun.Db", "SuoJun.Db\SuoJun.Db.csproj", "{AAD0207A-6660-43F3-B308-3254715F69A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Senparc.OpenApi", "Senparc.OpenApi\Senparc.OpenApi.csproj", "{FA472428-7E4F-4E9B-87E0-149C0E812BD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -146,6 +148,10 @@ Global
 		{AAD0207A-6660-43F3-B308-3254715F69A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAD0207A-6660-43F3-B308-3254715F69A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAD0207A-6660-43F3-B308-3254715F69A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA472428-7E4F-4E9B-87E0-149C0E812BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA472428-7E4F-4E9B-87E0-149C0E812BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA472428-7E4F-4E9B-87E0-149C0E812BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA472428-7E4F-4E9B-87E0-149C0E812BD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -238,6 +238,7 @@ namespace Senparc.Mvc.Controllers.Api
                                   Name = v.Name,
                                   Address = addrName,
                                   SignNum = v.SignNum,
+                                  
                                   Sort = i++,
                                   Status = v.Status,
                                   IsSign = !string.IsNullOrEmpty(v.SignNum),
@@ -271,7 +272,7 @@ namespace Senparc.Mvc.Controllers.Api
                             ActivityRemark = x.Activity.Summary,
                             ActivityDesc = x.Activity.Description,
                             x.Activity.ScheduleStatus,
-                            x.Activity.IsPublish,
+                            x.Activity.IsPublish,                         
                             x.Name,
                             x.Address,
                             x.StartTime,
