@@ -374,25 +374,30 @@ namespace Senparc.Areas.Admin.Controllers
                 }
                 else
                 {
-                    pm = new ProjectMember
+
+                    if (!string.IsNullOrEmpty(model.LeaderName))
                     {
-                        Id = Guid.NewGuid().ToString("N"),
-                        Company = model.LeaderCom,
-                        Duty = model.LeaderDuty,
-                        Email = string.Empty,
-                        CreateTime = DateTime.Now,
-                        Flag = false,
-                        Gender = 0,
-                        Name = model.Name,
-                        Nation = model.LeaderNation,
-                        ProjectId = account.Id,
-                        Phone = model.LeaderPhone,
-                        UpdateTime = DateTime.Now,
-                        IsLeader = true,
-                        IdCard = model.LeaderCard,
-                        Sort = 1,
-                    };
-                    _projectMemberService.SaveObject(pm);
+                        pm = new ProjectMember
+                        {
+                            Id = Guid.NewGuid().ToString("N"),
+                            Company = model.LeaderCom,
+                            Duty = model.LeaderDuty,
+                            Email = string.Empty,
+                            CreateTime = DateTime.Now,
+                            Flag = false,
+                            Gender = 0,
+                            Name = model.LeaderName,
+                            Nation = model.LeaderNation,
+                            ProjectId = account.Id,
+                            Phone = model.LeaderPhone,
+                            UpdateTime = DateTime.Now,
+                            IsLeader = true,
+                            IdCard = model.LeaderCard,
+                            Sort = 1,
+                        };
+                        _projectMemberService.SaveObject(pm);
+                    }
+               
                 }
               
                 base.SetMessager(MessageType.success, $"{(isEdit ? "修改" : "新增")}成功！");
