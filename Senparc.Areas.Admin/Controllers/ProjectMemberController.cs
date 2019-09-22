@@ -104,22 +104,22 @@ namespace Senparc.Areas.Admin.Controllers
 
                 list.Add(new ProjectMember_EditVD
                 {
-                     ProjectId = x.ProjectId,
-                       Name = x.Name,
-                       Nation = x.Nation,
-                      IdCard = x.IdCard,
-                       Company = x.Company,
-                        Duty = x.Duty,
-                         Gender = x.Gender,
-                          Id = x.Id,
-                           Phone = x.Phone,
-                             CreateTime = x.CreateTime,
-                              CompetitionProgram = leader,
-                               Email = x.Email,
-                                IsLeader = x.IsLeader,
-                                 HeadImgUrl = x.HeadImgUrl,
-                                  IdCardImgUrl = x.IdCardImgUrl,
-                                  UserName = x.Phone                      
+                    ProjectId = x.ProjectId,
+                    Name = x.Name,
+                    Nation = x.Nation,
+                    IdCard = x.IdCard,
+                    Company = x.Company,
+                    Duty = x.Duty,
+                    Gender = x.Gender,
+                    Id = x.Id,
+                    Phone = x.Phone,
+                    CreateTime = x.CreateTime,
+                    CompetitionProgram = leader,
+                    Email = x.Email,
+                    IsLeader = x.IsLeader,
+                    HeadImgUrl = x.HeadImgUrl,
+                    IdCardImgUrl = x.IdCardImgUrl,
+                    UserName = x.Phone                      
 
 
                 });
@@ -330,10 +330,99 @@ namespace Senparc.Areas.Admin.Controllers
         /// <returns></returns>
         public ActionResult ExportMember()
         {
+            var activies = _activityService.GetFullList(x => x.IsPublish, x => x.IsPublish, OrderingType.Descending).ToList();
+
+            if (activies.Count < 1)
+            {
+                base.SetMessager(MessageType.danger, "请先完善活动主题");
+                return RedirectToAction("Index");
+            }
+            var curactivity = activies.Select(x => x.Id).ToList();
+
+            // List<Schedule> list = new List<Schedule>();
+
+            var clist = _scheduleService.GetFullList(x => curactivity.Contains(x.ActivityId), x => x.Sort, OrderingType.Ascending).ToList().Select(x => x.Id).ToList();
+
+            var modellist = _competitionProgramService.GetFullList(x => clist.Contains(x.ScheduleId), x => x.CreateTime, OrderingType.Descending).Select(x => x).ToList();
 
 
+            var seh = new SenparcExpressionHelper<ProjectMember>();
+            //seh.ValueCompare.AndAlso(true, z => !z.Flag)
+            //    .AndAlso(!kw.IsNullOrEmpty(), z => z.Name.Contains(kw) || z.Company.Contains(kw) || z.Duty.Contains(kw) || z.Phone.Contains(kw) || z.Nation.Contains(kw));
 
-            return View();
+            //if (!string.IsNullOrEmpty(ProjectId))
+            //{
+            //    seh.ValueCompare.AndAlso(true, z => z.ProjectId == ProjectId);
+            //}
+
+            var where = seh.BuildWhereExpression();
+
+
+            //var seh = new SenparcExpressionHelper<ProjectMember>();
+            //seh.ValueCompare.AndAlso(true, z => !z.Flag)
+            //    .AndAlso(!kw.IsNullOrEmpty(), z => z.Name.Contains(kw) || z.Company.Contains(kw) || z.Duty.Contains(kw) || z.Phone.Contains(kw) || z.Nation.Contains(kw));
+            //var where = seh.BuildWhereExpression();
+
+            var modelList = _projectMemberService.GetObjectList(1, 20000, where, z => z.Id, OrderingType.Descending);
+            List<ProjectMember_EditVD> list = new List<ProjectMember_EditVD>();
+
+            modelList.ForEach(x =>
+            {
+
+                var leader = new CompetitionProgram();
+
+                if (!string.IsNullOrEmpty(x.ProjectId))
+                {
+                    var cleader = _competitionProgramService.GetObject(xp => xp.Id == x.ProjectId);
+
+                    if (cleader != null)
+                    {
+                        leader = cleader;
+                    }
+                }
+
+                var strcateName = string.Empty;
+
+                if (leader.Schedule == null)
+                {
+                    leader.Schedule = _scheduleService.GetObject(s => s.Id == leader.ScheduleId);
+                }
+
+                list.Add(new ProjectMember_EditVD
+                {
+                    ProjectId = x.ProjectId,
+                    Name = x.Name,
+                    Nation = x.Nation,
+                    IdCard = x.IdCard,
+                    Company = x.Company,
+                    Duty = x.Duty,
+                    Gender = x.Gender,
+                    Id = x.Id,
+                    Phone = x.Phone,
+                    CreateTime = x.CreateTime,
+                    CompetitionProgram = leader,
+                    Email = x.Email,
+                    IsLeader = x.IsLeader,
+                    HeadImgUrl = x.HeadImgUrl,
+                    IdCardImgUrl = x.IdCardImgUrl,
+                    UserName = x.Phone
+
+
+                });
+
+
+            });
+
+
+           
+            //var vd = new ProjectIndex_EditVD()
+            //{
+            //    CompetitionProgramList = new PagedList<ProjectMember_EditVD>(list, pageIndex, modelList.PageCount, modelList.TotalCount, modelList.SkipCount),
+            //    kw = kw,
+            //    ProjectId = ProjectId,
+            //    CpList = modellist
+            //};
+            return View(null);
         }
        
 
