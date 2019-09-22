@@ -312,8 +312,8 @@ namespace Senparc.Areas.Admin.Controllers
         {
             try
             {
-                var objList = _scheduleService.GetFullList(z => ids.Contains(z.Id), z => z.Id, OrderingType.Ascending);
-                _scheduleService.DeleteAll(objList);
+                var objList = _projectMemberService.GetFullList(z => ids.Contains(z.Id), z => z.Id, OrderingType.Ascending);
+                _projectMemberService.DeleteAll(objList);
                 SetMessager(MessageType.success, "删除成功！");
             }
             catch (Exception e)
@@ -324,6 +324,17 @@ namespace Senparc.Areas.Admin.Controllers
         }
 
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult ExportMember()
+        {
+
+
+
+            return View();
+        }
        
 
         public string GetScheduleTags(string id)

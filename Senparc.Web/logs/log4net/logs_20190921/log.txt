@@ -1,0 +1,1288 @@
+
+----------------------header--------------------------
+2019-09-21 00:18:46,925 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=5030 T=1
+
+----------------------header--------------------------
+2019-09-21 00:25:29,583 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3113 T=1
+
+----------------------header--------------------------
+2019-09-21 00:37:33,462 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2543 T=1
+
+----------------------header--------------------------
+2019-09-21 00:39:55,553 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2637 T=1
+
+----------------------header--------------------------
+2019-09-21 00:41:56,917 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2831 T=1
+
+----------------------header--------------------------
+2019-09-21 00:44:00,564 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2612 T=1
+
+----------------------header--------------------------
+2019-09-21 01:00:26,437 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2655 T=1
+
+----------------------header--------------------------
+2019-09-21 01:10:29,036 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2850 T=1
+
+----------------------header--------------------------
+2019-09-21 01:13:35,373 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2785 T=1
+
+----------------------header--------------------------
+2019-09-21 01:18:01,207 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2614 T=1
+
+----------------------header--------------------------
+2019-09-21 07:11:13,213 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3787 T=1
+
+----------------------header--------------------------
+2019-09-21 07:14:47,425 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2788 T=1
+
+----------------------header--------------------------
+2019-09-21 07:16:39,659 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2834 T=1
+2019-09-21 07:17:24,889 [14] INFO  WebLoggerRepository - AdminUserInfo新增：（ID：1003）
+ : ? R=48063 T=14
+
+----------------------header--------------------------
+2019-09-21 07:23:09,774 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2785 T=1
+
+----------------------header--------------------------
+2019-09-21 07:26:39,536 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2307 T=1
+2019-09-21 07:27:12,133 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_1（ID：1004）
+ : ? R=34903 T=6
+2019-09-21 07:27:19,219 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_2（ID：1005）
+ : ? R=41990 T=6
+2019-09-21 07:27:22,302 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_3（ID：1006）
+ : ? R=45073 T=6
+2019-09-21 07:27:22,350 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_4（ID：1007）
+ : ? R=45121 T=6
+2019-09-21 07:27:22,397 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_5（ID：1008）
+ : ? R=45168 T=6
+2019-09-21 07:27:22,445 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_6（ID：1009）
+ : ? R=45216 T=6
+2019-09-21 07:27:22,492 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_7（ID：1010）
+ : ? R=45263 T=6
+2019-09-21 07:27:22,542 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_8（ID：1011）
+ : ? R=45313 T=6
+2019-09-21 07:27:22,589 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_9（ID：1012）
+ : ? R=45360 T=6
+2019-09-21 07:27:22,636 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_10（ID：1013）
+ : ? R=45407 T=6
+2019-09-21 07:27:22,683 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_11（ID：1014）
+ : ? R=45454 T=6
+2019-09-21 07:27:22,734 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_12（ID：1015）
+ : ? R=45505 T=6
+2019-09-21 07:27:22,787 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_13（ID：1016）
+ : ? R=45558 T=6
+2019-09-21 07:27:22,834 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_14（ID：1017）
+ : ? R=45605 T=6
+2019-09-21 07:27:22,880 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_15（ID：1018）
+ : ? R=45651 T=6
+2019-09-21 07:27:22,929 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_16（ID：1019）
+ : ? R=45700 T=6
+2019-09-21 07:27:22,976 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_17（ID：1020）
+ : ? R=45747 T=6
+2019-09-21 07:27:23,028 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_18（ID：1021）
+ : ? R=45799 T=6
+2019-09-21 07:27:23,082 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_19（ID：1022）
+ : ? R=45853 T=6
+2019-09-21 07:27:23,131 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_20（ID：1023）
+ : ? R=45902 T=6
+2019-09-21 07:27:23,182 [6] INFO  WebLoggerRepository - AdminUserInfo新增：admin_21（ID：1024）
+ : ? R=45953 T=6
+2019-09-21 07:29:27,482 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_1（ID：1004）
+ : ? R=170253 T=18
+2019-09-21 07:29:27,508 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_2（ID：1005）
+ : ? R=170279 T=18
+2019-09-21 07:29:27,534 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_3（ID：1006）
+ : ? R=170305 T=18
+2019-09-21 07:29:27,560 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_4（ID：1007）
+ : ? R=170331 T=18
+2019-09-21 07:29:27,587 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_5（ID：1008）
+ : ? R=170358 T=18
+2019-09-21 07:29:27,612 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_6（ID：1009）
+ : ? R=170383 T=18
+2019-09-21 07:29:27,641 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_7（ID：1010）
+ : ? R=170412 T=18
+2019-09-21 07:29:27,665 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_8（ID：1011）
+ : ? R=170436 T=18
+2019-09-21 07:29:27,694 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_9（ID：1012）
+ : ? R=170465 T=18
+2019-09-21 07:29:27,718 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_10（ID：1013）
+ : ? R=170489 T=18
+2019-09-21 07:29:27,743 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_11（ID：1014）
+ : ? R=170514 T=18
+2019-09-21 07:29:27,774 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_12（ID：1015）
+ : ? R=170545 T=18
+2019-09-21 07:29:27,798 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_13（ID：1016）
+ : ? R=170569 T=18
+2019-09-21 07:29:27,824 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_14（ID：1017）
+ : ? R=170595 T=18
+2019-09-21 07:29:27,849 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_15（ID：1018）
+ : ? R=170620 T=18
+2019-09-21 07:29:27,874 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_16（ID：1019）
+ : ? R=170645 T=18
+2019-09-21 07:29:27,899 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_17（ID：1020）
+ : ? R=170670 T=18
+2019-09-21 07:29:27,925 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_18（ID：1021）
+ : ? R=170696 T=18
+2019-09-21 07:29:27,950 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_19（ID：1022）
+ : ? R=170721 T=18
+2019-09-21 07:29:27,976 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_20（ID：1023）
+ : ? R=170747 T=18
+2019-09-21 07:29:28,004 [18] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_21（ID：1024）
+ : ? R=170775 T=18
+2019-09-21 07:29:28,061 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_22（ID：1025）
+ : ? R=170832 T=18
+2019-09-21 07:29:28,118 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_23（ID：1026）
+ : ? R=170889 T=18
+2019-09-21 07:29:28,169 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_24（ID：1027）
+ : ? R=170940 T=18
+2019-09-21 07:29:28,224 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_25（ID：1028）
+ : ? R=170995 T=18
+2019-09-21 07:29:28,274 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_26（ID：1029）
+ : ? R=171045 T=18
+2019-09-21 07:29:28,323 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_27（ID：1030）
+ : ? R=171094 T=18
+2019-09-21 07:29:28,373 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_28（ID：1031）
+ : ? R=171144 T=18
+2019-09-21 07:29:28,433 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_29（ID：1032）
+ : ? R=171204 T=18
+2019-09-21 07:29:28,495 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_30（ID：1033）
+ : ? R=171266 T=18
+2019-09-21 07:29:28,545 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_31（ID：1034）
+ : ? R=171316 T=18
+2019-09-21 07:29:28,595 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_32（ID：1035）
+ : ? R=171366 T=18
+2019-09-21 07:29:28,644 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_33（ID：1036）
+ : ? R=171415 T=18
+2019-09-21 07:29:28,696 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_34（ID：1037）
+ : ? R=171467 T=18
+2019-09-21 07:29:28,751 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_35（ID：1038）
+ : ? R=171522 T=18
+2019-09-21 07:29:28,808 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_36（ID：1039）
+ : ? R=171579 T=18
+2019-09-21 07:29:28,865 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_37（ID：1040）
+ : ? R=171636 T=18
+2019-09-21 07:29:28,918 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_38（ID：1041）
+ : ? R=171689 T=18
+2019-09-21 07:29:28,967 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_39（ID：1042）
+ : ? R=171738 T=18
+2019-09-21 07:29:29,017 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_40（ID：1043）
+ : ? R=171788 T=18
+2019-09-21 07:29:29,067 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_41（ID：1044）
+ : ? R=171838 T=18
+2019-09-21 07:29:29,118 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_42（ID：1045）
+ : ? R=171889 T=18
+2019-09-21 07:29:29,166 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_43（ID：1046）
+ : ? R=171937 T=18
+2019-09-21 07:29:29,217 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_44（ID：1047）
+ : ? R=171988 T=18
+2019-09-21 07:29:29,286 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_45（ID：1048）
+ : ? R=172057 T=18
+2019-09-21 07:29:29,351 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_46（ID：1049）
+ : ? R=172122 T=18
+2019-09-21 07:29:29,408 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_47（ID：1050）
+ : ? R=172179 T=18
+2019-09-21 07:29:29,460 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_48（ID：1051）
+ : ? R=172231 T=18
+2019-09-21 07:29:29,509 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_49（ID：1052）
+ : ? R=172280 T=18
+2019-09-21 07:29:29,560 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_50（ID：1053）
+ : ? R=172331 T=18
+2019-09-21 07:29:29,611 [18] INFO  WebLoggerRepository - AdminUserInfo新增：admin_51（ID：1054）
+ : ? R=172382 T=18
+
+----------------------header--------------------------
+2019-09-21 07:33:05,471 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3107 T=1
+
+----------------------header--------------------------
+2019-09-21 07:37:31,660 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2699 T=1
+
+----------------------header--------------------------
+2019-09-21 07:39:07,101 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2728 T=1
+
+----------------------header--------------------------
+2019-09-21 08:25:23,137 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3785 T=1
+
+----------------------header--------------------------
+2019-09-21 08:33:21,020 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2802 T=1
+
+----------------------header--------------------------
+2019-09-21 08:35:15,437 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2809 T=1
+
+----------------------header--------------------------
+2019-09-21 08:44:50,000 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2829 T=1
+
+----------------------header--------------------------
+2019-09-21 08:47:37,344 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2412 T=1
+2019-09-21 08:48:25,235 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《妈妈的呼唤》|《总有一天》)（ID：b75e15f26eee48e088083c5063568694）
+ : ? R=50302 T=9
+2019-09-21 08:48:33,460 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：二重唱(《那山花开》|《青春舞曲》)（ID：051a7e6535f846b9b0e9ef542ebf5957）
+ : ? R=58527 T=9
+2019-09-21 08:48:33,650 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《问湘江》|《断桥遗梦》)（ID：d6b495ab1360496aa9c514284cedb4c0）
+ : ? R=58717 T=9
+2019-09-21 08:48:33,826 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《广西尼来啰》|《来香巴拉看太阳》)（ID：cc18cf28cd984c2b9de983c963c2a946）
+ : ? R=58893 T=9
+2019-09-21 08:48:33,995 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《湘江红》)（ID：d9b02e9f21cf4350ade7bf6191b280da）
+ : ? R=59062 T=9
+2019-09-21 08:48:34,172 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：双人舞(《嘹歌声声》)（ID：5bd3ea06c5034f40865e28e265eb4be3）
+ : ? R=59239 T=9
+2019-09-21 08:48:34,369 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《醉·美》)（ID：c3d2170a131743559011df049f5ec294）
+ : ? R=59436 T=9
+2019-09-21 08:48:34,560 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独舞(《狱中谣》)（ID：ca4d41a2d6474b10a1c305f908c5f11b）
+ : ? R=59627 T=9
+2019-09-21 08:48:34,748 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：双人舞(《无人知晓》)（ID：dec51a052745468fbc39d2dcd82ea8cf）
+ : ? R=59815 T=9
+2019-09-21 08:48:34,935 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：小组唱(《丰收的季节》|《花与苍穹》)（ID：ce66a7d55592406885a5329a027630ed）
+ : ? R=60002 T=9
+2019-09-21 08:48:35,126 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《玉浆·豆腐娘》)（ID：7b2f94b46ed84a079a6347d4e00ddbf4）
+ : ? R=60193 T=9
+2019-09-21 08:48:35,315 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《心脏》|《静悄悄的爱》)（ID：40d3ad7c06bd45eca750a4a1c9842c66）
+ : ? R=60382 T=9
+2019-09-21 08:48:35,493 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《祖国之南》|《两地曲》)（ID：7b6f76a95c2c48aab519b35c0948e102）
+ : ? R=60560 T=9
+2019-09-21 08:48:35,664 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：重唱(《月亮街》|《为爱干杯》)（ID：ffac43b4e46549ff93adcad23d64005c）
+ : ? R=60731 T=9
+2019-09-21 08:48:35,842 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《约定》)（ID：92a249ec6e87421e80839f37443b3dc8）
+ : ? R=60909 T=9
+2019-09-21 08:48:36,019 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《那河、这山》)（ID：4f9dde71e2ff4ff4b698204dd54d2fcd）
+ : ? R=61086 T=9
+2019-09-21 08:48:36,190 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《仰望鼓楼》)（ID：d2d862c02bf744a59a3003837a9416b3）
+ : ? R=61257 T=9
+2019-09-21 08:48:36,373 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《银秀》)（ID：5efe61093ac64e1ebe78b47496d89396）
+ : ? R=61440 T=9
+2019-09-21 08:48:36,545 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《瑶族舞曲》)（ID：f59a4610bd9340c2a7cae6883cb8ebb5）
+ : ? R=61612 T=9
+2019-09-21 08:48:36,757 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《闹鱼》)（ID：38659e3b3a05496d8d4e2a1315789ba6）
+ : ? R=61824 T=9
+2019-09-21 08:48:36,930 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独舞(《柳侯赋》)（ID：c8fb5f0b8b3e43a586999ad592f71207）
+ : ? R=61997 T=9
+2019-09-21 08:48:37,113 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《漓江曲》|《水灵灵》)（ID：0e6a664126654ba19c61481c0e1eb39f）
+ : ? R=62180 T=9
+2019-09-21 08:48:37,329 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《老班章》|《望乡词》)（ID：d81424b744ff4316a1fd77d8222d7aef）
+ : ? R=62396 T=9
+2019-09-21 08:48:37,601 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《和过去说再见》|《THINKOFME》)（ID：cd7c5557819a4e1fbcea854ea7eced86）
+ : ? R=62668 T=9
+2019-09-21 08:48:37,797 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《咏桂林》|《今夜无人入眠》)（ID：450fae1e7f714b7589b05caa228be8fa）
+ : ? R=62864 T=9
+2019-09-21 08:48:37,974 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《湘江记忆》)（ID：3274da162334459abbdf55cd7390c859）
+ : ? R=63041 T=9
+2019-09-21 08:48:38,138 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《难忘曾径流血的湘江》|《喜庆中国》)（ID：215140c45dff46c0afac4b1c7bbf867e）
+ : ? R=63205 T=9
+2019-09-21 08:48:38,339 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《阿婆的笼箱》)（ID：886ea2a9d80e446bbfd96ff61de210af）
+ : ? R=63406 T=9
+2019-09-21 08:48:38,506 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：小组唱(《情飞壮乡》|《木叶吹呀吹》)（ID：887ccbf2404c4d74bd756937b3cf222e）
+ : ? R=63573 T=9
+2019-09-21 08:48:38,670 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《那山花开》|《黄河渔娘》)（ID：cf43d42335c6448e8402938225f445d7）
+ : ? R=63737 T=9
+2019-09-21 08:48:38,845 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《连心歌》|《粉墨春秋》)（ID：57d844e58a754b1b8f0a7d2b25410621）
+ : ? R=63912 T=9
+2019-09-21 08:48:39,066 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：小组唱(《爱的光芒》|《彩云追月》)（ID：028ea99a62e943dbb16db9d9d53ef392）
+ : ? R=64133 T=9
+2019-09-21 08:48:39,260 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《顶·硬·上》)（ID：0c127b552905442bbd74b49a1ec63865）
+ : ? R=64327 T=9
+2019-09-21 08:48:39,434 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：男声独唱(《一路奔放》|《拉住妈妈的手》)（ID：a0cb9a26fbf84026a6ad43680aeeb3a3）
+ : ? R=64501 T=9
+2019-09-21 08:48:39,609 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《红树林》|《太傻》)（ID：f8d001f2fcbf421d970c99e4c03e2aef）
+ : ? R=64676 T=9
+2019-09-21 08:48:39,782 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《翅膀》|《青春舞曲》)（ID：a524a4130f9e44688b08cefa38707050）
+ : ? R=64849 T=9
+2019-09-21 08:48:39,954 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：双人舞(《我的名字叫建国》)（ID：81b5f65fc27c48338ff5c5c64b60b129）
+ : ? R=65021 T=9
+2019-09-21 08:48:40,132 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《女儿花》)（ID：2bbfc14dec234bd3b2e108c3268bc9e0）
+ : ? R=65199 T=9
+2019-09-21 08:48:40,311 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《米粉姑娘》|《为我白州更多娇》)（ID：b88cdc956151482e8bba6f6909427ace）
+ : ? R=65378 T=9
+2019-09-21 08:48:40,492 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《稻花飘香》)（ID：a225ae25c28c4470944f19bcaf8ab335）
+ : ? R=65559 T=9
+2019-09-21 08:48:40,666 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《追寻》)（ID：a3ae54ec69604b6a87ce13263464e9a2）
+ : ? R=65733 T=9
+2019-09-21 08:48:40,838 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《帽缘》)（ID：07bac8411e184d7ea313ab5a30d7af62）
+ : ? R=65905 T=9
+2019-09-21 08:48:41,013 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：合唱(《肥田好地》|《幸福中国一起走》)（ID：3de6917172f94c198c7dd69496b83e4b）
+ : ? R=66080 T=9
+2019-09-21 08:48:41,190 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《打面酱》)（ID：fe43e0ba55ba4c67b4e52fa51b6a98fb）
+ : ? R=66257 T=9
+2019-09-21 08:48:41,360 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《好风吹来》|《我在这啊妈妈》)（ID：b171a05007ef4d4da98e367565dedfdf）
+ : ? R=66427 T=9
+2019-09-21 08:48:41,544 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：合唱(《绣球抛上天》|《山路湾湾》)（ID：82b5aea8f04746f186e6f2b2ef448a8f）
+ : ? R=66611 T=9
+2019-09-21 08:48:41,723 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《跨越》)（ID：5f757626885043f692196d76ffad389d）
+ : ? R=66790 T=9
+2019-09-21 08:48:41,945 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《觅香》)（ID：d5d87f23cd4841df97ad3ed384acc8d1）
+ : ? R=67012 T=9
+2019-09-21 08:48:42,160 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《阿母的天》)（ID：b8565e4635604669b2eabc74a40d548a）
+ : ? R=67227 T=9
+2019-09-21 08:48:42,346 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《洗月》)（ID：b86983ec18a64973aefa33cc75f00a8a）
+ : ? R=67413 T=9
+2019-09-21 08:48:42,521 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《剪禾》)（ID：807b27923c804f3db870dfa8ec527847）
+ : ? R=67588 T=9
+2019-09-21 08:48:42,703 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：合唱(《蝴蝶情歌》|《流水欢歌迎客来》)（ID：9752bf91c2cb4390b75d991942388623）
+ : ? R=67770 T=9
+2019-09-21 08:48:42,909 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《瑶山夜语》（暂名）)（ID：469ab58bdd47483aaa65fe4f2a2024e6）
+ : ? R=67976 T=9
+2019-09-21 08:48:43,123 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《尖尖谣》)（ID：519aa952e34a4cd5ab78c93eb8a43d89）
+ : ? R=68190 T=9
+2019-09-21 08:48:43,344 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《寿城欢歌》|《广西尼的呀》)（ID：43d74c7fd3e34008b2a11d6cbaa4949a）
+ : ? R=68411 T=9
+2019-09-21 08:48:43,518 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《舂·景》)（ID：5b1e3d82259c45c18bab65b57265082c）
+ : ? R=68585 T=9
+2019-09-21 08:48:43,732 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《长桌酒》)（ID：5bd4c31d19904910abec14a34721eb9f）
+ : ? R=68799 T=9
+2019-09-21 08:48:44,003 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《鲜红的军旗是首歌》|《高歌义勇》)（ID：de7322ccd54c4129b8cb945f7c5946bb）
+ : ? R=69070 T=9
+2019-09-21 08:48:44,220 [9] INFO  WebLoggerRepository - CompetitionProgram新增：合唱(《三姐迎客歌》|《唱彩调》)（ID：35260a3c51b0409392637e0ee4045d8f）
+ : ? R=69287 T=9
+2019-09-21 08:48:44,400 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《阿公的鼓》)（ID：916dc62b752841d6bccaf58cb17e4c67）
+ : ? R=69467 T=9
+2019-09-21 08:48:44,570 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《闯三关》)（ID：14f3f9c9c23442a3a607a08fcf5c79d4）
+ : ? R=69637 T=9
+2019-09-21 08:48:44,751 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《砂陶心》)（ID：0fc0b6f2471d4a6d918cb970cdb96b16）
+ : ? R=69818 T=9
+2019-09-21 08:48:44,929 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：小组唱(《山瑶》|《奉献》)（ID：0198861e452e483c802f04278641aa68）
+ : ? R=69997 T=9
+2019-09-21 08:48:45,103 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《使命之瑶》|《春风十里》)（ID：27fdc7ed9301446e9f7eee6583263f99）
+ : ? R=70171 T=9
+2019-09-21 08:48:45,274 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《阿婆》|《我回家》)（ID：69ad1711ca9f45ed998030c119201982）
+ : ? R=70342 T=9
+2019-09-21 08:48:45,457 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《一辈背，一代带》)（ID：290cced827564ecba15e03cfe60943f1）
+ : ? R=70525 T=9
+2019-09-21 08:48:45,640 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《追着我的旗》)（ID：0cc9107aba154668bc6baec51d42bd3c）
+ : ? R=70708 T=9
+2019-09-21 08:48:45,812 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《来了不想走》|《左手指月》)（ID：a0ce7ae84eba4c8f896ce4ceb94ad59b）
+ : ? R=70880 T=9
+2019-09-21 08:48:45,986 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《茶香歌甜情满坡》|《梦里歌乡》)（ID：b643f8de48ed4d9fb991469aae9c422c）
+ : ? R=71054 T=9
+2019-09-21 08:48:46,161 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《一壶美酒醉江州》|《祖国母亲》)（ID：59b22204f5a942d6aa76edd767cc5470）
+ : ? R=71229 T=9
+2019-09-21 08:48:46,335 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：合唱(《阿姐琴瑶》|《放雁》)（ID：138a9681401a40d7b007c81489181855）
+ : ? R=71403 T=9
+2019-09-21 08:48:46,514 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《骆越班女》)（ID：c08a4fe69dff44bab39df3521de1ce1c）
+ : ? R=71582 T=9
+2019-09-21 08:48:46,689 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《昂三月三》|《壮乡美》)（ID：f05177d89bda491f94516e4a896ef91d）
+ : ? R=71757 T=9
+2019-09-21 08:48:46,873 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《山·水·袖》)（ID：35f471cfce8a4296af47cdc6d3dacbae）
+ : ? R=71941 T=9
+2019-09-21 08:48:47,106 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《毛姑妹的情思》|《日子越好歌越多》)（ID：d30e1b8ebcc44cbdb409318e7b9afc2d）
+ : ? R=72174 T=9
+2019-09-21 08:48:47,338 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《壮家妹》|《粉墨春秋》)（ID：63cfb72f11584cbb8588f8df6498a008）
+ : ? R=72406 T=9
+2019-09-21 08:48:47,557 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：小组唱(《改革开放四十春》|《中国脊梁》)（ID：1413262f52ce4c349d404f5fbbf457cc）
+ : ? R=72624 T=9
+2019-09-21 08:48:47,733 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独舞(《采茶女》)（ID：ee2ed744259f4b36bb769217218b1d3c）
+ : ? R=72800 T=9
+2019-09-21 08:48:47,922 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独舞(独舞《娘》)（ID：3c8cf874f31749b9a51c8e7dc0fa3581）
+ : ? R=72989 T=9
+2019-09-21 08:48:48,107 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《阿妹竹林见情郎》|《壮乡美》)（ID：2f00b29f67af41d2be7ab4cd8b92decb）
+ : ? R=73174 T=9
+2019-09-21 08:48:48,288 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《歌海》|《鹰翔》)（ID：e2837ea8401746ae89f4665119f063e5）
+ : ? R=73355 T=9
+2019-09-21 08:48:48,474 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《云开日出》|《我像雪花天上来》)（ID：856345574d2d409bb7e0d39a65275cb5）
+ : ? R=73541 T=9
+2019-09-21 08:48:48,652 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《云开日出》|《星光灿烂》)（ID：68e8232bbc3f4597a44bf7a11d9ea53d）
+ : ? R=73719 T=9
+2019-09-21 08:48:48,828 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《美丽的野芭蕉》|《我心永爱》)（ID：2e18804304ea49c3aad5d04edd8cf022）
+ : ? R=73895 T=9
+2019-09-21 08:48:49,019 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：小组唱(《美丽瑶山喇吱香》|《采茶姐妹》)（ID：cfad6ba85925437c81a0729ec137718b）
+ : ? R=74086 T=9
+2019-09-21 08:48:49,198 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《年轻的初心》|《做好今天》)（ID：8ade9b8641a340e9bb8bd761c9cf655b）
+ : ? R=74265 T=9
+2019-09-21 08:48:49,380 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《云飘流水是家乡》|《鹰翔》)（ID：9507ea2ab47c404aa0922ec54b7e1837）
+ : ? R=74447 T=9
+2019-09-21 08:48:49,554 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《陪你走到最后》)（ID：181f5b0f5fec4ee583e29c71b52c5a30）
+ : ? R=74621 T=9
+2019-09-21 08:48:49,728 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：双人舞(《记得我爱你》)（ID：ad87ce939aaa493aaec7aed46d6d9ef2）
+ : ? R=74795 T=9
+2019-09-21 08:48:49,906 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独舞(《高梁红了》)（ID：6f1ad0c1835645df9cccd2287d77ba57）
+ : ? R=74973 T=9
+2019-09-21 08:48:50,087 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《开山人》)（ID：f67388f7377a4377bc9b620ae6094930）
+ : ? R=75154 T=9
+2019-09-21 08:48:50,299 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《诞生》)（ID：b413a3b663ea41149086d1fc7da0b0ad）
+ : ? R=75366 T=9
+2019-09-21 08:48:50,498 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：三人舞(《带亩红》)（ID：2bb1c04587524193ab4966f8fc25888d）
+ : ? R=75565 T=9
+2019-09-21 08:48:50,671 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《花山印象》)（ID：84f8fe3d803a439aae143af4164ee0a4）
+ : ? R=75738 T=9
+2019-09-21 08:48:50,904 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《田埂上的歌》)（ID：9cf70e2ab7e64928acbbdbfeb90ef2ac）
+ : ? R=75971 T=9
+2019-09-21 08:48:51,125 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《边贸女人》)（ID：fe982226e8ca47bf84c254b9c8e11041）
+ : ? R=76192 T=9
+2019-09-21 08:48:51,347 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：小组唱(《又见壮乡三月三》|《天路》)（ID：32587a21c1c44c079bba4f227f66bdb2）
+ : ? R=76414 T=9
+2019-09-21 08:48:51,531 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《春到壮乡》|《在这遥远的地方》)（ID：1f77d3503d5d4e4099a3551fe392572a）
+ : ? R=76598 T=9
+2019-09-21 08:48:51,711 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《莲的心事》|《洋娃娃之歌》)（ID：e75ff9d6a6254d5694ab2d63e157a9d0）
+ : ? R=76778 T=9
+2019-09-21 08:48:51,888 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《可爱的宝贝》|《来生来世把你爱》)（ID：26c0276c6bde4c28975bac5154cd6750）
+ : ? R=76955 T=9
+2019-09-21 08:48:52,069 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《雨歇》)（ID：2a861587c0e34b15a4944012ea8b8fa9）
+ : ? R=77136 T=9
+2019-09-21 08:48:52,260 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《走寨》)（ID：f45cdc4132de46d7bd3e2cd068802926）
+ : ? R=77327 T=9
+2019-09-21 08:48:52,495 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《家园》|《来香巴拉看太阳》)（ID：0065e245317d49f2867d88e0a5acb43f）
+ : ? R=77562 T=9
+2019-09-21 08:48:52,739 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《瑶盼》)（ID：20f5732bfdcf48f09f49ea797542ac81）
+ : ? R=77806 T=9
+2019-09-21 08:48:52,928 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《花开满山时》)（ID：7502fbd7ebf747d8a4c7bb311d8233a7）
+ : ? R=77995 T=9
+2019-09-21 08:48:53,115 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《兄弟姐妹一起来》|《荔枝颂》)（ID：a32af1da51c24a90bb46c673ca111f74）
+ : ? R=78182 T=9
+2019-09-21 08:48:53,316 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《红水河之恋》|《一切献给党》)（ID：f9f4f572a7ff46079faa86e0b7cf0674）
+ : ? R=78383 T=9
+2019-09-21 08:48:53,508 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《扬帆出海》)（ID：87fc51e0fdfb493b8b2e7dd32ec02dd6）
+ : ? R=78575 T=9
+2019-09-21 08:48:53,695 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《山间勒俏》)（ID：bfc47b7190d741ba8f92a05c590e95c1）
+ : ? R=78762 T=9
+2019-09-21 08:48:53,879 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《承诺》|《费加罗的婚礼》选段《你不在再去做情郎》)（ID：5cc812d3afd14e69b0538454e367557f）
+ : ? R=78946 T=9
+2019-09-21 08:48:54,101 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《我那么爱你》|《走在小康路上》)（ID：bda02903464f401fbc5f87b2752aafa9）
+ : ? R=79168 T=9
+2019-09-21 08:48:54,321 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《爱要走，情难留》|《情姐下河洗衣裳》)（ID：6b109bead1b64f61b767c724f43ec9e1）
+ : ? R=79388 T=9
+2019-09-21 08:48:54,497 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《南珠·丝路》)（ID：bea50ef107f644f4bf838f7d8871e984）
+ : ? R=79564 T=9
+2019-09-21 08:48:54,698 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《布努瑶家金锣舞》)（ID：fa9d5cea8ff845dfae211daa2b7fc6d3）
+ : ? R=79765 T=9
+2019-09-21 08:48:54,914 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《一衣带水》|《美丽家园》)（ID：0d64cd0e40474198b3ccbd1480e38642）
+ : ? R=79981 T=9
+2019-09-21 08:48:55,107 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《心愿》|《游子吟》)（ID：8679689c791547928469bb74abd002f9）
+ : ? R=80174 T=9
+2019-09-21 08:48:55,284 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《走哟走哟》)（ID：320d23fd717e4e7295e7297bf2ec637e）
+ : ? R=80351 T=9
+2019-09-21 08:48:55,497 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：小组唱(《蔚蓝的情怀》|《玛依拉的随想》)（ID：68d06a20226d4f95a0fd746cb1eca235）
+ : ? R=80564 T=9
+2019-09-21 08:48:55,709 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《天地汉》)（ID：56ce5c241ec242d29d0bfc3e212a5b7d）
+ : ? R=80776 T=9
+2019-09-21 08:48:55,927 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独舞(《板瑶嫁》)（ID：02f4a8959abc48db9cfa7b63d97c829d）
+ : ? R=80994 T=9
+2019-09-21 08:48:56,153 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：三人舞(《芒蒿·苗妹》)（ID：ad8733ad6ef642799ed5ab258d69f0c2）
+ : ? R=81220 T=9
+2019-09-21 08:48:56,353 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《偏翩裙语》)（ID：96b74824eb85435ba387e32432f6809a）
+ : ? R=81420 T=9
+2019-09-21 08:48:56,544 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《牛角尖尖尖向天》)（ID：9a1f93ebb361464a949987c7d4e9cb2f）
+ : ? R=81611 T=9
+2019-09-21 08:48:56,732 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：合唱(《壮家阿哥》|《赶歌圩》)（ID：7cf58f39827d45919da33df01f1275a9）
+ : ? R=81799 T=9
+2019-09-21 08:48:56,913 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：双人舞(《荷塘夜话》)（ID：352db73e52e6428bb38f5e7fbd7480dd）
+ : ? R=81980 T=9
+2019-09-21 08:48:57,092 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《笑看万里江山一片红》|《中国进入新时代》)（ID：1d99f972fce34335b076888cb9d7df0f）
+ : ? R=82159 T=9
+2019-09-21 08:48:57,277 [9] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《窑变》|《亲爱的中国，我的爱》)（ID：3bdbf93bd5e440c4821ae0194b6b39a2）
+ : ? R=82344 T=9
+2019-09-21 08:50:37,990 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《妈妈的呼唤》|《总有一天》)（ID：6a3c57c24d0a46ee9e764aafd8480c4d）
+ : ? R=183057 T=9
+2019-09-21 08:50:38,166 [9] INFO  WebLoggerRepository - CompetitionProgram新增：二重唱(《那山花开》|《青春舞曲》)（ID：55accce18c894eb2bb327902bb1f6604）
+ : ? R=183233 T=9
+2019-09-21 08:50:38,356 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《问湘江》|《断桥遗梦》)（ID：4fd3eeffdf10434195e435174d8eb893）
+ : ? R=183423 T=9
+2019-09-21 08:50:38,535 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《广西尼来啰》|《来香巴拉看太阳》)（ID：e0bca2b15c3b446192496316981bc41f）
+ : ? R=183602 T=9
+2019-09-21 08:50:38,716 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《湘江红》)（ID：d780c3d8e1ee4c499b504445f85a9a6e）
+ : ? R=183783 T=9
+2019-09-21 08:50:38,892 [9] INFO  WebLoggerRepository - CompetitionProgram新增：双人舞(《嘹歌声声》)（ID：b49b15454c624a0581065d741f2fdd63）
+ : ? R=183959 T=9
+2019-09-21 08:50:39,077 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《醉·美》)（ID：007c5cfc98a44048bca6ccc87f7e0efa）
+ : ? R=184144 T=9
+2019-09-21 08:50:39,265 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独舞(《狱中谣》)（ID：d76ef44c82774f15aad80f70ad769e11）
+ : ? R=184332 T=9
+2019-09-21 08:50:39,434 [9] INFO  WebLoggerRepository - CompetitionProgram新增：双人舞(《无人知晓》)（ID：0ed83d0e3689469484c642a313bffe2e）
+ : ? R=184501 T=9
+2019-09-21 08:50:39,600 [9] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《丰收的季节》|《花与苍穹》)（ID：69b50a68b4434b4ba51450db4a549fce）
+ : ? R=184667 T=9
+2019-09-21 08:50:39,766 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《玉浆·豆腐娘》)（ID：3ef1a110c0ec469e8c6df930301c4303）
+ : ? R=184833 T=9
+2019-09-21 08:50:39,946 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《心脏》|《静悄悄的爱》)（ID：ba2ccc4343d646cc97ef75ee418c2eb4）
+ : ? R=185013 T=9
+2019-09-21 08:50:40,121 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《祖国之南》|《两地曲》)（ID：1df11f1ba39d40829eb1d35011ebe46b）
+ : ? R=185188 T=9
+2019-09-21 08:50:40,289 [9] INFO  WebLoggerRepository - CompetitionProgram新增：重唱(《月亮街》|《为爱干杯》)（ID：706bc7d114084019aad27e7c7fa5cb48）
+ : ? R=185356 T=9
+2019-09-21 08:50:40,456 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《约定》)（ID：4719e8ba483d4d96ad07ccf48bd07828）
+ : ? R=185523 T=9
+2019-09-21 08:50:40,628 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《那河、这山》)（ID：0b97da6b19e3416b8bc255eba195ceb1）
+ : ? R=185695 T=9
+2019-09-21 08:50:40,795 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《仰望鼓楼》)（ID：73d780e3e25049c085d8aa726e6497b9）
+ : ? R=185862 T=9
+2019-09-21 08:50:40,962 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《银秀》)（ID：57f26ef80a5f4ba5a481f1d16960d119）
+ : ? R=186029 T=9
+2019-09-21 08:50:41,132 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《瑶族舞曲》)（ID：c3f55949b3db441bb983b4f679bfe7ad）
+ : ? R=186199 T=9
+2019-09-21 08:50:41,301 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《闹鱼》)（ID：a817af3845604ec9898f4fcbfdededd3）
+ : ? R=186368 T=9
+2019-09-21 08:50:41,469 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独舞(《柳侯赋》)（ID：8ffe7c134b724dd18a752405448e7af6）
+ : ? R=186536 T=9
+2019-09-21 08:50:41,643 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《漓江曲》|《水灵灵》)（ID：30fcde851db54adf9705059fb4a41779）
+ : ? R=186710 T=9
+2019-09-21 08:50:41,822 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《老班章》|《望乡词》)（ID：32748b326cdd4a4ba5dd97e1177ad2f6）
+ : ? R=186889 T=9
+2019-09-21 08:50:41,989 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《和过去说再见》|《THINKOFME》)（ID：6e4e02ed13c4474c81346ffef0c23386）
+ : ? R=187056 T=9
+2019-09-21 08:50:42,160 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《咏桂林》|《今夜无人入眠》)（ID：f82ea2a0b5a645e889cb4c5c0b5f5d92）
+ : ? R=187227 T=9
+2019-09-21 08:50:42,334 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《湘江记忆》)（ID：1db7ec2545dc4fc7b5b50d91ccec8ad4）
+ : ? R=187401 T=9
+2019-09-21 08:50:42,513 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《难忘曾径流血的湘江》|《喜庆中国》)（ID：7f66be1338f247548f3d3a83df038057）
+ : ? R=187580 T=9
+2019-09-21 08:50:42,705 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《阿婆的笼箱》)（ID：0adbcb6d57b0413d931613d3e775f179）
+ : ? R=187772 T=9
+2019-09-21 08:50:42,879 [9] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《情飞壮乡》|《木叶吹呀吹》)（ID：4deee4d7b2cc47a9a0d78c6f9679037e）
+ : ? R=187946 T=9
+2019-09-21 08:50:43,054 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《那山花开》|《黄河渔娘》)（ID：92a13e9505894f5992eebf5b043dd36d）
+ : ? R=188121 T=9
+2019-09-21 08:50:43,231 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《连心歌》|《粉墨春秋》)（ID：06aff3bd641e48649e4621b0e2502487）
+ : ? R=188298 T=9
+2019-09-21 08:50:43,402 [9] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《爱的光芒》|《彩云追月》)（ID：de6d4f17726c4812a515e199fbf7e3f3）
+ : ? R=188469 T=9
+2019-09-21 08:50:43,576 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《顶·硬·上》)（ID：8b6ff4b157544eb8a4819629663b8da6）
+ : ? R=188643 T=9
+2019-09-21 08:50:43,750 [9] INFO  WebLoggerRepository - CompetitionProgram新增：男声独唱(《一路奔放》|《拉住妈妈的手》)（ID：e290b6bc3f74495398ca06f1854f3ddc）
+ : ? R=188817 T=9
+2019-09-21 08:50:43,921 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《红树林》|《太傻》)（ID：f0adb4c4170c4ba0a61f851cc142b4f5）
+ : ? R=188988 T=9
+2019-09-21 08:50:44,104 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《翅膀》|《青春舞曲》)（ID：07c13abf37414471a62525d319eefc18）
+ : ? R=189171 T=9
+2019-09-21 08:50:44,286 [9] INFO  WebLoggerRepository - CompetitionProgram新增：双人舞(《我的名字叫建国》)（ID：382cbba0534545fe8d8872b1ac7a4e35）
+ : ? R=189353 T=9
+2019-09-21 08:50:44,474 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《女儿花》)（ID：3ab2dbe76dbb4c8f90416cd0ea2f9f14）
+ : ? R=189541 T=9
+2019-09-21 08:50:44,651 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《米粉姑娘》|《为我白州更多娇》)（ID：654ddd82a5ff4bde9f91717ad10d427f）
+ : ? R=189718 T=9
+2019-09-21 08:50:44,820 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《稻花飘香》)（ID：76f7d90580e144e1b7db1fb75fb82295）
+ : ? R=189887 T=9
+2019-09-21 08:50:44,992 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《追寻》)（ID：2af282d345a049ccb1b3d4e8bcdaad3c）
+ : ? R=190059 T=9
+2019-09-21 08:50:45,160 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《帽缘》)（ID：47be0118bf4c4d4288405679d3d5caf3）
+ : ? R=190227 T=9
+2019-09-21 08:50:45,330 [9] INFO  WebLoggerRepository - CompetitionProgram新增：合唱(《肥田好地》|《幸福中国一起走》)（ID：13d11d0a9daf4ccc90d4467a6c731b91）
+ : ? R=190397 T=9
+2019-09-21 08:50:45,506 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《打面酱》)（ID：b32fcf4dc58048f085b8e6b5e1357894）
+ : ? R=190573 T=9
+2019-09-21 08:50:45,684 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《好风吹来》|《我在这啊妈妈》)（ID：8bf07fc573634e739a4160e28ec570ee）
+ : ? R=190751 T=9
+2019-09-21 08:50:45,859 [9] INFO  WebLoggerRepository - CompetitionProgram新增：合唱(《绣球抛上天》|《山路湾湾》)（ID：cefcd805e29a4871b57b24c928e54280）
+ : ? R=190926 T=9
+2019-09-21 08:50:46,029 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《跨越》)（ID：6ea27b5bc949424b8a571302ec8173e0）
+ : ? R=191096 T=9
+2019-09-21 08:50:46,198 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《觅香》)（ID：f5a90e890e93441ea2726e617f5a0709）
+ : ? R=191265 T=9
+2019-09-21 08:50:46,368 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《阿母的天》)（ID：1013146622fc48fe9467c18e065dde64）
+ : ? R=191435 T=9
+2019-09-21 08:50:46,542 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《洗月》)（ID：5e75e08f6b8447d289fa8abbd7b683d1）
+ : ? R=191609 T=9
+2019-09-21 08:50:46,714 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《剪禾》)（ID：74e49e82512d48aba447c8e600b4c004）
+ : ? R=191781 T=9
+2019-09-21 08:50:46,879 [9] INFO  WebLoggerRepository - CompetitionProgram新增：合唱(《蝴蝶情歌》|《流水欢歌迎客来》)（ID：dd62f6132fd9499691a110aed0e1bc72）
+ : ? R=191946 T=9
+2019-09-21 08:50:47,052 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《瑶山夜语》（暂名）)（ID：4ce75741d5cc4e7bb00604ce60fc190e）
+ : ? R=192119 T=9
+2019-09-21 08:50:47,224 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《尖尖谣》)（ID：f55a48c6dac849ca93221ad34853d87b）
+ : ? R=192291 T=9
+2019-09-21 08:50:47,395 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《寿城欢歌》|《广西尼的呀》)（ID：a4950510c5b6445f8e772118521fdc57）
+ : ? R=192463 T=9
+2019-09-21 08:50:47,570 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《舂·景》)（ID：fd7ce9e19ff74e98b2164365cca9e801）
+ : ? R=192638 T=9
+2019-09-21 08:50:47,752 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《长桌酒》)（ID：dde8ad7d2a834c8dbdc91b23228401ec）
+ : ? R=192820 T=9
+2019-09-21 08:50:47,938 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《鲜红的军旗是首歌》|《高歌义勇》)（ID：f10e9db5d3a5436aafc436470db04c0a）
+ : ? R=193006 T=9
+2019-09-21 08:50:48,113 [9] INFO  WebLoggerRepository - CompetitionProgram新增：合唱(《三姐迎客歌》|《唱彩调》)（ID：21f77eaaf8ff459da48a76cd78607637）
+ : ? R=193181 T=9
+2019-09-21 08:50:48,285 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《阿公的鼓》)（ID：5f1a167c6a064c03aaabcee99db3a0f0）
+ : ? R=193353 T=9
+2019-09-21 08:50:48,456 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《闯三关》)（ID：0b585493203c43259c9ad2ac9b328e8a）
+ : ? R=193524 T=9
+2019-09-21 08:50:48,634 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《砂陶心》)（ID：4356a4a964574627a383dc868adfe0a7）
+ : ? R=193702 T=9
+2019-09-21 08:50:48,813 [9] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《山瑶》|《奉献》)（ID：8e871406e2ca4be4876b3e109ffec6f7）
+ : ? R=193881 T=9
+2019-09-21 08:50:49,008 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《使命之瑶》|《春风十里》)（ID：d348434f90a54673adf25aa6666d6cbb）
+ : ? R=194076 T=9
+2019-09-21 08:50:49,199 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《阿婆》|《我回家》)（ID：128d186d8f2c4b8e8352fd8e025adefe）
+ : ? R=194267 T=9
+2019-09-21 08:50:49,386 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《一辈背，一代带》)（ID：a80e39d69b414499a8a35d39157d4003）
+ : ? R=194454 T=9
+2019-09-21 08:50:49,557 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《追着我的旗》)（ID：9bac80c1c20b45e6aa59b0f368d47f85）
+ : ? R=194625 T=9
+2019-09-21 08:50:49,729 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《来了不想走》|《左手指月》)（ID：8ef3e3cc027b4451b573fb0483d42ced）
+ : ? R=194797 T=9
+2019-09-21 08:50:49,905 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《茶香歌甜情满坡》|《梦里歌乡》)（ID：dc753cf541e74f6980b60bf07cb7817c）
+ : ? R=194972 T=9
+2019-09-21 08:50:50,078 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《一壶美酒醉江州》|《祖国母亲》)（ID：7d93a84aa99d44d1991199fe02878aae）
+ : ? R=195145 T=9
+2019-09-21 08:50:50,266 [9] INFO  WebLoggerRepository - CompetitionProgram新增：合唱(《阿姐琴瑶》|《放雁》)（ID：458d80700b7c4dcd8d5e59a2fba8c6c4）
+ : ? R=195333 T=9
+2019-09-21 08:50:50,441 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《骆越班女》)（ID：678a5992fcf44ef380a6eaafb8840991）
+ : ? R=195508 T=9
+2019-09-21 08:50:50,621 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《昂三月三》|《壮乡美》)（ID：354d6b68d0704b908eccb52bbac64529）
+ : ? R=195688 T=9
+2019-09-21 08:50:50,800 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《山·水·袖》)（ID：62807d19ea6f45948fb39edd0caea3ba）
+ : ? R=195867 T=9
+2019-09-21 08:50:50,977 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《毛姑妹的情思》|《日子越好歌越多》)（ID：6741d80d2b834ac6a4aaa00a4206c689）
+ : ? R=196044 T=9
+2019-09-21 08:50:51,148 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《壮家妹》|《粉墨春秋》)（ID：6d29fee81b2c4a3083667880195b1306）
+ : ? R=196215 T=9
+2019-09-21 08:50:51,326 [9] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《改革开放四十春》|《中国脊梁》)（ID：4c75dc90ace64a4f8c44796ce3142b2f）
+ : ? R=196393 T=9
+2019-09-21 08:50:51,508 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独舞(《采茶女》)（ID：3eff221f092847d485b450978ddcc79f）
+ : ? R=196575 T=9
+2019-09-21 08:50:51,685 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独舞(独舞《娘》)（ID：24ae40886a9247dd8705113edcc62efb）
+ : ? R=196752 T=9
+2019-09-21 08:50:51,867 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《阿妹竹林见情郎》|《壮乡美》)（ID：078dd5cd5ff24fe7a9d85083f7c21d87）
+ : ? R=196934 T=9
+2019-09-21 08:50:52,042 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《歌海》|《鹰翔》)（ID：b1fcff4603634ed7a0a9a2170a3cb708）
+ : ? R=197109 T=9
+2019-09-21 08:50:52,224 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《云开日出》|《我像雪花天上来》)（ID：136aa8df598a401c890f0035f03fa56b）
+ : ? R=197291 T=9
+2019-09-21 08:50:52,400 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《云开日出》|《星光灿烂》)（ID：38f70c171edd45088ec4c91257229b88）
+ : ? R=197467 T=9
+2019-09-21 08:50:52,581 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《美丽的野芭蕉》|《我心永爱》)（ID：e02673c340e54092ac97e425ac52da46）
+ : ? R=197648 T=9
+2019-09-21 08:50:52,761 [9] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《美丽瑶山喇吱香》|《采茶姐妹》)（ID：1712584fe55548eca6ed37d3238d6553）
+ : ? R=197828 T=9
+2019-09-21 08:50:52,931 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《年轻的初心》|《做好今天》)（ID：3b57ba7ab1544ba8a241f202bc9a671e）
+ : ? R=197998 T=9
+2019-09-21 08:50:53,118 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《云飘流水是家乡》|《鹰翔》)（ID：19754ea1ac97408cbfeaf09284a2a9f2）
+ : ? R=198185 T=9
+2019-09-21 08:50:53,312 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《陪你走到最后》)（ID：02bffe09929c43f8a9f11f57b3147452）
+ : ? R=198379 T=9
+2019-09-21 08:50:53,488 [9] INFO  WebLoggerRepository - CompetitionProgram新增：双人舞(《记得我爱你》)（ID：7f79817604934511a15139773e190b21）
+ : ? R=198555 T=9
+2019-09-21 08:50:53,671 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独舞(《高梁红了》)（ID：9b3031be8dc248ed80f3206b5c2a99f0）
+ : ? R=198738 T=9
+2019-09-21 08:50:56,479 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《开山人》)（ID：0f086d4372e84a5995a80f074721f6e6）
+ : ? R=201546 T=9
+2019-09-21 08:50:56,674 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《诞生》)（ID：1e4dc4c28be4445a858ec910ca375da2）
+ : ? R=201741 T=9
+2019-09-21 08:50:56,861 [9] INFO  WebLoggerRepository - CompetitionProgram新增：三人舞(《带亩红》)（ID：3040c1f75dad4c389e06ecbfb15aef16）
+ : ? R=201928 T=9
+2019-09-21 08:50:57,031 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《花山印象》)（ID：5ae815f98b6e44599165adbf2b35beb5）
+ : ? R=202098 T=9
+2019-09-21 08:50:57,213 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《田埂上的歌》)（ID：963d51cdc91d48449a56ec9844caeb3c）
+ : ? R=202280 T=9
+2019-09-21 08:50:57,396 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《边贸女人》)（ID：a77e01fa8d0040cc9a0420c5bbc2f247）
+ : ? R=202463 T=9
+2019-09-21 08:50:57,573 [9] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《又见壮乡三月三》|《天路》)（ID：6bff41c86458406a807c6a593237f2e9）
+ : ? R=202640 T=9
+2019-09-21 08:50:57,760 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《春到壮乡》|《在这遥远的地方》)（ID：6c03a9569bf44e209135d0c5558d86be）
+ : ? R=202827 T=9
+2019-09-21 08:50:57,942 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《莲的心事》|《洋娃娃之歌》)（ID：89a7e0089ef848cd809e7eb414b09177）
+ : ? R=203009 T=9
+2019-09-21 08:50:58,122 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《可爱的宝贝》|《来生来世把你爱》)（ID：9c8c46702cb442d5b55215907c9664b8）
+ : ? R=203189 T=9
+2019-09-21 08:50:58,318 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《雨歇》)（ID：0b32aaa3eed0419990c9cab518dfc415）
+ : ? R=203385 T=9
+2019-09-21 08:50:58,494 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《走寨》)（ID：2de4e786f92749ac909bf30890916448）
+ : ? R=203561 T=9
+2019-09-21 08:50:58,701 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《家园》|《来香巴拉看太阳》)（ID：520950307e5c497cb1eb01dddddc5ba8）
+ : ? R=203768 T=9
+2019-09-21 08:50:58,879 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《瑶盼》)（ID：71f44630615c48b1b3160578f78d339a）
+ : ? R=203946 T=9
+2019-09-21 08:50:59,104 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《花开满山时》)（ID：8beb4f3f756943e6946cadee7d5008f4）
+ : ? R=204171 T=9
+2019-09-21 08:50:59,298 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《兄弟姐妹一起来》|《荔枝颂》)（ID：3f0f6ffed82644e19c1d86cb0af0a913）
+ : ? R=204365 T=9
+2019-09-21 08:50:59,494 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《红水河之恋》|《一切献给党》)（ID：b0c76e5474d64c8e8ac54ebae94a6407）
+ : ? R=204561 T=9
+2019-09-21 08:50:59,703 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《扬帆出海》)（ID：aac20df59fb04521a53fd10294c09b6b）
+ : ? R=204770 T=9
+2019-09-21 08:50:59,897 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《山间勒俏》)（ID：96ea2a4698a748b992ebaf1a57c4f9f0）
+ : ? R=204964 T=9
+2019-09-21 08:51:00,079 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《承诺》|《费加罗的婚礼》选段《你不在再去做情郎》)（ID：1f2abba14cc44eef8b823193d405b4dc）
+ : ? R=205146 T=9
+2019-09-21 08:51:00,257 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《我那么爱你》|《走在小康路上》)（ID：5e12f335d6664663976774e413a02e42）
+ : ? R=205324 T=9
+2019-09-21 08:51:00,445 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《爱要走，情难留》|《情姐下河洗衣裳》)（ID：53f35f151caa43a1b81e553b847b6341）
+ : ? R=205512 T=9
+2019-09-21 08:51:00,622 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《南珠·丝路》)（ID：9227917b8b0a4b789b3c0042550570bc）
+ : ? R=205689 T=9
+2019-09-21 08:51:00,804 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《布努瑶家金锣舞》)（ID：2f53a3a742264a7d83f6302ba4755543）
+ : ? R=205871 T=9
+2019-09-21 08:51:00,981 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《一衣带水》|《美丽家园》)（ID：ee58012d3f854f8d808ced58fdeb126e）
+ : ? R=206048 T=9
+2019-09-21 08:51:01,159 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《心愿》|《游子吟》)（ID：e2f6d0a5f9f448f885037041ff8173a7）
+ : ? R=206226 T=9
+2019-09-21 08:51:01,339 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《走哟走哟》)（ID：6236c2e9bdff466cb6fa0b3247c0c72a）
+ : ? R=206406 T=9
+2019-09-21 08:51:01,527 [9] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《蔚蓝的情怀》|《玛依拉的随想》)（ID：d451e9f4acc7422c92eb9e4d5b84c210）
+ : ? R=206594 T=9
+2019-09-21 08:51:01,704 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《天地汉》)（ID：878722a535a9455fbf82d3ace1ffdb0a）
+ : ? R=206771 T=9
+2019-09-21 08:51:01,884 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独舞(《板瑶嫁》)（ID：9e489a4734a7487cb6654e2dc5da4882）
+ : ? R=206951 T=9
+2019-09-21 08:51:02,061 [9] INFO  WebLoggerRepository - CompetitionProgram新增：三人舞(《芒蒿·苗妹》)（ID：e5744dd7cf6c45d8bd0200458e1cd8cc）
+ : ? R=207128 T=9
+2019-09-21 08:51:02,242 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《偏翩裙语》)（ID：d085c43c027b476ba714bb9dc00f5e01）
+ : ? R=207309 T=9
+2019-09-21 08:51:02,425 [9] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《牛角尖尖尖向天》)（ID：7e882be0fc2e4b278c78517004413c99）
+ : ? R=207492 T=9
+2019-09-21 08:51:02,607 [9] INFO  WebLoggerRepository - CompetitionProgram新增：合唱(《壮家阿哥》|《赶歌圩》)（ID：8bc714ec2f1c4f37bc025d24f84fb8c2）
+ : ? R=207674 T=9
+2019-09-21 08:51:02,787 [9] INFO  WebLoggerRepository - CompetitionProgram新增：双人舞(《荷塘夜话》)（ID：12c6fc6ab626497bb7c4537c4dfbe199）
+ : ? R=207854 T=9
+2019-09-21 08:51:02,963 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《笑看万里江山一片红》|《中国进入新时代》)（ID：bc28740c554b4917bf0dbed24c030261）
+ : ? R=208030 T=9
+2019-09-21 08:51:03,144 [9] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《窑变》|《亲爱的中国，我的爱》)（ID：185f4c2850b94c93b4a81d65c4fb7b48）
+ : ? R=208211 T=9
+2019-09-21 08:52:25,913 [24] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《妈妈的呼唤》|《总有一天》)（ID：1f8c512d3fef4a029386659da123a867）
+ : ? R=290980 T=24
+2019-09-21 08:52:26,081 [24] INFO  WebLoggerRepository - CompetitionProgram新增：二重唱(《那山花开》|《青春舞曲》)（ID：16103d4f6b73458c813298484c7bcf85）
+ : ? R=291148 T=24
+2019-09-21 08:52:26,245 [24] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《问湘江》|《断桥遗梦》)（ID：c68fd7754ea5451590b5d8a9af3f1be1）
+ : ? R=291312 T=24
+2019-09-21 08:52:26,413 [24] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《广西尼来啰》|《来香巴拉看太阳》)（ID：6e401509aace484ab0b8d01cbe1fe781）
+ : ? R=291480 T=24
+2019-09-21 08:52:26,592 [24] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《湘江红》)（ID：cb917fa154504c07af765258249e6d0d）
+ : ? R=291659 T=24
+2019-09-21 08:52:26,779 [24] INFO  WebLoggerRepository - CompetitionProgram新增：双人舞(《嘹歌声声》)（ID：0f188d07c3cf497cbf1e02f716e0bc9c）
+ : ? R=291846 T=24
+2019-09-21 08:52:26,951 [24] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《醉·美》)（ID：e400d5781a114c258e981ed973573d1b）
+ : ? R=292018 T=24
+2019-09-21 08:52:27,128 [24] INFO  WebLoggerRepository - CompetitionProgram新增：独舞(《狱中谣》)（ID：050398adc91943b4aa066fd41e727b55）
+ : ? R=292195 T=24
+2019-09-21 08:52:27,346 [24] INFO  WebLoggerRepository - CompetitionProgram新增：双人舞(《无人知晓》)（ID：5867e830c53143938c97fb3a07058067）
+ : ? R=292413 T=24
+2019-09-21 08:52:27,564 [24] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《丰收的季节》|《花与苍穹》)（ID：c72b4ec8329e4bb3a4d237a549d9a967）
+ : ? R=292631 T=24
+2019-09-21 08:52:27,739 [24] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《玉浆·豆腐娘》)（ID：aeb6fc94b0d34b72b70ca471e7a74fd6）
+ : ? R=292806 T=24
+2019-09-21 08:52:27,909 [24] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《心脏》|《静悄悄的爱》)（ID：c2bc332a95f9464aa092343faa8387d7）
+ : ? R=292976 T=24
+2019-09-21 08:52:28,079 [24] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《祖国之南》|《两地曲》)（ID：616ee550477e4ea482e596a3a61a77e2）
+ : ? R=293146 T=24
+2019-09-21 08:52:28,248 [24] INFO  WebLoggerRepository - CompetitionProgram新增：重唱(《月亮街》|《为爱干杯》)（ID：9145366310584e439ebe6a1098bf3a90）
+ : ? R=293315 T=24
+
+----------------------header--------------------------
+2019-09-21 08:55:07,362 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2841 T=1
+2019-09-21 08:55:42,638 [13] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《妈妈的呼唤》|《总有一天》)（ID：1f8c512d3fef4a029386659da123a867）
+ : ? R=38117 T=13
+2019-09-21 08:55:44,012 [13] INFO  WebLoggerRepository - CompetitionProgram编辑：二重唱(《那山花开》|《青春舞曲》)（ID：16103d4f6b73458c813298484c7bcf85）
+ : ? R=39491 T=13
+2019-09-21 08:55:45,366 [13] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《问湘江》|《断桥遗梦》)（ID：c68fd7754ea5451590b5d8a9af3f1be1）
+ : ? R=40845 T=13
+2019-09-21 08:55:46,518 [13] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《广西尼来啰》|《来香巴拉看太阳》)（ID：6e401509aace484ab0b8d01cbe1fe781）
+ : ? R=41997 T=13
+2019-09-21 08:55:47,455 [13] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《湘江红》)（ID：cb917fa154504c07af765258249e6d0d）
+ : ? R=42933 T=13
+2019-09-21 08:55:48,764 [13] INFO  WebLoggerRepository - CompetitionProgram编辑：双人舞(《嘹歌声声》)（ID：0f188d07c3cf497cbf1e02f716e0bc9c）
+ : ? R=44242 T=13
+2019-09-21 08:55:51,889 [13] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《醉·美》)（ID：e400d5781a114c258e981ed973573d1b）
+ : ? R=47367 T=13
+2019-09-21 08:55:52,054 [13] INFO  WebLoggerRepository - CompetitionProgram编辑：独舞(《狱中谣》)（ID：050398adc91943b4aa066fd41e727b55）
+ : ? R=47532 T=13
+2019-09-21 08:55:52,224 [13] INFO  WebLoggerRepository - CompetitionProgram编辑：双人舞(《无人知晓》)（ID：5867e830c53143938c97fb3a07058067）
+ : ? R=47702 T=13
+2019-09-21 08:55:52,391 [13] INFO  WebLoggerRepository - CompetitionProgram编辑：小组唱(《丰收的季节》|《花与苍穹》)（ID：c72b4ec8329e4bb3a4d237a549d9a967）
+ : ? R=47869 T=13
+2019-09-21 08:55:52,562 [13] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《玉浆·豆腐娘》)（ID：aeb6fc94b0d34b72b70ca471e7a74fd6）
+ : ? R=48040 T=13
+2019-09-21 08:55:52,732 [13] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《心脏》|《静悄悄的爱》)（ID：c2bc332a95f9464aa092343faa8387d7）
+ : ? R=48210 T=13
+2019-09-21 08:55:52,920 [13] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《祖国之南》|《两地曲》)（ID：616ee550477e4ea482e596a3a61a77e2）
+ : ? R=48398 T=13
+2019-09-21 08:55:53,092 [13] INFO  WebLoggerRepository - CompetitionProgram编辑：重唱(《月亮街》|《为爱干杯》)（ID：9145366310584e439ebe6a1098bf3a90）
+ : ? R=48570 T=13
+
+----------------------header--------------------------
+2019-09-21 08:59:40,275 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2714 T=1
+2019-09-21 09:00:15,472 [7] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《妈妈的呼唤》|《总有一天》)（ID：1f8c512d3fef4a029386659da123a867）
+ : ? R=37911 T=7
+2019-09-21 09:00:15,648 [7] INFO  WebLoggerRepository - CompetitionProgram编辑：二重唱(《那山花开》|《青春舞曲》)（ID：16103d4f6b73458c813298484c7bcf85）
+ : ? R=38087 T=7
+2019-09-21 09:00:15,818 [7] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《问湘江》|《断桥遗梦》)（ID：c68fd7754ea5451590b5d8a9af3f1be1）
+ : ? R=38257 T=7
+2019-09-21 09:00:16,007 [7] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《广西尼来啰》|《来香巴拉看太阳》)（ID：6e401509aace484ab0b8d01cbe1fe781）
+ : ? R=38446 T=7
+2019-09-21 09:00:16,180 [7] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《湘江红》)（ID：cb917fa154504c07af765258249e6d0d）
+ : ? R=38619 T=7
+2019-09-21 09:00:16,376 [7] INFO  WebLoggerRepository - CompetitionProgram编辑：双人舞(《嘹歌声声》)（ID：0f188d07c3cf497cbf1e02f716e0bc9c）
+ : ? R=38815 T=7
+2019-09-21 09:00:16,545 [7] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《醉·美》)（ID：e400d5781a114c258e981ed973573d1b）
+ : ? R=38984 T=7
+2019-09-21 09:00:16,733 [7] INFO  WebLoggerRepository - CompetitionProgram编辑：独舞(《狱中谣》)（ID：050398adc91943b4aa066fd41e727b55）
+ : ? R=39172 T=7
+2019-09-21 09:00:16,975 [7] INFO  WebLoggerRepository - CompetitionProgram编辑：双人舞(《无人知晓》)（ID：5867e830c53143938c97fb3a07058067）
+ : ? R=39414 T=7
+2019-09-21 09:00:17,181 [7] INFO  WebLoggerRepository - CompetitionProgram编辑：小组唱(《丰收的季节》|《花与苍穹》)（ID：c72b4ec8329e4bb3a4d237a549d9a967）
+ : ? R=39620 T=7
+2019-09-21 09:00:17,362 [7] INFO  WebLoggerRepository - CompetitionProgram编辑：群舞(《玉浆·豆腐娘》)（ID：aeb6fc94b0d34b72b70ca471e7a74fd6）
+ : ? R=39801 T=7
+2019-09-21 09:00:17,539 [7] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《心脏》|《静悄悄的爱》)（ID：c2bc332a95f9464aa092343faa8387d7）
+ : ? R=39978 T=7
+2019-09-21 09:00:17,706 [7] INFO  WebLoggerRepository - CompetitionProgram编辑：独唱(《祖国之南》|《两地曲》)（ID：616ee550477e4ea482e596a3a61a77e2）
+ : ? R=40145 T=7
+2019-09-21 09:00:17,905 [7] INFO  WebLoggerRepository - CompetitionProgram编辑：重唱(《月亮街》|《为爱干杯》)（ID：9145366310584e439ebe6a1098bf3a90）
+ : ? R=40344 T=7
+2019-09-21 09:00:18,084 [7] INFO  WebLoggerRepository - CompetitionProgram新增：单簧管独奏(《壮嘹随想曲》|《探戈组曲》)（ID：9b6209a1bfb143dcb88d07310e323194）
+ : ? R=40523 T=7
+2019-09-21 09:00:18,260 [7] INFO  WebLoggerRepository - CompetitionProgram新增：二胡独奏(《曙光》|《楚颂》)（ID：59b74835733746e0aff4551e5a74946d）
+ : ? R=40699 T=7
+2019-09-21 09:00:18,428 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《约定》)（ID：ef3665a6db154376a0ca12ac2e5f8ed6）
+ : ? R=40867 T=7
+2019-09-21 09:00:18,601 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《那河、这山》)（ID：81c73e4f865040a5bdc73949f65c000c）
+ : ? R=41040 T=7
+2019-09-21 09:00:18,773 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《仰望鼓楼》)（ID：7a1cf46b007a46e9a75449f7821e9a44）
+ : ? R=41212 T=7
+2019-09-21 09:00:18,958 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《银秀》)（ID：1f0faae9d116446b9ec399759aac18fa）
+ : ? R=41397 T=7
+2019-09-21 09:00:19,139 [7] INFO  WebLoggerRepository - CompetitionProgram新增：唢呐独奏(《喜庆》|《关中情》)（ID：0abf9fb14dfe425e90c373433166936f）
+ : ? R=41578 T=7
+2019-09-21 09:00:19,323 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《瑶族舞曲》)（ID：04ad23c02c054e458ffb8d4c5561d396）
+ : ? R=41762 T=7
+2019-09-21 09:00:19,555 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《闹鱼》)（ID：2fccf20ac9ea42fc9262dd0861ad43df）
+ : ? R=41994 T=7
+2019-09-21 09:00:19,736 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独舞(《柳侯赋》)（ID：e474ee712367432d8fac57b0817c2fbb）
+ : ? R=42175 T=7
+2019-09-21 09:00:19,904 [7] INFO  WebLoggerRepository - CompetitionProgram新增：二胡独奏(《脱贫欢歌》|《葡萄熟了》)（ID：5d8b0705f410458b8a51c5bdbdadcfbe）
+ : ? R=42343 T=7
+2019-09-21 09:00:20,078 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《漓江曲》|《水灵灵》)（ID：f6097de22a284581ad4751a0d7ec0495）
+ : ? R=42517 T=7
+2019-09-21 09:00:20,250 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《老班章》|《望乡词》)（ID：96838f25105b41c8afa40937d37ff815）
+ : ? R=42689 T=7
+2019-09-21 09:00:20,426 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《和过去说再见》|《THINKOFME》)（ID：4d1a286b1aaa40438bd2544de3bbd804）
+ : ? R=42865 T=7
+2019-09-21 09:00:20,599 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《咏桂林》|《今夜无人入眠》)（ID：b853c8b28bbe4cb6b4ed83ed34e82690）
+ : ? R=43038 T=7
+2019-09-21 09:00:20,772 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《湘江记忆》)（ID：ebf28f489c2f455fbcc6ae1f9dc4f89c）
+ : ? R=43211 T=7
+2019-09-21 09:00:20,947 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《难忘曾径流血的湘江》|《喜庆中国》)（ID：dba50d67a3264d349937a4c8eb6f4252）
+ : ? R=43386 T=7
+2019-09-21 09:00:21,121 [7] INFO  WebLoggerRepository - CompetitionProgram新增：琵琶独奏(《花山战鼓》|《龙船》)（ID：6e1bfe62a8c6490c93cfe7e7f2a1d13f）
+ : ? R=43560 T=7
+2019-09-21 09:00:21,295 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《阿婆的笼箱》)（ID：fde4dd0d59c14455aade4e6f9ae1c100）
+ : ? R=43734 T=7
+2019-09-21 09:00:21,465 [7] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《情飞壮乡》|《木叶吹呀吹》)（ID：b2e46c4d33b44759a56207f597bacbac）
+ : ? R=43904 T=7
+2019-09-21 09:00:21,637 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《那山花开》|《黄河渔娘》)（ID：1a717a0c1ea741bf9f4cf8bf7012ef4f）
+ : ? R=44076 T=7
+2019-09-21 09:00:21,809 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《连心歌》|《粉墨春秋》)（ID：1feed9c23811467e88d1be8b92499c77）
+ : ? R=44248 T=7
+2019-09-21 09:00:21,980 [7] INFO  WebLoggerRepository - CompetitionProgram新增：竹笛独奏(《离愁》|《深秋叙》)（ID：3df16cfd93bf4490b196dc5a5bad7eac）
+ : ? R=44419 T=7
+2019-09-21 09:00:22,149 [7] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《爱的光芒》|《彩云追月》)（ID：8831a746126a473c9684cfbd24c4aa5d）
+ : ? R=44588 T=7
+2019-09-21 09:00:22,324 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《顶·硬·上》)（ID：c42bbea98ac64450bd7609b4f9b71037）
+ : ? R=44763 T=7
+2019-09-21 09:00:22,503 [7] INFO  WebLoggerRepository - CompetitionProgram新增：男声独唱(《一路奔放》|《拉住妈妈的手》)（ID：945d4ab79be24ecc8c6771fd60f9d69b）
+ : ? R=44942 T=7
+2019-09-21 09:00:22,677 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《红树林》|《太傻》)（ID：df1a1f9adfa346baafbde372f7cb6b2b）
+ : ? R=45116 T=7
+2019-09-21 09:00:22,852 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《翅膀》|《青春舞曲》)（ID：477abf9864204b2aa770dd9e9f8edef4）
+ : ? R=45291 T=7
+2019-09-21 09:00:23,021 [7] INFO  WebLoggerRepository - CompetitionProgram新增：双人舞(《我的名字叫建国》)（ID：570c2c77e6154a6eaca186274efc16bf）
+ : ? R=45460 T=7
+2019-09-21 09:00:23,207 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独奏(《采珠谣》|《欢歌擂鼓庆哈节》)（ID：bcc28dae38c842de83b3f8d315d0f6e9）
+ : ? R=45646 T=7
+2019-09-21 09:00:23,379 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《女儿花》)（ID：858b6692b3394f64816e4d1fcf6fc93c）
+ : ? R=45818 T=7
+2019-09-21 09:00:23,553 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《米粉姑娘》|《为我白州更多娇》)（ID：24930ad439ff415cac4253ef9f4d9c91）
+ : ? R=45992 T=7
+2019-09-21 09:00:23,724 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《稻花飘香》)（ID：a195ab7d2b6d40a588b6f8b844bac11f）
+ : ? R=46163 T=7
+2019-09-21 09:00:23,964 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《追寻》)（ID：735d737ebe534843bfe430c6f422ae16）
+ : ? R=46403 T=7
+2019-09-21 09:00:24,210 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《帽缘》)（ID：2f463f6a7f0b42a2ab05d99e758db928）
+ : ? R=46649 T=7
+2019-09-21 09:00:24,391 [7] INFO  WebLoggerRepository - CompetitionProgram新增：合唱(《肥田好地》|《幸福中国一起走》)（ID：5d9fb2a09c9c45dd9b574071182c62be）
+ : ? R=46830 T=7
+2019-09-21 09:00:24,571 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《打面酱》)（ID：ab1371bf58ff4978a0013c81a87c513d）
+ : ? R=47010 T=7
+2019-09-21 09:00:24,785 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《好风吹来》|《我在这啊妈妈》)（ID：9e963aaa7d554ceabb3f5c7431674ab3）
+ : ? R=47224 T=7
+2019-09-21 09:00:24,963 [7] INFO  WebLoggerRepository - CompetitionProgram新增：合唱(《绣球抛上天》|《山路湾湾》)（ID：bb77b54a69c14b839b5eacdc506b3a9a）
+ : ? R=47402 T=7
+2019-09-21 09:00:25,136 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《跨越》)（ID：8118471b23024a7d8b265b247334a17e）
+ : ? R=47575 T=7
+2019-09-21 09:00:25,316 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《觅香》)（ID：a5404526c1614314afdda29a61ae9aac）
+ : ? R=47755 T=7
+2019-09-21 09:00:25,494 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《阿母的天》)（ID：0f6a5d5a544b4329abed211df4e7bca0）
+ : ? R=47933 T=7
+2019-09-21 09:00:25,668 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《洗月》)（ID：0b1c00cce8734e4ab8b439037a6194d9）
+ : ? R=48107 T=7
+2019-09-21 09:00:25,848 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《剪禾》)（ID：60521eabd5d14190b11d1d8f113d79a2）
+ : ? R=48287 T=7
+2019-09-21 09:00:26,023 [7] INFO  WebLoggerRepository - CompetitionProgram新增：合唱(《蝴蝶情歌》|《流水欢歌迎客来》)（ID：50a081e6601c449ab85b565e29680a1c）
+ : ? R=48462 T=7
+2019-09-21 09:00:26,193 [7] INFO  WebLoggerRepository - CompetitionProgram新增：马骨胡独奏(《蝴蝶梦》|《壮欢飘》)（ID：e80828866c2b4c10adab002e9ba75139）
+ : ? R=48632 T=7
+2019-09-21 09:00:26,371 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《瑶山夜语》（暂名）)（ID：d39a78a16818482baf87b1690fd647a8）
+ : ? R=48810 T=7
+2019-09-21 09:00:26,550 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《尖尖谣》)（ID：bad1d41e5b374d3893c3d56bb0ea4602）
+ : ? R=48989 T=7
+2019-09-21 09:00:26,744 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《寿城欢歌》|《广西尼的呀》)（ID：239033f4d18447bda217da980fb7822a）
+ : ? R=49182 T=7
+2019-09-21 09:00:26,920 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《舂·景》)（ID：6eb6a8b629f34a78a61334850410ad1a）
+ : ? R=49358 T=7
+2019-09-21 09:00:27,100 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《长桌酒》)（ID：5a5d3a220a544e3ea922bfc02955d779）
+ : ? R=49538 T=7
+2019-09-21 09:00:27,283 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《鲜红的军旗是首歌》|《高歌义勇》)（ID：c07f38f8b19d4b248dfa4457225401b3）
+ : ? R=49721 T=7
+2019-09-21 09:00:27,459 [7] INFO  WebLoggerRepository - CompetitionProgram新增：合唱(《三姐迎客歌》|《唱彩调》)（ID：016c244b60174d4fb84e03ef8bda9855）
+ : ? R=49897 T=7
+2019-09-21 09:00:27,662 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《阿公的鼓》)（ID：cea605d3a9344775a6f74cab1f37a6a0）
+ : ? R=50100 T=7
+2019-09-21 09:00:27,845 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《闯三关》)（ID：0686f49bad0f47288f422ebafd389256）
+ : ? R=50283 T=7
+2019-09-21 09:00:28,018 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《砂陶心》)（ID：f925f63fa7244c3083ef1eb08588fd14）
+ : ? R=50456 T=7
+2019-09-21 09:00:28,201 [7] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《山瑶》|《奉献》)（ID：3ed3ebf474764e378862aea05d0396dc）
+ : ? R=50639 T=7
+2019-09-21 09:00:28,376 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《使命之瑶》|《春风十里》)（ID：37127c4479134ac8b49afdc4951d8441）
+ : ? R=50814 T=7
+2019-09-21 09:00:28,559 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《阿婆》|《我回家》)（ID：54d884a66260420aa42c06dd14c25b40）
+ : ? R=50997 T=7
+2019-09-21 09:00:28,732 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《一辈背，一代带》)（ID：01a57da9d48a46f6842583dc9f69a87e）
+ : ? R=51170 T=7
+2019-09-21 09:00:28,914 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《追着我的旗》)（ID：b6ca08fb1ebf4cdca8562c710ae34f5a）
+ : ? R=51352 T=7
+2019-09-21 09:00:29,095 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《来了不想走》|《左手指月》)（ID：8ad5ad91cada4a57a5a8a11739d908fc）
+ : ? R=51533 T=7
+2019-09-21 09:00:29,278 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《茶香歌甜情满坡》|《梦里歌乡》)（ID：03fb3cf2598d4b7ca05d96af2aaaf728）
+ : ? R=51716 T=7
+2019-09-21 09:00:29,460 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《一壶美酒醉江州》|《祖国母亲》)（ID：459bb0d4a33d4fb4a2fb44fa825df12c）
+ : ? R=51898 T=7
+2019-09-21 09:00:29,638 [7] INFO  WebLoggerRepository - CompetitionProgram新增：合唱(《阿姐琴瑶》|《放雁》)（ID：0fdfb3477ce24d1f8ef2d832369bc1cc）
+ : ? R=52076 T=7
+2019-09-21 09:00:29,813 [7] INFO  WebLoggerRepository - CompetitionProgram新增：大提琴独奏(《月迷苗岭时》|《柯达伊大提琴奏鸣曲第一乐章》)（ID：d9b60cf988434f38bbd2b3c56fabeb1b）
+ : ? R=52251 T=7
+2019-09-21 09:00:29,986 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《骆越班女》)（ID：7b6bb0dca2c34501a901c2b55d5777e2）
+ : ? R=52424 T=7
+2019-09-21 09:00:30,162 [7] INFO  WebLoggerRepository - CompetitionProgram新增：高胡、古筝、芦笙三重奏(《歌仙三姐故乡行》|《山渔舟唱晚》)（ID：e017f0ab3a0e4cc79b03d7b953d592bb）
+ : ? R=52601 T=7
+2019-09-21 09:00:30,348 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《昂三月三》|《壮乡美》)（ID：25c3ade9619c4e708d7b464d09363e94）
+ : ? R=52787 T=7
+2019-09-21 09:00:30,526 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《山·水·袖》)（ID：c8bc65e427754653b82cb3067ab08b93）
+ : ? R=52965 T=7
+2019-09-21 09:00:30,713 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《毛姑妹的情思》|《日子越好歌越多》)（ID：5c84f18329954db197696db5298673bd）
+ : ? R=53152 T=7
+2019-09-21 09:00:30,889 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《壮家妹》|《粉墨春秋》)（ID：66064569ba884fb89fc40bb479c0c29c）
+ : ? R=53328 T=7
+2019-09-21 09:00:31,064 [7] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《改革开放四十春》|《中国脊梁》)（ID：e5dc1d9aeead4af08c41ef8c1e4fa17b）
+ : ? R=53503 T=7
+2019-09-21 09:00:31,245 [7] INFO  WebLoggerRepository - CompetitionProgram新增：古筝独奏(《探幽》|《枫桥夜泊》)（ID：43e02a1b7bfe4ecbba27e7c64aa07769）
+ : ? R=53684 T=7
+2019-09-21 09:00:31,422 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独舞(《采茶女》)（ID：5ac4a8785eee4b4d8236b49235ae022f）
+ : ? R=53861 T=7
+2019-09-21 09:00:31,605 [7] INFO  WebLoggerRepository - CompetitionProgram新增：单簧管、长笛、大提琴、小提琴、钢琴五重奏(《壮寨青山、壮寨水》|《阿尔博斯五重奏》)（ID：e9fec75d6d4d433593cc9e552e068bda）
+ : ? R=54044 T=7
+2019-09-21 09:00:31,789 [7] INFO  WebLoggerRepository - CompetitionProgram新增：民乐重奏(《丝海寻梦--东盟丝绸之路幻想曲》|《漓江唱晚》)（ID：24c8d049ab2f40ffbc794e1cb3206358）
+ : ? R=54228 T=7
+2019-09-21 09:00:31,972 [7] INFO  WebLoggerRepository - CompetitionProgram新增：民乐重奏(《火之影》|《芦笙欢歌》)（ID：9557fbd2d92e4f4983c920d8ae57e689）
+ : ? R=54411 T=7
+2019-09-21 09:00:32,147 [7] INFO  WebLoggerRepository - CompetitionProgram新增：二胡独奏(《壮乡律韵》|《弦歌吟》)（ID：9e8e961072e341d6b53c241a41cd1882）
+ : ? R=54586 T=7
+2019-09-21 09:00:32,340 [7] INFO  WebLoggerRepository - CompetitionProgram新增：民乐重奏(《壮寨音韵》|《SmoothCriminal》)（ID：e8753a20545742b8b968b2f42423310d）
+ : ? R=54779 T=7
+2019-09-21 09:00:32,518 [7] INFO  WebLoggerRepository - CompetitionProgram新增：民乐重奏(《过茶山》|《闹元宵》)（ID：314cd5f575134e8a8bf319fd63bcf040）
+ : ? R=54957 T=7
+2019-09-21 09:00:32,712 [7] INFO  WebLoggerRepository - CompetitionProgram新增：大提琴二重奏(《山歌调》|《g小协奏曲》)（ID：5848d5607c7645b7be02fea0d5052992）
+ : ? R=55151 T=7
+2019-09-21 09:00:32,932 [7] INFO  WebLoggerRepository - CompetitionProgram新增：铜管重奏(《花山魂-为低音铜管打击乐而作》|《加勒比海盗组曲》)（ID：0391fec4968b434983ba15ecb0ccb9f8）
+ : ? R=55371 T=7
+2019-09-21 09:00:33,112 [7] INFO  WebLoggerRepository - CompetitionProgram新增：钢琴四重奏(《谪仙》|勃拉姆斯《钢琴四重奏No.3,Op60》第四乐章)（ID：35bd036a1d8b46be9fb36b4f781df694）
+ : ? R=55551 T=7
+2019-09-21 09:00:33,300 [7] INFO  WebLoggerRepository - CompetitionProgram新增：弦乐五重奏(《草原即景》|《西班牙组曲》)（ID：f4346718520849f2922ca491a23e435c）
+ : ? R=55739 T=7
+2019-09-21 09:00:33,496 [7] INFO  WebLoggerRepository - CompetitionProgram新增：中提琴四重奏(《蝶舞花海》|《帕萨卡利亚》)（ID：de5e77df9674435f87c8b6370ee18e16）
+ : ? R=55935 T=7
+2019-09-21 09:00:33,673 [7] INFO  WebLoggerRepository - CompetitionProgram新增：弦乐四重奏(《adagio》|《门德尔松第六弦乐四重奏》)（ID：bf8c1a1dede0442495fcb29c02462f7a）
+ : ? R=56112 T=7
+2019-09-21 09:00:33,866 [7] INFO  WebLoggerRepository - CompetitionProgram新增：弦乐四重奏(《三姐的歌谣》|《鲍罗丁第二弦四重奏第一乐章》)（ID：27a60ab6897243baaf49cffbb4fac214）
+ : ? R=56305 T=7
+2019-09-21 09:00:34,062 [7] INFO  WebLoggerRepository - CompetitionProgram新增：打击乐三重奏(《锦锣密鼓》|《trioperuno》)（ID：eedea2149d8d48059c2aa66713ef3349）
+ : ? R=56501 T=7
+2019-09-21 09:00:34,252 [7] INFO  WebLoggerRepository - CompetitionProgram新增：民乐合奏(《与山对歌》|《香颂曲》)（ID：3c5cd1be26b24117b5de9b6f3cc58ae4）
+ : ? R=56691 T=7
+2019-09-21 09:00:34,429 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独舞(独舞《娘》)（ID：8305f3e216ba451c89b62b699d655afe）
+ : ? R=56868 T=7
+2019-09-21 09:00:34,616 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《阿妹竹林见情郎》|《壮乡美》)（ID：7b0b3ce1163b4334b7f50a7a1c729f3a）
+ : ? R=57055 T=7
+2019-09-21 09:00:34,797 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《歌海》|《鹰翔》)（ID：a6a64b736c5e44d7ab71a08800624627）
+ : ? R=57236 T=7
+2019-09-21 09:00:34,978 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《云开日出》|《我像雪花天上来》)（ID：79463592fbac48068ea30a2b240aa0d2）
+ : ? R=57417 T=7
+2019-09-21 09:00:35,152 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《云开日出》|《星光灿烂》)（ID：a1dd14dc31f341d196a089e23fbbee1f）
+ : ? R=57591 T=7
+2019-09-21 09:00:35,334 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《美丽的野芭蕉》|《我心永爱》)（ID：1546e1e651ed471c91d15e639e5a64ef）
+ : ? R=57773 T=7
+2019-09-21 09:00:35,513 [7] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《美丽瑶山喇吱香》|《采茶姐妹》)（ID：ff0ec4f21d824bdd8c84d457529da4c1）
+ : ? R=57952 T=7
+2019-09-21 09:00:35,690 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《年轻的初心》|《做好今天》)（ID：3070529a36f844b29aa2e84a32797c16）
+ : ? R=58129 T=7
+2019-09-21 09:00:35,867 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《云飘流水是家乡》|《鹰翔》)（ID：a181a7bca8cd44aba631e2e4503c3a08）
+ : ? R=58306 T=7
+2019-09-21 09:00:36,047 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《陪你走到最后》)（ID：65123befc9a645269997ff656d6bb2ea）
+ : ? R=58486 T=7
+2019-09-21 09:00:36,226 [7] INFO  WebLoggerRepository - CompetitionProgram新增：双人舞(《记得我爱你》)（ID：ffe14bfca3ca4a428b36b0238ea45af2）
+ : ? R=58665 T=7
+2019-09-21 09:00:36,406 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独舞(《高梁红了》)（ID：b77a84c002d2455db771117e6b4fade3）
+ : ? R=58845 T=7
+2019-09-21 09:00:36,601 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《开山人》)（ID：90317413a4d24d4ca2e3c04a26dee1f3）
+ : ? R=59040 T=7
+2019-09-21 09:00:36,784 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《诞生》)（ID：da85b0cd68ee4fff8323e87aab1c3c8d）
+ : ? R=59223 T=7
+2019-09-21 09:00:36,967 [7] INFO  WebLoggerRepository - CompetitionProgram新增：三人舞(《带亩红》)（ID：6e920136c522452e81761de0a0a58d08）
+ : ? R=59406 T=7
+2019-09-21 09:00:37,147 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《花山印象》)（ID：f5417790d17c414d92150ea95ea53a31）
+ : ? R=59586 T=7
+2019-09-21 09:00:37,330 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《田埂上的歌》)（ID：34cfefeea696437b89a235eb589d75c0）
+ : ? R=59769 T=7
+2019-09-21 09:00:37,546 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《边贸女人》)（ID：cfb83e7159bc46de90298d0bd97be905）
+ : ? R=59985 T=7
+2019-09-21 09:00:37,736 [7] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《又见壮乡三月三》|《天路》)（ID：62fe269953a54aeeb52063a08ef123e2）
+ : ? R=60175 T=7
+2019-09-21 09:00:37,918 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《春到壮乡》|《在这遥远的地方》)（ID：d291c11980b34217b248e59e90b2f3cb）
+ : ? R=60357 T=7
+2019-09-21 09:00:38,097 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《莲的心事》|《洋娃娃之歌》)（ID：094619949220495f9b4962261676e324）
+ : ? R=60536 T=7
+2019-09-21 09:00:38,276 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《可爱的宝贝》|《来生来世把你爱》)（ID：ce29af78559547ada7a6f098e2d44e7d）
+ : ? R=60715 T=7
+2019-09-21 09:00:38,458 [7] INFO  WebLoggerRepository - CompetitionProgram新增：笛子独奏(《北部湾随想曲》|《深秋叙》)（ID：e1a72f869b154f6c973b7ab1ca665dcc）
+ : ? R=60897 T=7
+2019-09-21 09:00:38,649 [7] INFO  WebLoggerRepository - CompetitionProgram新增：唢呐独奏(《桂城印象》|《西北叙事曲》)（ID：7f75b98f41c942c79495050b0106d12a）
+ : ? R=61088 T=7
+2019-09-21 09:00:38,838 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《雨歇》)（ID：877ac91cc06a474fa4805aa17e818468）
+ : ? R=61277 T=7
+2019-09-21 09:00:39,033 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《走寨》)（ID：02bf7a9592bc408fb402a006483cba2b）
+ : ? R=61472 T=7
+2019-09-21 09:00:39,224 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《家园》|《来香巴拉看太阳》)（ID：c86c801b728543318c6b051bb5f36795）
+ : ? R=61663 T=7
+2019-09-21 09:00:39,419 [7] INFO  WebLoggerRepository - CompetitionProgram新增：管乐重奏(《春舞》|《中国拉格》)（ID：6db704ab8a92410e824499eac223919e）
+ : ? R=61858 T=7
+2019-09-21 09:00:39,605 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《瑶盼》)（ID：30f9f39fb4534d2e991d609d791a2fe7）
+ : ? R=62044 T=7
+2019-09-21 09:00:39,789 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《花开满山时》)（ID：8b8b195db8774cf09450a74c0dd22c42）
+ : ? R=62228 T=7
+2019-09-21 09:00:39,971 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《兄弟姐妹一起来》|《荔枝颂》)（ID：bb3694baf35d4acfa925dca80338b34a）
+ : ? R=62410 T=7
+2019-09-21 09:00:40,149 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《红水河之恋》|《一切献给党》)（ID：4816febd9c5840f386aec4ae75711c22）
+ : ? R=62588 T=7
+2019-09-21 09:00:40,331 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《扬帆出海》)（ID：ffc62b74a3184d45a66e722d09bae6e0）
+ : ? R=62770 T=7
+2019-09-21 09:00:40,511 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《山间勒俏》)（ID：c52148a4c47546788a430580cee407a3）
+ : ? R=62950 T=7
+2019-09-21 09:00:40,693 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《承诺》|《费加罗的婚礼》选段《你不在再去做情郎》)（ID：06e2afc4a3e342d084188c4302fbef1a）
+ : ? R=63132 T=7
+2019-09-21 09:00:40,873 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《我那么爱你》|《走在小康路上》)（ID：5af56151831242e8bd84519e682d32e0）
+ : ? R=63312 T=7
+2019-09-21 09:00:41,054 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《爱要走，情难留》|《情姐下河洗衣裳》)（ID：fc055ea795e64017aa31316f812b388f）
+ : ? R=63493 T=7
+2019-09-21 09:00:41,236 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《南珠·丝路》)（ID：cf6158b9782544edb6d1a0fbdceb9c2e）
+ : ? R=63675 T=7
+2019-09-21 09:00:41,417 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《布努瑶家金锣舞》)（ID：2e3de6b10717444ca3a2f0c2cb27fc17）
+ : ? R=63856 T=7
+2019-09-21 09:00:41,594 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《一衣带水》|《美丽家园》)（ID：4ca621521604491bb6720662da15711a）
+ : ? R=64033 T=7
+2019-09-21 09:00:41,772 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《心愿》|《游子吟》)（ID：55b8844330054821a061f9a2b99d4496）
+ : ? R=64211 T=7
+2019-09-21 09:00:41,954 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《走哟走哟》)（ID：43f6497448c14fd7bf246413a8fe357f）
+ : ? R=64393 T=7
+2019-09-21 09:00:42,134 [7] INFO  WebLoggerRepository - CompetitionProgram新增：小组唱(《蔚蓝的情怀》|《玛依拉的随想》)（ID：7c1f74daf9d14d6ab67e9510bbbaf90a）
+ : ? R=64573 T=7
+2019-09-21 09:00:42,320 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《天地汉》)（ID：6a7ed7e0ec0d4b13b613cce20d5767a4）
+ : ? R=64759 T=7
+2019-09-21 09:00:42,503 [7] INFO  WebLoggerRepository - CompetitionProgram新增：笛子独奏(《苗情意语》|《秦川情》)（ID：9a0c5c1f821d4927b7397f311987228d）
+ : ? R=64942 T=7
+2019-09-21 09:00:42,684 [7] INFO  WebLoggerRepository - CompetitionProgram新增：民乐重奏(《桂南丝路意象》|《山野遐想》)（ID：6b0b112612474948b5366f81897214e6）
+ : ? R=65123 T=7
+2019-09-21 09:00:42,870 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独舞(《板瑶嫁》)（ID：802516f3e43b4d86807115799f303ce5）
+ : ? R=65309 T=7
+2019-09-21 09:00:43,060 [7] INFO  WebLoggerRepository - CompetitionProgram新增：三人舞(《芒蒿·苗妹》)（ID：fb1938af376d41ed8d6cfeb86173a0ef）
+ : ? R=65499 T=7
+2019-09-21 09:00:43,250 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《偏翩裙语》)（ID：8b912a6b76bf4a65b57ac7e9551eb7e4）
+ : ? R=65689 T=7
+2019-09-21 09:00:43,435 [7] INFO  WebLoggerRepository - CompetitionProgram新增：群舞(《牛角尖尖尖向天》)（ID：14934d4f9d82445d8669d39bd4555402）
+ : ? R=65874 T=7
+2019-09-21 09:00:43,623 [7] INFO  WebLoggerRepository - CompetitionProgram新增：合唱(《壮家阿哥》|《赶歌圩》)（ID：efc1c71730884c91ad16d8b326169014）
+ : ? R=66062 T=7
+2019-09-21 09:00:43,814 [7] INFO  WebLoggerRepository - CompetitionProgram新增：双人舞(《荷塘夜话》)（ID：b49a33eb471b4ebdbe104851aebfb890）
+ : ? R=66253 T=7
+2019-09-21 09:00:44,011 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《笑看万里江山一片红》|《中国进入新时代》)（ID：c23e754227cc4241b66d910d2bc97630）
+ : ? R=66450 T=7
+2019-09-21 09:00:44,204 [7] INFO  WebLoggerRepository - CompetitionProgram新增：独唱(《窑变》|《亲爱的中国，我的爱》)（ID：c0ca80b0643a4d5a8262dc98ce9c569c）
+ : ? R=66643 T=7
+2019-09-21 09:01:47,648 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_1（ID：1005）
+ : ? R=130087 T=22
+2019-09-21 09:01:47,712 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_2（ID：1006）
+ : ? R=130151 T=22
+2019-09-21 09:01:47,771 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_3（ID：1007）
+ : ? R=130210 T=22
+2019-09-21 09:01:47,824 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_4（ID：1008）
+ : ? R=130263 T=22
+2019-09-21 09:01:47,875 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_5（ID：1009）
+ : ? R=130314 T=22
+2019-09-21 09:01:47,957 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_6（ID：1010）
+ : ? R=130396 T=22
+2019-09-21 09:01:48,012 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_7（ID：1011）
+ : ? R=130451 T=22
+2019-09-21 09:01:48,060 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_8（ID：1012）
+ : ? R=130499 T=22
+2019-09-21 09:01:48,108 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_9（ID：1013）
+ : ? R=130547 T=22
+2019-09-21 09:01:48,158 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_10（ID：1014）
+ : ? R=130597 T=22
+2019-09-21 09:01:48,206 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_11（ID：1015）
+ : ? R=130645 T=22
+2019-09-21 09:01:48,258 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_12（ID：1016）
+ : ? R=130697 T=22
+2019-09-21 09:01:48,308 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_13（ID：1017）
+ : ? R=130747 T=22
+2019-09-21 09:01:48,357 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_14（ID：1018）
+ : ? R=130796 T=22
+2019-09-21 09:01:48,408 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_15（ID：1019）
+ : ? R=130847 T=22
+2019-09-21 09:01:48,461 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_16（ID：1020）
+ : ? R=130900 T=22
+2019-09-21 09:01:48,512 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_17（ID：1021）
+ : ? R=130951 T=22
+2019-09-21 09:01:48,561 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_18（ID：1022）
+ : ? R=131000 T=22
+2019-09-21 09:01:48,625 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_19（ID：1023）
+ : ? R=131064 T=22
+2019-09-21 09:01:48,674 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_20（ID：1024）
+ : ? R=131113 T=22
+2019-09-21 09:01:48,727 [22] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_21（ID：1025）
+ : ? R=131166 T=22
+2019-09-21 09:03:07,900 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_1（ID：1005）
+ : ? R=210339 T=28
+2019-09-21 09:03:07,924 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_2（ID：1006）
+ : ? R=210363 T=28
+2019-09-21 09:03:07,948 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_3（ID：1007）
+ : ? R=210387 T=28
+2019-09-21 09:03:07,973 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_4（ID：1008）
+ : ? R=210412 T=28
+2019-09-21 09:03:08,000 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_5（ID：1009）
+ : ? R=210439 T=28
+2019-09-21 09:03:08,026 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_6（ID：1010）
+ : ? R=210465 T=28
+2019-09-21 09:03:08,051 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_7（ID：1011）
+ : ? R=210490 T=28
+2019-09-21 09:03:08,078 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_8（ID：1012）
+ : ? R=210517 T=28
+2019-09-21 09:03:08,103 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_9（ID：1013）
+ : ? R=210542 T=28
+2019-09-21 09:03:08,129 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_10（ID：1014）
+ : ? R=210568 T=28
+2019-09-21 09:03:08,154 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_11（ID：1015）
+ : ? R=210593 T=28
+2019-09-21 09:03:08,180 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_12（ID：1016）
+ : ? R=210619 T=28
+2019-09-21 09:03:08,206 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_13（ID：1017）
+ : ? R=210645 T=28
+2019-09-21 09:03:08,232 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_14（ID：1018）
+ : ? R=210671 T=28
+2019-09-21 09:03:08,258 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_15（ID：1019）
+ : ? R=210697 T=28
+2019-09-21 09:03:08,283 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_16（ID：1020）
+ : ? R=210722 T=28
+2019-09-21 09:03:08,310 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_17（ID：1021）
+ : ? R=210749 T=28
+2019-09-21 09:03:08,336 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_18（ID：1022）
+ : ? R=210775 T=28
+2019-09-21 09:03:08,362 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_19（ID：1023）
+ : ? R=210801 T=28
+2019-09-21 09:03:08,389 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_20（ID：1024）
+ : ? R=210828 T=28
+2019-09-21 09:03:08,415 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_21（ID：1025）
+ : ? R=210854 T=28
+2019-09-21 09:03:08,469 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_22（ID：1026）
+ : ? R=210908 T=28
+2019-09-21 09:03:08,522 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_23（ID：1027）
+ : ? R=210961 T=28
+2019-09-21 09:03:08,574 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_24（ID：1028）
+ : ? R=211013 T=28
+2019-09-21 09:03:08,625 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_25（ID：1029）
+ : ? R=211064 T=28
+2019-09-21 09:03:08,675 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_26（ID：1030）
+ : ? R=211114 T=28
+2019-09-21 09:03:08,726 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_27（ID：1031）
+ : ? R=211165 T=28
+2019-09-21 09:03:08,776 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_28（ID：1032）
+ : ? R=211215 T=28
+2019-09-21 09:03:08,826 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_29（ID：1033）
+ : ? R=211265 T=28
+2019-09-21 09:03:08,877 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_30（ID：1034）
+ : ? R=211316 T=28
+2019-09-21 09:03:08,927 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_31（ID：1035）
+ : ? R=211366 T=28
+2019-09-21 09:03:08,980 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_32（ID：1036）
+ : ? R=211419 T=28
+2019-09-21 09:03:09,036 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_33（ID：1037）
+ : ? R=211475 T=28
+2019-09-21 09:03:09,088 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_34（ID：1038）
+ : ? R=211527 T=28
+2019-09-21 09:03:09,139 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_35（ID：1039）
+ : ? R=211578 T=28
+2019-09-21 09:03:09,190 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_36（ID：1040）
+ : ? R=211629 T=28
+2019-09-21 09:03:09,268 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_37（ID：1041）
+ : ? R=211707 T=28
+2019-09-21 09:03:09,321 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_38（ID：1042）
+ : ? R=211760 T=28
+2019-09-21 09:03:09,417 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_39（ID：1043）
+ : ? R=211856 T=28
+2019-09-21 09:03:09,510 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_40（ID：1044）
+ : ? R=211949 T=28
+2019-09-21 09:03:09,561 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_41（ID：1045）
+ : ? R=212000 T=28
+2019-09-21 09:03:09,612 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_42（ID：1046）
+ : ? R=212051 T=28
+2019-09-21 09:03:09,666 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_43（ID：1047）
+ : ? R=212105 T=28
+2019-09-21 09:03:09,718 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_44（ID：1048）
+ : ? R=212157 T=28
+2019-09-21 09:03:09,774 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_45（ID：1049）
+ : ? R=212213 T=28
+2019-09-21 09:03:09,827 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_46（ID：1050）
+ : ? R=212266 T=28
+2019-09-21 09:03:09,878 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_47（ID：1051）
+ : ? R=212317 T=28
+2019-09-21 09:03:09,929 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_48（ID：1052）
+ : ? R=212368 T=28
+2019-09-21 09:03:09,979 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_49（ID：1053）
+ : ? R=212418 T=28
+2019-09-21 09:03:10,030 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_50（ID：1054）
+ : ? R=212469 T=28
+2019-09-21 09:03:10,081 [28] INFO  WebLoggerRepository - AdminUserInfo编辑：admin_51（ID：1055）
+ : ? R=212520 T=28
+
+----------------------header--------------------------
+2019-09-21 09:04:42,775 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=2743 T=1
+
+----------------------header--------------------------
+2019-09-21 09:07:16,325 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3236 T=1
+
+----------------------header--------------------------
+2019-09-21 09:34:29,155 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3739 T=1
+2019-09-21 09:34:42,761 [7] ERROR WebLoggerRepository - FullSystemConfig为null
+ : ? R=17344 T=7
+
+----------------------header--------------------------
+2019-09-21 09:59:45,906 [1] INFO  SystemLoggerRepository - 测试Log4net
+ : ? R=3762 T=1

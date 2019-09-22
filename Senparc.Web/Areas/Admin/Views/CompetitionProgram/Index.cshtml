@@ -71,7 +71,19 @@
 
     </div>
 </form>
-
+<form method="post" enctype="multipart/form-data" asp-action="Post">
+    <div class="form-group">
+        <div class="col-md-10">
+            <p>请上传帐号表:</p>
+            <input type="file" name="files" multiple>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="submit" value="立即提交">
+        </div>
+    </div>
+</form>
 <div class="row">
     <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="x_panel">
@@ -163,7 +175,7 @@
                     </table>
                 </div>
                 <div class="text-center p jpagerbar">
-                    @Html.Raw((Html.PagerBar(Model.CompetitionProgramList, new PagerBarSettings(Url.Action("Index", "Activity", new
+                    @Html.Raw((Html.PagerBar(Model.CompetitionProgramList, new PagerBarSettings(Url.Action("Index", "CompetitionProgram", new
        {
            pageIndex = "{0}",
            kw = Model.kw,

@@ -12,6 +12,10 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using Senparc.Areas.Admin.NopiUtil;
+using System.Data;
 
 namespace Senparc.Areas.Admin.Controllers
 {
@@ -262,19 +266,19 @@ namespace Senparc.Areas.Admin.Controllers
             {
                 return View(model);
             }
-            CompetitionProgram account = null;
-
+            CompetitionProgram competitionProgram = null;
+          //  CompetitionProgram 
             ProjectMember pm = null;
             if (isEdit)
             {
-                account = _competitionProgramService .GetObject(z => z.Id == model.Id);
-                if (account == null)
+                competitionProgram = _competitionProgramService .GetObject(z => z.Id == model.Id);
+                if (competitionProgram == null)
                 {
                     base.SetMessager(MessageType.danger, "信息不存在！");
                     return RedirectToAction("Index");
                 }
 
-                pm = _projectMemberService.GetObject(x => x.ProjectId == account.Id);
+                pm = _projectMemberService.GetObject(x => x.ProjectId == competitionProgram.Id);
 
                 if (pm != null)
                 {
@@ -287,7 +291,7 @@ namespace Senparc.Areas.Admin.Controllers
                     pm.Gender = 0;
                     pm.Name = model.LeaderName;
                     pm.Nation = model.LeaderNation;
-                    pm.ProjectId = account.Id;
+                    pm.ProjectId = competitionProgram.Id;
                     pm.Phone = model.LeaderPhone;
                     pm.UpdateTime = DateTime.Now;
                     pm.IsLeader = true;
@@ -295,29 +299,29 @@ namespace Senparc.Areas.Admin.Controllers
                     pm.Sort = 1;
                 }
 
-                account.Name        = model.Name;
-                account.Desc        = model.Desc;
-                account.ImgUrl      = model.ImgUrl;
-                account.Cate        = model.Cate;
-                account.Remark      = model.Remark;
-                account.ScheduleId = model.ProjectId;
-                account.Desc        = model.Desc;
-                account.BdImgUrl    = model.BdImgUrl;
-                account.BdImgUrlPwd = model.BdImgUrlPwd;
-                account.Company     = model.Company;
-                account.ControlId   = model.ControlId;
-                account.UpdatorId   = UserName;
-                account.UpdatorName = AdminUser == null ? "" : AdminUser.RealName;
-                account.UpdateTime  = DateTime.Now;
-                account.SignNum     = model.SignNum;
-                account.Status      = model.Status;
-                account.UpdateTime  = DateTime.Now;
-                account.UpdatorId   = UserName;
-                account.UpdatorName = AdminUser == null ? "" : AdminUser.RealName;
+                competitionProgram.Name        = model.Name;
+                competitionProgram.Desc        = model.Desc;
+                competitionProgram.ImgUrl      = model.ImgUrl;
+                competitionProgram.Cate        = model.Cate;
+                competitionProgram.Remark      = model.Remark;
+                competitionProgram.ScheduleId = model.ProjectId;
+                competitionProgram.Desc        = model.Desc;
+                competitionProgram.BdImgUrl    = model.BdImgUrl;
+                competitionProgram.BdImgUrlPwd = model.BdImgUrlPwd;
+                competitionProgram.Company     = model.Company;
+                competitionProgram.ControlId   = model.ControlId;
+                competitionProgram.UpdatorId   = UserName;
+                competitionProgram.UpdatorName = AdminUser == null ? "" : AdminUser.RealName;
+                competitionProgram.UpdateTime  = DateTime.Now;
+                competitionProgram.SignNum     = model.SignNum;
+                competitionProgram.Status      = model.Status;
+                competitionProgram.UpdateTime  = DateTime.Now;
+                competitionProgram.UpdatorId   = UserName;
+                competitionProgram.UpdatorName = AdminUser == null ? "" : AdminUser.RealName;
             }
             else
             {
-                account = new CompetitionProgram()
+                competitionProgram = new CompetitionProgram()
                 {
                     Id = Guid.NewGuid().ToString("N"),
                     Name = model.Name,
@@ -346,7 +350,7 @@ namespace Senparc.Areas.Admin.Controllers
             try
             {
 
-                await TryUpdateModelAsync(account, "", 
+                await TryUpdateModelAsync(competitionProgram, "", 
                                           v => v.Name       
                                         , v => v.Desc       
                                         , v => v.ImgUrl     
@@ -367,7 +371,7 @@ namespace Senparc.Areas.Admin.Controllers
                                         , v => v.UpdatorName  );
 
 
-                _competitionProgramService.SaveObject(account);
+                _competitionProgramService.SaveObject(competitionProgram);
                 if (pm != null)
                 {
                     _projectMemberService.SaveObject(pm);
@@ -388,7 +392,7 @@ namespace Senparc.Areas.Admin.Controllers
                             Gender = 0,
                             Name = model.LeaderName,
                             Nation = model.LeaderNation,
-                            ProjectId = account.Id,
+                            ProjectId = competitionProgram.Id,
                             Phone = model.LeaderPhone,
                             UpdateTime = DateTime.Now,
                             IsLeader = true,
@@ -415,8 +419,8 @@ namespace Senparc.Areas.Admin.Controllers
         {
             try
             {
-                var objList = _scheduleService.GetFullList(z => ids.Contains(z.Id), z => z.Id, OrderingType.Ascending);
-                _scheduleService.DeleteAll(objList);
+                var objList =_competitionProgramService .GetFullList(z => ids.Contains(z.Id), z => z.Id, OrderingType.Ascending);
+                _competitionProgramService.DeleteAll(objList);
                 SetMessager(MessageType.success, "删除成功！");
             }
             catch (Exception e)
@@ -425,6 +429,78 @@ namespace Senparc.Areas.Admin.Controllers
             }
             return RedirectToAction("Index");
         }
+        private async Task<ProjectMember> SaveObj(CompetitionProgram_EditVD model, CompetitionProgram competitionProgram, ProjectMember pm)
+        {
+            try
+            {
+
+                await TryUpdateModelAsync(competitionProgram, "",
+                                          v => v.Name
+                                        , v => v.Desc
+                                        , v => v.ImgUrl
+                                        , v => v.Cate
+                                        , v => v.Remark
+                                        , v => v.Desc
+                                        , v => v.BdImgUrl
+                                        , v => v.BdImgUrlPwd
+                                        , v => v.Company
+                                        , v => v.ControlId
+                                        , v => v.UpdatorId
+                                        , v => v.UpdatorName
+                                        , v => v.UpdateTime
+                                        , v => v.SignNum
+                                        , v => v.Status
+                                        , v => v.UpdateTime
+                                        , v => v.UpdatorId
+                                        , v => v.UpdatorName);
+
+
+                _competitionProgramService.SaveObject(competitionProgram);
+                if (pm != null)
+                {
+                    _projectMemberService.SaveObject(pm);
+                }
+                else
+                {
+
+                    if (!string.IsNullOrEmpty(model.LeaderName))
+                    {
+                        pm = new ProjectMember
+                        {
+                            Id = Guid.NewGuid().ToString("N"),
+                            Company = model.LeaderCom,
+                            Duty = model.LeaderDuty,
+                            Email = string.Empty,
+                            CreateTime = DateTime.Now,
+                            Flag = false,
+                            Gender = 0,
+                            Name = model.LeaderName,
+                            Nation = model.LeaderNation,
+                            ProjectId = competitionProgram.Id,
+                            Phone = model.LeaderPhone,
+                            UpdateTime = DateTime.Now,
+                            IsLeader = true,
+                            IdCard = model.LeaderCard,
+                            Sort = 1,
+                        };
+                        _projectMemberService.SaveObject(pm);
+                    }
+
+                }
+
+                //base.SetMessager(MessageType.success, $"{(isEdit ? "修改" : "新增")}成功！");
+                //return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                //base.SetMessager(MessageType.danger, $"{(isEdit ? "修改" : "新增")}失败！" + ex.Message);
+                //return RedirectToAction("Index");
+            }
+
+            return pm;
+        }
+
+
 
 
         //public async Task<IActionResult> ScheduleTags()
@@ -451,6 +527,207 @@ namespace Senparc.Areas.Admin.Controllers
 
             return "OK,Cancel";
         }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Post(List<IFormFile> files)
+        {
+            long size = files.Sum(f => f.Length);
+
+            // full path to file in temp location
+            var filePath = Path.GetTempFileName();
+            var activies = _activityService.GetFullList(x => x.IsPublish, x => x.IsPublish, OrderingType.Descending).ToList();
+
+            if (activies.Count < 1)
+            {
+                base.SetMessager(MessageType.danger, "请先完善活动主题");
+                return RedirectToAction("Index","Activity");
+            }
+            List<Schedule> list = new List<Schedule>();
+            try
+            {
+                foreach (var formFile in files)
+                {
+                    if (formFile.Length > 0)
+                    {
+
+
+                        using (var stream = formFile.OpenReadStream())
+                        {
+
+                            ExcelHelper excelHelper = new ExcelHelper();
+                            string fileExtension = Path.GetExtension(formFile.FileName);
+                            DataTable table = excelHelper.ExcelImport(stream, fileExtension, 0);
+
+                            if (table != null)
+                            {
+                                foreach (DataRow row in table.Rows)
+                                {
+
+                                    try
+                                    {
+                                        //if (row.ItemArray.Length != 6)
+                                        //{
+                                        //    continue;
+                                        //}
+                                        var rownum = row.ItemArray[0].ToString();// 行号
+                                        var num = row["序号"].ToString();// 序号
+                                        var accountnum = string.Empty;
+                                        if (row["公司ID"] == null )
+                                        {
+
+                                            continue;
+                                            
+                                            
+                                        }
+                                        accountnum = row["公司ID"].ToString();                                      
+                                        var controlId = string.Format("admin_{0}", accountnum.Trim());//  关联帐号
+                                        
+                                        if (row["曲目"] == null)
+                                        {
+                                            continue;
+                                        }
+                                        var name = row["曲目"].ToString();
+
+
+                                        var comname = string.Empty;
+
+
+                                        if (row["公司名称"] != null)
+                                        {
+                                            comname = row["公司名称"].ToString();
+                                        }
+
+                                        if (row["组别"] == null)
+                                        {
+                                            continue;
+                                        }
+                                        var scheduleName = row["组别"].ToString();
+                                        if (string.IsNullOrEmpty(scheduleName))
+                                        {
+                                            continue;
+                                        }
+                                        CompetitionProgram_EditVD cev = new CompetitionProgram_EditVD();
+                                        ///获取节目类别
+                                        var cate = cev.CateList.FirstOrDefault(x => x.Name.Equals(scheduleName));
+                                        if (cate == null)
+                                        {
+                                            continue;
+                                        }
+                                        var cateId = cate.Id;
+
+                                        //获取指定节目
+                                        var result = _competitionProgramService.GetObject(x => name.Equals(x.Name));
+
+                                        var schedule = _scheduleService.GetObject(x => scheduleName.Equals(x.Name));
+
+                                        if (schedule == null)
+                                        {
+                                            continue;
+                                        }
+                                        CompetitionProgram competitionProgram = null;
+                                        if (result == null)
+                                        {
+                                            competitionProgram = new CompetitionProgram()
+                                            {
+                                                Id = Guid.NewGuid().ToString("N"),
+                                                Name = name,
+                                                Company = comname,
+                                                Desc = string.Empty,
+                                                Flag = false,
+                                                ControlId = controlId,
+                                                ScheduleId = schedule.Id,
+                                                BdImgUrl = string.Empty,
+                                                BdImgUrlPwd = string.Empty,
+
+                                                ImgUrl = string.Empty,
+                                                Cate = cateId,
+                                                UpdateTime = DateTime.Now,
+                                                UpdatorId = UserName,
+                                                UpdatorName = AdminUser == null ? "" : AdminUser.RealName,
+                                                CreatorName = AdminUser == null ? "" : AdminUser.RealName,
+                                                SignNum = string.Empty,
+                                                Status = 0,
+                                                Remark = string.Empty,
+                                                CreateTime = DateTime.Now,
+                                                CreatorId = UserName,
+                                            };
+
+                                        }
+                                        else
+                                        {
+                                            competitionProgram = result;
+                                            competitionProgram.Name = name;
+                                            competitionProgram.Desc = string.Empty;
+                                            competitionProgram.ImgUrl = string.Empty;
+                                            competitionProgram.Cate = cateId;
+                                            competitionProgram.Remark = string.Empty;
+                                            competitionProgram.ScheduleId = schedule.Id; competitionProgram.BdImgUrl = string.Empty;
+                                            competitionProgram.BdImgUrlPwd = string.Empty;
+                                            competitionProgram.Company = comname;
+                                            competitionProgram.ControlId = controlId;
+                                            competitionProgram.UpdatorId = UserName;
+                                            competitionProgram.UpdatorName = AdminUser == null ? "" : AdminUser.RealName;
+                                            competitionProgram.UpdateTime = DateTime.Now;
+                                            competitionProgram.SignNum = string.Empty;
+                                            competitionProgram.Status = 0;
+                                            competitionProgram.UpdateTime = DateTime.Now;
+                                            competitionProgram.UpdatorId = UserName;
+                                            competitionProgram.UpdatorName = AdminUser == null ? "" : AdminUser.RealName;
+                                        }
+
+
+
+                                        await TryUpdateModelAsync(competitionProgram, "",
+                                                                  v => v.Name
+                                                                , v => v.Desc
+                                                                , v => v.ImgUrl
+                                                                , v => v.Cate
+                                                                , v => v.Remark
+                                                                , v => v.Desc
+                                                                , v => v.BdImgUrl
+                                                                , v => v.BdImgUrlPwd
+                                                                , v => v.Company
+                                                                , v => v.ControlId
+                                                                , v => v.UpdatorId
+                                                                , v => v.UpdatorName
+                                                                , v => v.UpdateTime
+                                                                , v => v.SignNum
+                                                                , v => v.Status
+                                                                , v => v.UpdateTime
+                                                                , v => v.UpdatorId
+                                                                , v => v.UpdatorName);
+
+
+                                        _competitionProgramService.SaveObject(competitionProgram);
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        continue;
+                                    }
+
+              
+                              
+                                }
+                            }
+                            await Task.Delay(10);
+                            // await formFile.CopyToAsync(stream);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                var error = ex.Message;
+            }
+
+
+            // process uploaded files
+            // Don't rely on or trust the FileName property without validation.
+
+            return Ok(new { count = files.Count, size, filePath });
+        }
+
     }
 }
 

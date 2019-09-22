@@ -6,6 +6,20 @@
 @section breadcrumbs{
 
 }
+
+<form method="post" enctype="multipart/form-data" asp-action="Post" asp-controller="AdminUserInfo">
+    <div class="form-group">
+        <div class="col-md-10">
+            <p>Upload one or more files using this form:</p>
+            <input type="file" name="files" multiple>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="submit" value="Upload">
+        </div>
+    </div>
+</form>
 <div class="row">
 
     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -27,11 +41,13 @@
                         <thead>
                             <tr class="headings">
                                 <th>
-                                    <input type="checkbox" id="check-all"  class="flat">
+                                    <input type="checkbox" id="check-all" class="flat">
                                 </th>
-                                <th class="column-title"># </th>
-                                <th class="column-title">用户名 </th>
                                 <th class="column-title">备注 </th>
+                                <th class="column-title">用户名 </th>
+                                <th class="column-title">公司名称 </th>
+
+
                                 <th class="column-title">添加时间 </th>
                                 <th class="column-title">操作 </th>
                                 <th class="bulk-actions" colspan="6">
@@ -45,20 +61,22 @@
                         <tbody>
                             @foreach (var item in Model.AdminUserInfoList)
                             {
-                                <tr class="pointer">
-                                    <td class="a-center ">
-                                        <input type="checkbox" class="flat table_records" name="ids" form="deleteForm" value="@item.Id">
-                                    </td>
-                                    <td class=" "> @item.Id</td>
-                                    <td class=" ">@item.UserName </td>
-                                    <td class=" ">@item.Note </td>
-                                    <td class=" "> @item.AddTime.ToString("yyyy-MM-dd HH:mm")</td>
-                                    <td class=" ">
-                                        <a asp-action="Edit" asp-route-id="@item.Id" title="编辑" class="btn-xs btn btn-info">
-                                            <em class="fa fa-pencil-square-o"></em>
-                                        </a>
-                                    </td>
-                                </tr>
+                            <tr class="pointer">
+                                <td class="a-center ">
+                                    <input type="checkbox" class="flat table_records" name="ids" form="deleteForm" value="@item.Id">
+                                </td>
+                                <td class=" ">@item.Note </td>
+                                <td class=" ">@item.UserName </td>
+                                <td class=" "> @item.RealName</td>
+
+
+                                <td class=" "> @item.AddTime.ToString("yyyy-MM-dd HH:mm")</td>
+                                <td class=" ">
+                                    <a asp-action="Edit" asp-route-id="@item.Id" title="编辑" class="btn-xs btn btn-info">
+                                        <em class="fa fa-pencil-square-o"></em>
+                                    </a>
+                                </td>
+                            </tr>
                             }
                         </tbody>
                     </table>

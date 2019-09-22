@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Senparc.Areas.Admin.Models.VD;
+using Senparc.Areas.Admin.NopiUtil;
 using Senparc.CO2NET.Extensions;
 using Senparc.Core.Enums;
 using Senparc.Core.Models;
@@ -9,6 +11,9 @@ using Senparc.Service;
 using Senparc.Utility;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Senparc.Areas.Admin.Controllers
@@ -27,9 +32,11 @@ namespace Senparc.Areas.Admin.Controllers
         public ActionResult Index(int pageIndex = 1)
         {
             var seh = new SenparcExpressionHelper<AdminUserInfo>();
+            seh.ValueCompare.AndAlso(true, z => !string.IsNullOrEmpty(z.Note) &&!string.IsNullOrEmpty(z.RealName));
             var where = seh.BuildWhereExpression();
 
-            var admins = _adminUserInfoService.GetObjectList(pageIndex, 20, where, z => z.Id, OrderingType.Descending);
+
+            var admins = _adminUserInfoService.GetObjectList(pageIndex, 1000, where, z => z.Id, OrderingType.Ascending);
             var vd = new AdminUserInfo_IndexVD()
             {
                 AdminUserInfoList = admins
@@ -61,6 +68,7 @@ namespace Senparc.Areas.Admin.Controllers
         {
 
             bool isEdit = model.Id > 0;
+
             this.Validator(model.UserName, "用户名", "UserName", false)
                 .IsFalse(z => this._adminUserInfoService.CheckUserNameExisted(model.Id, z), "用户名已存在！", true);
 
@@ -114,6 +122,99 @@ namespace Senparc.Areas.Admin.Controllers
             _adminUserInfoService.DeleteAll(userInfoList);
             SetMessager(MessageType.success, "删除成功！");
             return RedirectToAction("Index");
+        }
+
+        //[Route("UploadFiles")]
+        [HttpPost]
+        public async Task<IActionResult> Post(List<IFormFile> files)
+        {
+            long size = files.Sum(f => f.Length);
+
+            // full path to file in temp location
+            var filePath = Path.GetTempFileName();
+
+            try
+            {
+                foreach (var formFile in files)
+                {
+                    if (formFile.Length > 0)
+                    {
+
+
+                        using (var stream = formFile.OpenReadStream())
+                        {
+
+                            ExcelHelper excelHelper = new ExcelHelper();
+                            string fileExtension = Path.GetExtension(formFile.FileName);
+                            DataTable table = excelHelper.ExcelImport(stream, fileExtension, 0);
+
+                            if (table != null)
+                            {
+                                foreach (DataRow row in table.Rows)
+                                {
+                                    if (row.ItemArray.Length != 6)
+                                    {
+                                        continue;
+                                    }
+
+                                    var passwordSalt = DateTime.Now.Ticks.ToString();
+                                    AdminUserInfo model = null;
+                                    var userName = row.ItemArray[4].ToString();
+                                    var password = row.ItemArray[5].ToString();
+
+                                    if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(password))
+                                    {
+                                        continue;
+                                    }
+
+                                    var existModel = _adminUserInfoService.GetUserInfo(userName);
+
+                                    if (existModel != null)
+                                    {
+                                        model = existModel;
+                                    }
+                                    else
+                                    {
+                                        model = new AdminUserInfo()
+                                        {
+                                            PasswordSalt = passwordSalt,
+                                            LastLoginTime = DateTime.Now,
+                                            ThisLoginTime = DateTime.Now,
+                                            AddTime = DateTime.Now,
+                                        };
+                                    }
+
+                                    if (!password.IsNullOrEmpty())
+                                    {
+                                        model.Password = this._adminUserInfoService.GetPassword(password, model.PasswordSalt, false);//生成密码
+                                    }
+
+                                    model.RealName = row.ItemArray[3].ToString();
+                                    model.Note = row.ItemArray[1].ToString();
+                                    model.UserName = userName;
+                                    await this.TryUpdateModelAsync(model, "", z => z.Note, z => z.RealName, z => z.UserName);
+                                    this._adminUserInfoService.SaveObject(model);
+
+
+
+                                }
+                            }
+                            await Task.Delay(10);
+                           // await formFile.CopyToAsync(stream);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                var error = ex.Message;
+            }
+            
+
+            // process uploaded files
+            // Don't rely on or trust the FileName property without validation.
+
+            return Ok(new { count = files.Count, size, filePath });
         }
     }
 }
