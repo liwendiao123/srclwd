@@ -12,7 +12,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
-
+using Senparc.Mvc.Models;
+using Senparc.Core.Utility;
+using Senparc.Areas.Admin.NopiUtil;
 
 namespace Senparc.Areas.Admin.Controllers
 {
@@ -412,9 +414,91 @@ namespace Senparc.Areas.Admin.Controllers
 
 
             });
+            List<ExportProMemberTable> exportProMemberTables = new List<ExportProMemberTable>();
+            var i = 1;
+            list.OrderBy(x=>x.ProjectId).ToList().ForEach(x =>
+            {
+                ExportProMemberTable rowItem = new ExportProMemberTable
+                {
+                     Sort = i.ToString(),
+                     CompanyId =x.CompetitionProgram.ControlId,
+                     Company = x.CompetitionProgram.Company,
+                     ContactTel = x.Phone,
+                     IdCard = x.IdCard,
+                     Name = x.Name,
+                     Nation = x.Nation,
+                     ProjectName = x.CompetitionProgram.Name,
+                     ProjectType = CateManager.GetCateName(x.CompetitionProgram.Cate),
+                   WorkCom = x.Company
+
+                };
+
+                exportProMemberTables.Add(rowItem);
+                i++;
+
+            });
 
 
-           
+           var datatable =   DataTableListUtil.ListToDt<ExportProMemberTable>(exportProMemberTables);
+
+            ExcelHelper excelHelper = new ExcelHelper();
+            ExcelConfig excelConfig = new ExcelConfig() {
+                Title = "参赛者列表",
+                ColumnEntity = new List<ColumnModel>(),
+                IsAllSizeColumn = true,
+            };
+            var props = typeof(ExportProMemberTable).GetProperties();
+            //   var dt = new DataTable();
+            string proName = "";
+            excelConfig.ColumnEntity.AddRange(props.Select(p => {
+
+                switch (p.Name)
+                {
+                    case "Sort":
+                        proName = "序号";
+                        break;
+                    case "CompanyId":
+                        proName = "公司ID";
+                        break;
+                    case "Company":
+                        proName = "公司";
+                        break;
+                    case "ProjectName":
+                        proName = "参演项目";
+                        break;
+                    case "ProjectType":
+                        proName = "参演项目类型";
+                        break;
+                    case "Name":
+                        proName = "姓名";
+                        break;
+                    case "WorkCom":
+                        proName = "工作单位";
+                        break;
+                    case "ContactTel":
+                        proName = "联系电话";
+                        break;
+                    case "Nation":
+                        proName = "民族";
+                        break;
+                    case "IdCard":
+                        proName = "身份证号";
+                        break;
+                    default:
+                        proName = p.Name;
+                        break;
+                }
+
+                return new  ColumnModel()
+                {
+                    Column = p.Name,
+                    ExcelColumn = proName,
+
+                };
+            }).ToArray());
+
+          return  excelHelper.ExcelDownload(datatable, excelConfig, string.Format("{0}_参赛者表",DateTime.Now.ToString("yyyyMMddHHmm")));
+
             //var vd = new ProjectIndex_EditVD()
             //{
             //    CompetitionProgramList = new PagedList<ProjectMember_EditVD>(list, pageIndex, modelList.PageCount, modelList.TotalCount, modelList.SkipCount),
@@ -422,7 +506,7 @@ namespace Senparc.Areas.Admin.Controllers
             //    ProjectId = ProjectId,
             //    CpList = modellist
             //};
-            return View(null);
+         //   return View(null);
         }
        
 

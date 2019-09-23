@@ -537,9 +537,9 @@ namespace Senparc.Mvc.Controllers.Api
                     }
                 }
 
-                var pm = _projectMemberService.GetObject(x => x.ProjectId == request.ProjectId && x.Phone == request.Phone);
+                //var pm = _projectMemberService.GetObject(x => x.ProjectId == request.ProjectId && x.Phone == request.Phone);
 
-
+                ProjectMember pm = null;
                 if (!string.IsNullOrEmpty(request.Id))
                 {
                      pm = _projectMemberService.GetObject(x => x.Id == request.Id);

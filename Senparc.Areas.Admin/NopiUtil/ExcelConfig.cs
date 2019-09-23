@@ -11,6 +11,11 @@ namespace Senparc.Areas.Admin.NopiUtil
     public class ExcelConfig
     {
 
+        public ExcelConfig()
+        {
+            ColumnEntity = new List<ColumnModel>();
+        }
+
         /// <summary>
         /// 标题
         /// </summary>

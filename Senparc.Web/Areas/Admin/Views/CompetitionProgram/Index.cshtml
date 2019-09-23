@@ -91,6 +91,9 @@
                 <a asp-action="Edit" asp-route-id="" title="新增" class="btn-sm btn btn-success">
                     <em class="fa fa-plus"></em> &nbsp;<small>新增</small>
                 </a>
+                <a asp-action="ExportProject" asp-route-id="" title="导出" class="btn-sm btn btn-success">
+                    <em class="fa fa-plus"></em> &nbsp;<small>导出</small>
+                </a>
                 <label for="deleteBtn" class="btn-sm btn btn-danger" title="删除">
                     <em class="fa fa-trash-o"></em> &nbsp;<small>删除</small>
                     <input type="submit" id="deleteBtn" onclick="deleteCheck('ids','deleteForm'); return false;" form="deleteForm" class="hidden" value="删除" />

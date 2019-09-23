@@ -16,6 +16,8 @@ using Microsoft.AspNetCore.Http;
 using System.IO;
 using Senparc.Areas.Admin.NopiUtil;
 using System.Data;
+using Senparc.Core.Utility;
+using Senparc.Mvc.Models;
 
 namespace Senparc.Areas.Admin.Controllers
 {
@@ -726,6 +728,139 @@ namespace Senparc.Areas.Admin.Controllers
             // Don't rely on or trust the FileName property without validation.
 
             return Ok(new { count = files.Count, size, filePath });
+        }
+
+
+        public ActionResult ExportProject()
+        {
+            var seh = new SenparcExpressionHelper<CompetitionProgram>();
+            //seh.ValueCompare.AndAlso(true, z => !z.Flag)
+            //    .AndAlso(!projectId.IsNullOrEmpty(), z => z.ScheduleId == projectId)
+            //    .AndAlso(!kw.IsNullOrEmpty(), z => z.Name.Contains(kw) || z.Company.Contains(kw) || z.SignNum.Contains(kw) || z.Remark.Contains(kw) || z.Desc.Contains(kw));
+
+
+            var where = seh.BuildWhereExpression();
+
+            var activies = _activityService.GetFullList(x => x.IsPublish, x => x.IsPublish, OrderingType.Descending).ToList();
+
+            if (activies.Count < 1)
+            {
+                base.SetMessager(MessageType.danger, "请先完善活动主题");
+                return RedirectToAction("Index");
+            }
+            var curactivity = activies.Select(x => x.Id).ToList();
+
+            // List<Schedule> list = new List<Schedule>();
+
+            var clist = _scheduleService.GetFullList(x => curactivity.Contains(x.ActivityId), x => x.Sort, OrderingType.Ascending).ToList().Select(x => x).ToList();
+
+
+            var modelList = _competitionProgramService.GetObjectList(1, 10000, where, z => z.Id, OrderingType.Descending);
+
+            List<ExportProjectTable> list = new List<ExportProjectTable>();
+
+            int i = 1;
+            modelList.OrderBy(x=>x.ControlId).ThenBy(x=>x.Id).ToList().ForEach(x =>
+            {
+
+                //var leader = new ProjectMember();
+
+                //if (!string.IsNullOrEmpty(x.ControlId))
+                //{
+                //    var cleader = _projectMemberService.GetObject(xp => xp.IsLeader && xp.ProjectId == x.Id);
+
+                //    if (cleader != null)
+                //    {
+                //        leader = cleader;
+                //    }
+                //}
+
+                //var strcateName = string.Empty;
+
+                //if (x.Schedule == null)
+                //{
+                //    x.Schedule = _scheduleService.GetObject(s => s.Id == x.ScheduleId);
+                //}
+
+                list.Add(new ExportProjectTable
+                {
+                    
+
+                    CateName = CateManager.GetCateName(x.Cate),
+                     CompanyId = x.ControlId,
+                      CompanyName = x.Company,
+                       ProjectName = x.Name,
+                        SignNum = (string.IsNullOrEmpty(x.SignNum)?"否":x.SignNum),
+                         Sort = i.ToString()
+
+
+
+                });
+
+                i++;
+            });
+
+            //var vd = new CompetitionProgram_IndexVD()
+            //{
+            //    CompetitionProgramList = new PagedList<CompetitionProgram_EditVD>(list, pageIndex, modelList.PageCount, modelList.TotalCount, modelList.SkipCount),
+            //    kw = kw,
+            //    ProjectId = projectId,
+            //    Schedules = clist
+            //};
+
+            
+
+            var datatable = DataTableListUtil.ListToDt<ExportProjectTable>(list);
+
+            ExcelHelper excelHelper = new ExcelHelper();
+            ExcelConfig excelConfig = new ExcelConfig()
+            {
+                 IsAllSizeColumn = true,
+                Title = "抽签结果表",
+                ColumnEntity = new List<ColumnModel>()
+
+            };
+            var props = typeof(ExportProjectTable).GetProperties();
+            //   var dt = new DataTable();
+            string proName = "";
+            excelConfig.ColumnEntity.AddRange(props.Select(p => {
+
+                switch (p.Name)
+                {
+                    case "Sort":
+                        proName = "序号";
+                        break;
+                    case "CompanyId":
+                        proName = "公司ID";
+                        break;
+                    case "CompanyName":
+                        proName = "公司";
+                        break;
+                    case "ProjectName":
+                        proName = "参演项目";
+                        break;
+                    case "CateName":
+                        proName = "参演项目类型";
+                        break;
+                    case "SignNum":
+                        proName = "签号";
+                        break;
+                
+                    default:
+                        proName = p.Name;
+                        break;
+                }
+
+                return new ColumnModel()
+                {
+                    Column = p.Name,
+                    ExcelColumn = proName,
+
+                };
+            }).ToArray());
+
+            return excelHelper.ExcelDownload(datatable, excelConfig, string.Format("{0}_抽签结果表", DateTime.Now.ToString("yyyyMMddHHmm")));
+
         }
 
     }
