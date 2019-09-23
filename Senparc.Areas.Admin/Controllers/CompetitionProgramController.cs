@@ -71,7 +71,7 @@ namespace Senparc.Areas.Admin.Controllers
             var clist = _scheduleService.GetFullList(x => curactivity.Contains(x.ActivityId), x => x.Sort, OrderingType.Ascending).ToList().Select(x => x).ToList();
 
 
-            var modelList = _competitionProgramService.GetObjectList(pageIndex, 20, where, z => z.Id, OrderingType.Descending);
+            var modelList = _competitionProgramService.GetObjectList(pageIndex, 10000, where, z => z.Id, OrderingType.Descending);
 
             List<CompetitionProgram_EditVD> list = new List<CompetitionProgram_EditVD>();
 

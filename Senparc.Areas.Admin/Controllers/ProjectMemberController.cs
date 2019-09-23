@@ -77,7 +77,7 @@ namespace Senparc.Areas.Admin.Controllers
             //    .AndAlso(!kw.IsNullOrEmpty(), z => z.Name.Contains(kw) || z.Company.Contains(kw) || z.Duty.Contains(kw) || z.Phone.Contains(kw) || z.Nation.Contains(kw));
             //var where = seh.BuildWhereExpression();
 
-            var modelList = _projectMemberService.GetObjectList(pageIndex, 20, where, z => z.Id, OrderingType.Descending);
+            var modelList = _projectMemberService.GetObjectList(pageIndex, 10000, where, z => z.Id, OrderingType.Descending);
             List<ProjectMember_EditVD> list = new List<ProjectMember_EditVD>();
 
             modelList.ForEach(x =>

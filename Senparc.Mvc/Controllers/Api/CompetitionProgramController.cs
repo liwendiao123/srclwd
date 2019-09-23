@@ -589,7 +589,7 @@ namespace Senparc.Mvc.Controllers.Api
                         Flag = false,
                         Gender = request.Gender,
                         Name = request.Name,
-                        Nation = request.Name,
+                        Nation = request.Nation,
                         ProjectId = request.ProjectId,
                         Phone = request.Phone,
                         UpdateTime = DateTime.Now,
